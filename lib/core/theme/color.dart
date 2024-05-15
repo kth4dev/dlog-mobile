@@ -1,0 +1,46 @@
+import 'package:dlog/core/theme/resource.dart';
+import 'package:flutter/material.dart';
+
+DLogColorScheme dLogColorScheme = const DLogColorScheme(
+  grey: DLogColorSwatches(
+    light: Color(0xFFf6f6f6),
+    lightHover: Color(0xFFf2f2f2),
+    lightActive: Color(0xFFe4e4e4),
+    normal: Color(0xFFa8a8a8),
+    normalHover: Color(0xFF979797),
+    normalActive: Color(0xFF868686),
+    dark: Color(0xFF7e7e7e),
+    darkHover: Color(0xFF656565),
+    darkActive: Color(0xFF4c4c4c),
+    darker: Color(0xFF3b3b3b),
+  ),
+  black: DLogColorSwatches(
+    light: Color(0xFFe6e6e6),
+    lightHover: Color(0xFFd9d9d9),
+    lightActive: Color(0xFFb0b0b0),
+    normal: Color(0xFF000000),
+    normalHover: Color(0xFF000000),
+    normalActive: Color(0xFF000000),
+    dark: Color(0xFF000000),
+    darkHover: Color(0xFF000000),
+    darkActive: Color(0xFF000000),
+    darker: Color(0xFF000000),
+  ),
+  yellow: DLogColorSwatches(
+    light: Color(0xFFfcf8ec),
+    lightHover: Color(0xFFfbf5e3),
+    lightActive: Color(0xFFf7eac5),
+    normal: Color(0xFFe5ba43),
+    normalHover: Color(0xFFcea73c),
+    normalActive: Color(0xFFb79536),
+    dark: Color(0xFFac8c32),
+    darkHover: Color(0xFF897028),
+    darkActive: Color(0xFF67541e),
+    darker: Color(0xFF504117),
+  ),
+  whiteColor: Color(0xFFffffff),
+  blackColor: Color(0xFF000000),
+  successColor: Color(0xFF3ed27b),
+  errorColor: Color(0xFFff2b2b),
+  pendingColor: Color(0xFFffcc3f),
+);
