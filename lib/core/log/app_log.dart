@@ -3,7 +3,7 @@ import 'package:logger/logger.dart';
 
 
 class AppLogs {
-  static final _logger = locator<Logger>();
+  static final _logger = sl<Logger>();
 
   static void info(String message) {
     _logger.i(message);
