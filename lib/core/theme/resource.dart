@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class DlogThemeData {
+class DLogThemeData {
   final DLogColorScheme colorScheme;
   final DLogTextTheme textTheme;
 
-  const DlogThemeData({
+  const DLogThemeData({
     required this.colorScheme,
     required this.textTheme,
   });
