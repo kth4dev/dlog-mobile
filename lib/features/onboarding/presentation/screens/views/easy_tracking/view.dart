@@ -19,7 +19,7 @@ class EasyTrackingView extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SvgImage(path: DLogGraphic.shipping, height: 342),
+          const DLogSvgImage(path: DLogGraphic.shipping, height: 342),
           const EasyTrackingDescription(),
           EasyTrackingButtons(onNext: onNext, onSkip: onSkip)
         ],

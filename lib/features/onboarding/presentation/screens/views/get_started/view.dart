@@ -18,7 +18,7 @@ class GetStartedView extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SvgImage(path: DLogGraphic.orderDelivered, height: 342),
+          const DLogSvgImage(path: DLogGraphic.orderDelivered, height: 342),
           const GetStartedDescription(),
           DLogClickButton(
             text: "Get Started",

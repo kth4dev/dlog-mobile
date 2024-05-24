@@ -19,7 +19,7 @@ class CustomerSupportView extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SvgImage(path: DLogGraphic.digitalCustomerService, height: 342),
+          const DLogSvgImage(path: DLogGraphic.digitalCustomerService, height: 342),
           const CustomerSupportDescription(),
           CustomerSupportButtons(onNext: onNext, onSkip: onSkip)
         ],

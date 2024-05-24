@@ -19,7 +19,7 @@ class CreateAccountView extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SvgImage(path: DLogGraphic.enterPassword, height: 342),
+          const DLogSvgImage(path: DLogGraphic.enterPassword, height: 342),
           const CreateAccountDescription(),
           CreateAccountButtons(onLogin: onLogin, onSignUp: onSignUp)
         ],

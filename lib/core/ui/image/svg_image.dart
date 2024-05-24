@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SvgImage extends StatelessWidget {
+class DLogSvgImage extends StatelessWidget {
   final String path;
   final double? size;
   final double? width;
   final double? height;
 
-  const SvgImage(
+  const DLogSvgImage(
       {super.key, required this.path, this.size,this.width,this.height});
 
   @override
