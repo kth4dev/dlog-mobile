@@ -2,14 +2,14 @@ import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:flutter/material.dart';
 
-class LabelAndTextField extends StatefulWidget {
-  const LabelAndTextField({super.key});
+class LabelAndLoginTextField extends StatefulWidget {
+  const LabelAndLoginTextField({super.key});
 
   @override
-  State<LabelAndTextField> createState() => _LabelAndTextFieldState();
+  State<LabelAndLoginTextField> createState() => _LabelAndLoginTextFieldState();
 }
 
-class _LabelAndTextFieldState extends State<LabelAndTextField> {
+class _LabelAndLoginTextFieldState extends State<LabelAndLoginTextField> {
   late TextEditingController emailController,passwordController;
 
   @override

@@ -4,8 +4,8 @@ import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-class TextAndButton extends StatelessWidget {
-  const TextAndButton({super.key});
+class TextAndLoginButton extends StatelessWidget {
+  const TextAndLoginButton({super.key});
 
   @override
   Widget build(BuildContext context) {

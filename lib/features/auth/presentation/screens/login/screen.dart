@@ -1,7 +1,6 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
-import 'package:dlog/features/auth/presentation/screens/login/view/label_and_textField.dart';
-import 'package:dlog/features/auth/presentation/screens/login/view/text_and_button.dart';
+import 'package:dlog/features/auth/presentation/screens/login/view/label_and_login_text_field.dart';
+import 'package:dlog/features/auth/presentation/screens/login/view/text_and_login_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/images/logo/logo.dart';
@@ -19,20 +18,18 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
-          padding: _screenPadding,
-          child: Column(
-            children: [
-              const DLogAssetImage(
-                path: DLogLogo.deDynamic,
-                size: 100,
-              ),
-              40.spacingHeight,
-              const LabelAndTextField(),
-              20.spacingHeight,
-              const TextAndButton(),
-            ],
-          ),
+        padding: _screenPadding,
+        child: Column(
+          children: [
+            const DLogAssetImage(
+              path: DLogLogo.deDynamic,
+              size: 100,
+            ),
+            40.spacingHeight,
+            const LabelAndLoginTextField(),
+            20.spacingHeight,
+            const TextAndLoginButton(),
+          ],
         ),
       ),
     );
