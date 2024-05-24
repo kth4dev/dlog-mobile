@@ -43,7 +43,7 @@ class DLogOutLinedTextField extends StatelessWidget {
         6.spacingHeight,
         SizedBox(
           width: width,
-          height: height,
+          height: height ?? 40,
           child: TextFormField(
             textAlignVertical: TextAlignVertical.top,
             minLines: minLine,
