@@ -1,0 +1,15 @@
+com.bizaid.dlog.app-core-1.6.0-0 C:\Users\ASUS\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\res
+com.bizaid.dlog.app-jetified-window-java-1.0.0-beta04-1 C:\Users\ASUS\.gradle\caches\transforms-3\2a215381204751055df81b6269e717b7\transformed\jetified-window-java-1.0.0-beta04\res
+com.bizaid.dlog.app-jetified-annotation-experimental-1.1.0-2 C:\Users\ASUS\.gradle\caches\transforms-3\3d2f03fc996c2e0aa3dee5cfa3002cd1\transformed\jetified-annotation-experimental-1.1.0\res
+com.bizaid.dlog.app-jetified-window-1.0.0-beta04-3 C:\Users\ASUS\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\res
+com.bizaid.dlog.app-debug-4 D:\bizaid_project\dlog_mobile\android\app\src\debug\res
+com.bizaid.dlog.app-main-5 D:\bizaid_project\dlog_mobile\android\app\src\main\res
+com.bizaid.dlog.app-pngs-6 D:\bizaid_project\dlog_mobile\build\app\generated\res\pngs\debug
+com.bizaid.dlog.app-resValues-7 D:\bizaid_project\dlog_mobile\build\app\generated\res\resValues\debug
+com.bizaid.dlog.app-rs-8 D:\bizaid_project\dlog_mobile\build\app\generated\res\rs\debug
+com.bizaid.dlog.app-mergeDebugResources-9 D:\bizaid_project\dlog_mobile\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.bizaid.dlog.app-mergeDebugResources-10 D:\bizaid_project\dlog_mobile\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.bizaid.dlog.app-merged_res-11 D:\bizaid_project\dlog_mobile\build\app\intermediates\merged_res\debug
+com.bizaid.dlog.app-packaged_res-12 D:\bizaid_project\dlog_mobile\build\device_info_plus\intermediates\packaged_res\debug
+com.bizaid.dlog.app-packaged_res-13 D:\bizaid_project\dlog_mobile\build\flutter_localization\intermediates\packaged_res\debug
+com.bizaid.dlog.app-packaged_res-14 D:\bizaid_project\dlog_mobile\build\shared_preferences_android\intermediates\packaged_res\debug
