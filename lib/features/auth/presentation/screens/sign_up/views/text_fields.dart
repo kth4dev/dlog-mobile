@@ -4,14 +4,15 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:flutter/material.dart';
 
-class LabelAndSignUpTextField extends StatefulWidget {
-  const LabelAndSignUpTextField({super.key});
+class SingUpTextFieldsView extends StatefulWidget {
+  const SingUpTextFieldsView({super.key});
 
   @override
-  State<LabelAndSignUpTextField> createState() => _LabelAndSignUpTextFieldState();
+  State<SingUpTextFieldsView> createState() =>
+      _SingUpTextFieldsViewState();
 }
 
-class _LabelAndSignUpTextFieldState extends State<LabelAndSignUpTextField> {
+class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
   late TextEditingController customerNumberController,
       userNameController,
       phoneNumberController,
@@ -22,6 +23,7 @@ class _LabelAndSignUpTextFieldState extends State<LabelAndSignUpTextField> {
 
   @override
   void initState() {
+    super.initState();
     customerNumberController = TextEditingController();
     userNameController = TextEditingController();
     phoneNumberController = TextEditingController();
@@ -29,20 +31,9 @@ class _LabelAndSignUpTextFieldState extends State<LabelAndSignUpTextField> {
     passwordController = TextEditingController();
     confirmPasswordController = TextEditingController();
     customerShippingMarkController = TextEditingController();
-    super.initState();
   }
 
-  @override
-  void dispose() {
-    customerNumberController.dispose();
-    userNameController.dispose();
-    phoneNumberController.dispose();
-    emailController.dispose();
-    passwordController.dispose();
-    confirmPasswordController.dispose();
-    customerShippingMarkController.dispose();
-    super.dispose();
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -105,5 +96,17 @@ class _LabelAndSignUpTextFieldState extends State<LabelAndSignUpTextField> {
         ),
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    customerNumberController.dispose();
+    userNameController.dispose();
+    phoneNumberController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    customerShippingMarkController.dispose();
   }
 }

@@ -1,10 +1,9 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/auth/presentation/screens/login/view/label_and_login_text_field.dart';
-import 'package:dlog/features/auth/presentation/screens/login/view/text_and_login_button.dart';
+import 'package:dlog/core/images/logo/logo.dart';
+import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/images/logo/logo.dart';
-import '../../../../../core/ui/image/asset_image.dart';
+import 'views/views.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -26,9 +25,11 @@ class _LoginScreenState extends State<LoginScreen> {
               size: 100,
             ),
             40.spacingHeight,
-            const LabelAndLoginTextField(),
+            const LoginTextFieldsView(),
             20.spacingHeight,
-            const TextAndLoginButton(),
+            const ForgetPasswordView(),
+            40.spacingHeight,
+            const LoginAndSingUpViews(),
           ],
         ),
       ),

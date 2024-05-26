@@ -1,13 +1,14 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/ui/button/primary_button.dart';
+import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../../core/ui/button/primary_button.dart';
-import '../../../../../../core/ui/text/dlog_text.dart';
 
-class TextAndSignUpButton extends StatelessWidget {
-  const TextAndSignUpButton({super.key});
+
+class SignUpAndLoginView extends StatelessWidget {
+  const SignUpAndLoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
