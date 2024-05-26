@@ -1,6 +1,9 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
+import 'package:dlog/core/images/logo/logo.dart';
+import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:flutter/material.dart';
+
+import 'views/views.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -13,29 +16,30 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              DLogOutLinedTextField(
-                controller: TextEditingController(),
-                label: 'Username or Email',
-                textInputType: TextInputType.text,
-                height: 40,
-              ),
-              8.spacingHeight,
-              DLogOutLinedTextField(
-                controller: TextEditingController(),
-                label: 'Password',
-                textInputType: TextInputType.text,
-                height: 40,
-              ),
-            ],
-          ),
+      body: SingleChildScrollView(
+        padding: _screenPadding,
+        child: Column(
+          children: [
+            const DLogAssetImage(
+              path: DLogLogo.deDynamic,
+              size: 100,
+            ),
+            40.spacingHeight,
+            const LoginTextFieldsView(),
+            20.spacingHeight,
+            const ForgetPasswordView(),
+            40.spacingHeight,
+            const LoginAndSingUpViews(),
+          ],
         ),
       ),
     );
   }
+
+  EdgeInsets get _screenPadding => const EdgeInsets.only(
+        left: 24,
+        right: 24,
+        top: 100,
+        bottom: 196,
+      );
 }

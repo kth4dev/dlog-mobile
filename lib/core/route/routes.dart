@@ -14,6 +14,7 @@ class AppRoute {
   static const String login = "/login";
   static const String signUp = "/signUp";
 
+
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
