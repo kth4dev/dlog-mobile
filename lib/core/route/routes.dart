@@ -1,5 +1,6 @@
 import 'package:dlog/data/app-pref/app_data_store.dart';
 import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/features/auth/presentation/screens/fogot_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/home/presentation/screen.dart';
@@ -13,6 +14,7 @@ class AppRoute {
   static const String launch = "/launch";
   static const String login = "/login";
   static const String signUp = "/signUp";
+  static const String fogotPassword = "/fogotPassword";
 
 
   static GoRouter router = GoRouter(
@@ -49,6 +51,12 @@ class AppRoute {
         path: signUp,
         builder: (BuildContext context, GoRouterState state) {
           return const SignUpScreen();
+        },
+      ),
+      GoRoute(
+        path: fogotPassword,
+        builder: (BuildContext context, GoRouterState state) {
+          return const FogotPasswordScreen();
         },
       ),
     ],
