@@ -6,9 +6,16 @@ class DLogSvgImage extends StatelessWidget {
   final double? size;
   final double? width;
   final double? height;
+  final Color? color;
 
-  const DLogSvgImage(
-      {super.key, required this.path, this.size,this.width,this.height});
+  const DLogSvgImage({
+    super.key,
+    required this.path,
+    this.size,
+    this.width,
+    this.height,
+    this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +23,7 @@ class DLogSvgImage extends StatelessWidget {
       path,
       width: width ?? size,
       height: height ?? size,
+      color: color,
     );
   }
 }

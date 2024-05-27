@@ -15,6 +15,7 @@ class AppRoute {
   static const String login = "/login";
   static const String signUp = "/signUp";
   static const String forgetPassword = "/forgetPassword";
+  static const String home = "/home";
 
 
   static GoRouter router = GoRouter(
@@ -57,6 +58,12 @@ class AppRoute {
         path: forgetPassword,
         builder: (BuildContext context, GoRouterState state) {
           return const ForgetPasswordScreen();
+        },
+      ),
+      GoRoute(
+        path: home,
+        builder: (BuildContext context, GoRouterState state) {
+          return const HomeScreen();
         },
       ),
     ],

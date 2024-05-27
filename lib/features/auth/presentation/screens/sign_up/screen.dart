@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/logo/logo.dart';
+import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/views/text_fields.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/views/buttons.dart';
@@ -17,6 +18,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: const DLogAppBar(title: "SignUp"),
       body: SingleChildScrollView(
         padding: _screenPadding,
         child: Column(

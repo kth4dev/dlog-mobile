@@ -16,7 +16,9 @@ class LoginAndSingUpViews extends StatelessWidget {
       children: [
         DLogPrimaryButton(
           text: "Login",
-          onPressed: () {},
+          onPressed: () {
+            context.go(AppRoute.home);
+          },
           width: 160,
           height: 40,
         ),

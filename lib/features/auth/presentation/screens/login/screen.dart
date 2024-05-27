@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/logo/logo.dart';
+import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const DLogAppBar(title: "Login"),
       body: SingleChildScrollView(
         padding: _screenPadding,
         child: Column(
