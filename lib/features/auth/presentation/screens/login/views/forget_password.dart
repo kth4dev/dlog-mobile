@@ -13,7 +13,7 @@ class ForgetPasswordView extends StatelessWidget {
       alignment: Alignment.bottomRight,
       child: InkWell(
         onTap: () {
-          context.go(AppRoute.fogotPassword);
+          context.go(AppRoute.forgetPassword);
         },
         child: DLogText(
           "Forgot Password?",

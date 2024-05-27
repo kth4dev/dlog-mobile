@@ -20,20 +20,15 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
   }
 
   @override
-  void dispose() {
-    emailController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         DLogOutLinedTextField(
-            controller: emailController,
-            label: "Enter Phone no or email",
-            textInputType: TextInputType.text),
+          controller: emailController,
+          label: "Enter Phone no or email",
+          textInputType: TextInputType.text,
+        ),
         50.spacingHeight,
         DLogPrimaryButton(
           text: "Enter",
@@ -43,5 +38,11 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
         )
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    emailController.dispose();
+    super.dispose();
   }
 }
