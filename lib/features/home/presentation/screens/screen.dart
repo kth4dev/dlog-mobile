@@ -1,4 +1,5 @@
 import 'package:dlog/core/ui/app_bar/home.dart';
+import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,9 +12,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: DLogHomeAppBar(
-
+    return const Scaffold(
+      appBar: DLogHomeAppBar(),
+      body: Center(
+        child: DLogText("Home"),
       ),
     );
   }

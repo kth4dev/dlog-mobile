@@ -3,7 +3,8 @@ import 'package:dlog/di/injection_container.dart';
 import 'package:dlog/features/auth/presentation/screens/forget_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
-import 'package:dlog/features/home/presentation/screen.dart';
+import 'package:dlog/features/main/presentation/screens/screen.dart';
+import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -63,7 +64,7 @@ class AppRoute {
       GoRoute(
         path: home,
         builder: (BuildContext context, GoRouterState state) {
-          return const HomeScreen();
+          return const MainScreen();
         },
       ),
     ],
