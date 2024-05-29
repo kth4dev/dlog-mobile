@@ -6,3 +6,4 @@ class Documents {
   final document1 = "$basePath/Document-1.svg";
   final documentHistory = "$basePath/Document-history.svg";
 }
+

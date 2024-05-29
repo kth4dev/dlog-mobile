@@ -1,6 +1,8 @@
 import 'package:dlog/core/utils/constants.dart';
 
 class General {
-  final bell = "$iconsPath/Bell.svg";
-  final edit1 = "$iconsPath/Edit 1.svg";
+  static const basePath = "$iconsPath/general";
+  final bell = "$basePath/Bell.svg";
+  final edit1 = "$basePath/Edit 1.svg";
 }
+
