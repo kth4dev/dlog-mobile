@@ -1,7 +1,7 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/auth/presentation/screens/verify/view/header.dart';
-import 'package:dlog/features/auth/presentation/screens/verify/view/otp.dart';
 import 'package:flutter/material.dart';
+
+import 'view/views.dart';
 
 class VerifyScreen extends StatelessWidget {
   const VerifyScreen({super.key});

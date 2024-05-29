@@ -1,17 +1,17 @@
 import 'package:dlog/core/extensions/context_extension.dart';
-import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
 // todo : change suffix icon
 class DLogSearchTextField extends StatelessWidget {
   final TextEditingController? controller;
+  final String? text;
   final bool? isEnabled;
 
   const DLogSearchTextField({
     super.key,
     this.controller,
     this.isEnabled,
+    this.text
   });
 
   @override
@@ -43,7 +43,7 @@ class DLogSearchTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           suffixIcon: const Icon(Icons.search),
-          hintText: "Search"
+          hintText: text ?? "Search"
         ),
       ),
     );
