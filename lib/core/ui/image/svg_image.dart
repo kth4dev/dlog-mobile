@@ -23,7 +23,10 @@ class DLogSvgImage extends StatelessWidget {
       path,
       width: width ?? size,
       height: height ?? size,
-      color: color,
+      colorFilter: colorFilter,
     );
   }
+
+  ColorFilter? get colorFilter =>
+      (color != null) ? ColorFilter.mode(color!, BlendMode.srcIn) : null;
 }
