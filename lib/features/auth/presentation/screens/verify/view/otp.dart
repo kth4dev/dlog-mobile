@@ -4,7 +4,10 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pinput/pinput.dart';
+
+import '../../../../../../core/route/routes.dart';
 
 class OtpView extends StatefulWidget {
   const OtpView({super.key});
@@ -86,7 +89,7 @@ class _OtpViewState extends State<OtpView> {
 
   void _goNextPage() {
     if (otpController.text.length == 6) {
-      //context.go(AppRoute.login);
+      context.go(AppRoute.resetPassword);
     }
   }
 }
