@@ -1,7 +1,9 @@
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class TextFieldAndButtonView extends StatefulWidget {
   const TextFieldAndButtonView({super.key});
@@ -32,7 +34,9 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
         50.spacingHeight,
         DLogPrimaryButton(
           text: "Enter",
-          onPressed: () {},
+          onPressed: () {
+            context.go(AppRoute.verify);
+          },
           width: 160,
           height: 40,
         )
