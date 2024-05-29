@@ -6,7 +6,7 @@ import 'outline.dart';
 
 class HIcon{
   static const basePath = "$iconsPath/hicon";
-  static HIconBold bold = HIconBold();
-  static HIconLinear linear = HIconLinear();
-  static HIconOutLine outLine = HIconOutLine();
+  final HIconBold bold = HIconBold();
+  final HIconLinear linear = HIconLinear();
+  final HIconOutLine outLine = HIconOutLine();
 }

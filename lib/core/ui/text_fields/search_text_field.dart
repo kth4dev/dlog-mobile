@@ -1,6 +1,4 @@
 import 'package:dlog/core/extensions/context_extension.dart';
-import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
 // todo : change suffix icon

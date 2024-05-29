@@ -1,9 +1,9 @@
 import 'package:dlog/core/utils/constants.dart';
 
 class Iconex {
-  static const basePath = "$iconsPath/iconex/Light";
-  final box2 = "$basePath/Box 2.svg";
-  final calendar = "$basePath/Calendar.svg";
-  final lock = "$basePath/Lock.svg";
-  final trashCan = "$basePath/Trash can.svg";
+  static const iconExBasePath = "$iconsPath/iconex/Light";
+  final box2 = "$iconExBasePath/Box 2.svg";
+  final calendar = "$iconExBasePath/Calendar.svg";
+  final lock = "$iconExBasePath/Lock.svg";
+  final trashCan = "$iconExBasePath/Trash can.svg";
 }
