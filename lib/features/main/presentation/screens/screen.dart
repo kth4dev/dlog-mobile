@@ -5,7 +5,7 @@ import 'package:dlog/features/history/presentation/screens/screen.dart';
 import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/screen.dart';
-import 'package:dlog/features/shippment_order/presentation/screens/screen.dart';
+import 'package:dlog/features/shippment_order/presentation/screens/list/screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
