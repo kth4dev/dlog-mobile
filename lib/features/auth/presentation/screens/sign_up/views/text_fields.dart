@@ -2,6 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
+import 'package:dlog/core/ui/text_fields/password_text_field.dart';
 import 'package:flutter/material.dart';
 
 class SingUpTextFieldsView extends StatefulWidget {
@@ -47,6 +48,7 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
         ),
         30.spacingHeight,
         DLogOutLinedTextField(
+          hintText: "Enter Customer Name",
           controller: customerNumberController,
           label: "Customer Number",
           textInputType: TextInputType.text,
@@ -54,6 +56,7 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
         ),
         10.spacingHeight,
         DLogOutLinedTextField(
+          hintText: "Enter User Name",
           controller: userNameController,
           label: "User Name",
           textInputType: TextInputType.text,
@@ -61,6 +64,7 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
         ),
         10.spacingHeight,
         DLogOutLinedTextField(
+          hintText: "Enter Phone Number",
           controller: phoneNumberController,
           label: "Phone no",
           textInputType: TextInputType.number,
@@ -68,20 +72,23 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
         ),
         10.spacingHeight,
         DLogOutLinedTextField(
+          hintText: "Enter Email",
           controller: emailController,
           label: "Email",
           textInputType: TextInputType.text,
           isEnable: true,
         ),
         10.spacingHeight,
-        DLogOutLinedTextField(
+        DLogPasswordTextField(
+          hintText: "Enter Password",
           controller: passwordController,
           label: "Password",
           textInputType: TextInputType.text,
           isValidation: true,
         ),
         10.spacingHeight,
-        DLogOutLinedTextField(
+        DLogPasswordTextField(
+          hintText: "Enter Confirm Password",
           controller: confirmPasswordController,
           label: "Confirm Password",
           textInputType: TextInputType.text,
@@ -89,6 +96,7 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
         ),
         10.spacingHeight,
         DLogOutLinedTextField(
+          hintText: "Enter Customer Shipping Mark",
           controller: customerShippingMarkController,
           label: "Customer Shipping Mark",
           textInputType: TextInputType.text,
