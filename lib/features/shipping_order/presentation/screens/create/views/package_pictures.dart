@@ -37,7 +37,8 @@ class PackagePicturesView extends StatelessWidget {
               width: 60,
               height: 60,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5)
+                  borderRadius: BorderRadius.circular(5),
+                color:  context.getColorScheme.grey.lightHover,
               ),
               child: const DLogSvgImage(path: DLogGraphic.shipping,),
             ),

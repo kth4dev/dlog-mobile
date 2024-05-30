@@ -1,35 +1,32 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/detail_attached_file.dart';
+import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/build_supplier_code_and_attach_file_container.dart';
 import 'package:flutter/material.dart';
 
-class SupplierCodeAndDetailFileView extends StatefulWidget {
+import 'customer_supplier_code_dialog.dart';
+
+class SupplierCodeAndDetailFileView extends StatelessWidget {
   const SupplierCodeAndDetailFileView({super.key});
 
-  @override
-  State<SupplierCodeAndDetailFileView> createState() => _SupplierCodeAndDetailFileViewState();
-}
-
-class _SupplierCodeAndDetailFileViewState extends State<SupplierCodeAndDetailFileView> {
-  late TextEditingController supplierCodeController;
-  @override
-  void initState() {
-    supplierCodeController = TextEditingController();
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    supplierCodeController.dispose();
-    super.dispose();
-  }
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        DLogOutLinedTextField(hintText: "Select Customer Supplier Code", controller: supplierCodeController, label: "Customer's Supplier Code", textInputType: TextInputType.text),
+        BuildSupplierCodeAndAttachFileContainer(
+          icon: DLogIcons.chevron.arrowDown,
+          label: "Customer’s Supplier Code",
+          hintText: "Select Customer’s Supplier Code...",
+          onTap: () {
+            showCustomerSupplierCodeDialog(context: context);
+          },
+        ),
         20.spacingHeight,
-        const DetailAttachedFile(),
+        BuildSupplierCodeAndAttachFileContainer(
+          icon: "assets/images/icons/hicon/Linear/Attachment.svg",
+          label: "Shipment Details File*",
+          hintText: "Shippment Details File.xml",
+          onTap: () {},
+        ),
       ],
     );
   }

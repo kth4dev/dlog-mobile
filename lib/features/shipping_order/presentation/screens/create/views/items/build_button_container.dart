@@ -9,28 +9,32 @@ class BuildButtonContainer extends StatelessWidget {
   final Color textColor;
   final String text;
   final String icon;
-  const BuildButtonContainer({super.key,required this.color,required this.icon,required this.textColor,required this.text});
+  final VoidCallback onTap;
+  const BuildButtonContainer({super.key,required this.color,required this.icon,required this.textColor,required this.text,required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 142,
-      height: 40,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5),
-        color: color
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          DLogText(
-            text,
-            style: context.getTextTheme.tertiaryMedium,
-            color: textColor,
-          ),
-          10.spacingWidth,
-          DLogSvgImage(path: icon,width: 19.5,height: 21.5,color: context.getColorScheme.whiteColor,),
-        ],
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        width: 142,
+        height: 40,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          color: color
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            DLogText(
+              text,
+              style: context.getTextTheme.tertiaryMedium,
+              color: textColor,
+            ),
+            10.spacingWidth,
+            DLogSvgImage(path: icon,width: 19.5,height: 21.5,color: context.getColorScheme.whiteColor,),
+          ],
+        ),
       ),
     );
   }
