@@ -1,11 +1,11 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/shippment_order/presentation/screens/list/view/items/shippment_order_item.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/list/views/items/shipping_order_item.dart';
 import 'package:flutter/material.dart';
 
-class ShippmentOrderListView extends StatelessWidget {
-  const ShippmentOrderListView({super.key});
+class ShippingOrderListView extends StatelessWidget {
+  const ShippingOrderListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ShippmentOrderListView extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: 3,
                 itemBuilder: (context,index){
-                  return const ShippmentOrderItem();
+                  return const ShippingOrderItem();
                 })
           ],
         ),

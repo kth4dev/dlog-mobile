@@ -2,28 +2,28 @@ import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:flutter/material.dart';
 
-import 'view/views.dart';
+import 'views/views.dart';
 
 
-class ShippmentOrderScreen extends StatefulWidget {
-  const ShippmentOrderScreen({super.key});
+class ShippingOrderScreen extends StatefulWidget {
+  const ShippingOrderScreen({super.key});
 
   @override
-  State<ShippmentOrderScreen> createState() => _ShippmentOrderScreenState();
+  State<ShippingOrderScreen> createState() => _ShippingOrderScreenState();
 }
 
-class _ShippmentOrderScreenState extends State<ShippmentOrderScreen> {
+class _ShippingOrderScreenState extends State<ShippingOrderScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const DLogAppBar(title: "Shippment Order"),
+      appBar: const DLogAppBar(title: "Shipping Order"),
       body: Padding(
         padding: _screenPadding,
         child: Column(
           children: [
-            const ShippmentOrderHeaderView(),
+            const ShippingOrderHeaderView(),
             20.spacingHeight,
-            const ShippmentOrderListView(),
+            const ShippingOrderListView(),
           ],
         ),
       ),

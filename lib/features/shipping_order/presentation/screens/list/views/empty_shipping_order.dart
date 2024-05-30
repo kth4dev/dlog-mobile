@@ -6,8 +6,8 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
 
-class EmptyShippmentOrderView extends StatelessWidget {
-  const EmptyShippmentOrderView({super.key});
+class EmptyShippingOrderView extends StatelessWidget {
+  const EmptyShippingOrderView({super.key});
 
   @override
   Widget build(BuildContext context) {

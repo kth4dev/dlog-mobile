@@ -2,13 +2,13 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/icons/icons.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/shippment_order/presentation/screens/list/view/items/tracking.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/list/views/items/tracking.dart';
 import 'package:flutter/material.dart';
 
 import 'circle_icon_image.dart';
 
-class ShippmentOrderItem extends StatelessWidget {
-  const ShippmentOrderItem({super.key});
+class ShippingOrderItem extends StatelessWidget {
+  const ShippingOrderItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class ShippmentOrderItem extends StatelessWidget {
               10.spacingHeight,
               DLogText("Date: 10 Apr, 2024",style: context.getTextTheme.secondaryRegular,color: context.getColorScheme.black.normal,),
               10.spacingHeight,
-              DLogText("Shippping mark : 232",style: context.getTextTheme.secondaryRegular,color: context.getColorScheme.black.normal,),
+              DLogText("Shipping mark : 232",style: context.getTextTheme.secondaryRegular,color: context.getColorScheme.black.normal,),
               10.spacingHeight,
                     Row(
                       children: [

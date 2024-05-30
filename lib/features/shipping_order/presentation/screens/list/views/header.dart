@@ -4,14 +4,14 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/search_text_field.dart';
 import 'package:flutter/material.dart';
 
-class ShippmentOrderHeaderView extends StatefulWidget {
-  const ShippmentOrderHeaderView({super.key});
+class ShippingOrderHeaderView extends StatefulWidget {
+  const ShippingOrderHeaderView({super.key});
 
   @override
-  State<ShippmentOrderHeaderView> createState() => _ShippmentOrderHeaderViewState();
+  State<ShippingOrderHeaderView> createState() => _ShippingOrderHeaderViewState();
 }
 
-class _ShippmentOrderHeaderViewState extends State<ShippmentOrderHeaderView> {
+class _ShippingOrderHeaderViewState extends State<ShippingOrderHeaderView> {
   late TextEditingController searchController;
 
   @override
