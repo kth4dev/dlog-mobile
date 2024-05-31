@@ -1,8 +1,9 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/build_button_container.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/upload_detail_file_bottom_sheet.dart';
 import 'package:flutter/material.dart';
+
+import 'items/button_container.dart';
 
 class DownloadAndUploadButtonView extends StatelessWidget {
   const DownloadAndUploadButtonView({super.key});
@@ -11,7 +12,7 @@ class DownloadAndUploadButtonView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        BuildButtonContainer(
+      ButtonContainer(
           color: context.getColorScheme.blackColor,
           icon: "assets/images/icons/hicon/Outline/Document Download 2.svg",
           textColor: context.getColorScheme.yellow.normal,
@@ -19,13 +20,13 @@ class DownloadAndUploadButtonView extends StatelessWidget {
           onTap: () {},
         ),
         58.spacingWidth,
-        BuildButtonContainer(
+       ButtonContainer(
           color: context.getColorScheme.yellow.normal,
           icon: "assets/images/icons/hicon/Outline/Document Upload 2.svg",
           textColor: context.getColorScheme.blackColor,
           text: "Upload File",
           onTap: () {
-            showBuildUploadDetailFile(context: context);
+            showUploadDetailFileBottomSheet(context: context);
           },
         ),
       ],
