@@ -59,6 +59,7 @@ flutter:
     - assets/images/icons/interface_essential/
     - assets/images/graphic/
     - assets/images/logo/
+    - assets/images/sample/
   fonts:
     - family: Inter
       fonts:
