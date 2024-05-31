@@ -1,6 +1,7 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/build_metric_container.dart';
 import 'package:flutter/material.dart';
+
+import 'items/metric_container.dart';
 
 class PackageMetricsView extends StatelessWidget {
   const PackageMetricsView({super.key});
@@ -10,11 +11,11 @@ class PackageMetricsView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const BuildMetricContainer(label: "Kg", value: "10kg"),
+        const MetricContainer(label: "Kg", value: "10kg"),
         21.spacingWidth,
-        const BuildMetricContainer(label: "CBM", value: "10CBM"),
+        const MetricContainer(label: "CBM", value: "10CBM"),
         21.spacingWidth,
-        const BuildMetricContainer(label: "No of Carton", value: "10")
+        const MetricContainer(label: "No of Carton", value: "10")
       ],
     );
   }

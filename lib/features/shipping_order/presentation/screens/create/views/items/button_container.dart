@@ -4,13 +4,13 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class BuildButtonContainer extends StatelessWidget {
+class ButtonContainer extends StatelessWidget {
   final Color color;
   final Color textColor;
   final String text;
   final String icon;
   final VoidCallback onTap;
-  const BuildButtonContainer({super.key,required this.color,required this.icon,required this.textColor,required this.text,required this.onTap});
+  const ButtonContainer({super.key,required this.color,required this.icon,required this.textColor,required this.text,required this.onTap});
 
   @override
   Widget build(BuildContext context) {

@@ -4,12 +4,12 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class BuildSupplierCodeAndAttachFileContainer extends StatelessWidget {
+class SupplierCodeAndAttachFileContainer extends StatelessWidget {
   final String label;
   final String hintText;
   final String icon;
   final VoidCallback onTap;
-  const BuildSupplierCodeAndAttachFileContainer({super.key,required this.icon,required this.label,required this.hintText,required this.onTap});
+  const SupplierCodeAndAttachFileContainer({super.key,required this.icon,required this.label,required this.hintText,required this.onTap});
 
   @override
   Widget build(BuildContext context) {

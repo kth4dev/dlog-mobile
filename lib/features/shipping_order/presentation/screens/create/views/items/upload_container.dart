@@ -4,9 +4,9 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class BuildUploadContainer extends StatelessWidget {
+class UploadContainer extends StatelessWidget {
   final VoidCallback? onTap;
-  const BuildUploadContainer({super.key,this.onTap});
+  const UploadContainer({super.key,this.onTap});
 
   @override
   Widget build(BuildContext context) {

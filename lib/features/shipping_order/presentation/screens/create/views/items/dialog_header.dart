@@ -6,7 +6,8 @@ import 'package:go_router/go_router.dart';
 
 class DialogHeader extends StatelessWidget {
   final String header;
-  const DialogHeader({super.key,required this.header});
+  final VoidCallback onTap;
+  const DialogHeader({super.key,required this.header,required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +17,7 @@ class DialogHeader extends StatelessWidget {
         DLogText(header,style: context.getTextTheme.bodyMedium,color: context.getColorScheme.blackColor,),
         const Spacer(),
         InkWell(
-            onTap: (){
-              GoRouter.of(context).pop();
-            },
+            onTap: onTap,
             child: DLogSvgImage(path: "assets/images/icons/hicon/Bold/Close.svg",width: 24,height: 24,color: context.getColorScheme.blackColor,))
       ],
     );
