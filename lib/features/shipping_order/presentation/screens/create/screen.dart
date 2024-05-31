@@ -34,8 +34,10 @@ class _CreateShippingOrderScreenState extends State<CreateShippingOrderScreen> {
             20.spacingHeight,
             const SupplierCodeAndDetailFileView(),
             20.spacingHeight,
+            const WayBillPicturesView(),
+            20.spacingHeight,
             const DownloadAndUploadButtonView(),
-            40.spacingHeight,
+            30.spacingHeight,
             const AddOrderLineButtonView()
           ],
         ),
