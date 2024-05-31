@@ -6,5 +6,4 @@ class Iconex {
   final calendar = "$basePath/Calendar.svg";
   final lock = "$basePath/Lock.svg";
   final trashCan = "$basePath/Trash can.svg";
-  final edit2 = "$basePath/Edit 2.svg";
 }
