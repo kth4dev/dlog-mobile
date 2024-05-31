@@ -26,7 +26,6 @@ class SupplierCodeAndAttachFileContainer extends StatelessWidget {
           10.spacingHeight,
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            width: 342,
             height: 40,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),

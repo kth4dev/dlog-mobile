@@ -1,7 +1,7 @@
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/metrics_container.dart';
 import 'package:flutter/material.dart';
 
-import 'items/metric_container.dart';
 
 class PackageMetricsView extends StatelessWidget {
   const PackageMetricsView({super.key});

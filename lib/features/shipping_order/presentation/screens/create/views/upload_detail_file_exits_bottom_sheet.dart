@@ -11,7 +11,7 @@ class UploadDetailFileExitsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Padding(
       padding: _screenPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,13 +24,21 @@ class UploadDetailFileExitsView extends StatelessWidget {
             },
           ),
           18.spacingHeight,
-          const UploadContainer(),
-          25.spacingHeight,
-          const Divider(),
-          18.spacingHeight,
-          const UploadingFile(),
-          40.spacingHeight,
-          const UploadingButtons(),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  const UploadContainer(),
+                  25.spacingHeight,
+                  const Divider(),
+                  18.spacingHeight,
+                  const UploadingFile(),
+                  40.spacingHeight,
+                  const UploadingButtons(),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

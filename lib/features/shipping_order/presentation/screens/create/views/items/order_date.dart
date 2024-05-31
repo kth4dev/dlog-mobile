@@ -46,7 +46,7 @@ class _OrderDateState extends State<OrderDate> {
             }
           },
           child: Container(
-            width: 182,
+            padding: const EdgeInsets.symmetric(horizontal: 30),
             height: 40,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
