@@ -1,8 +1,7 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/auth/presentation/screens/reset_password/view/description.dart';
-import 'package:dlog/features/auth/presentation/screens/reset_password/view/header.dart';
-import 'package:dlog/features/auth/presentation/screens/reset_password/view/text_field_and_button.dart';
 import 'package:flutter/material.dart';
+
+import 'view/views.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});

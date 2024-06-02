@@ -1,6 +1,7 @@
-import 'package:dlog/core/ui/app_bar/default.dart';
-import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:flutter/material.dart';
+
+import 'views/views.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -12,13 +13,13 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: DLogAppBar(
-        title: "Profile",
-      ),
-      body: Center(
-        child: DLogText("Profile"),
-      ),
-    );
+    return  Scaffold(
+     body: Column(
+       children: [
+         const ProfileHeaderView(),
+         30.spacingHeight,
+         const ProfileMenuView()
+       ],
+     ));
   }
 }

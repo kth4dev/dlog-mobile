@@ -4,11 +4,11 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
 // todo : filled color,error text style
-class DLogOutLinedTextField extends StatelessWidget {
+class DLogPasswordTextField extends StatefulWidget {
   final TextEditingController controller;
   final String label;
-  final TextInputType textInputType;
   final String hintText;
+  final TextInputType textInputType;
   final bool? isValidation;
   final TextInputAction? textInputAction;
   final bool? isEnable;
@@ -18,7 +18,7 @@ class DLogOutLinedTextField extends StatelessWidget {
   final double? width;
   final double? height;
 
-  const DLogOutLinedTextField({
+  const DLogPasswordTextField({
     super.key,
     required this.hintText,
     required this.controller,
@@ -33,41 +33,57 @@ class DLogOutLinedTextField extends StatelessWidget {
     this.width,
     this.height,
   });
+
+  @override
+  State<DLogPasswordTextField> createState() => _DLogPasswordTextFieldState();
+}
+
+class _DLogPasswordTextFieldState extends State<DLogPasswordTextField> {
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          label,
+          widget.label,
           style: context.getTextTheme.tertiaryMedium,
         ),
         6.spacingHeight,
         SizedBox(
-          width: width,
-          height: height ?? 40,
+          width: widget.width,
+          height: widget.height ?? 40,
           child: TextFormField(
             textAlignVertical: TextAlignVertical.top,
-            minLines: minLine,
-            maxLines: maxLine,
-            maxLength: maxLength,
+            minLines: widget.minLine,
+            maxLines: widget.maxLine ?? 1,
+            maxLength: widget.maxLength,
             style: context.getTextTheme.tertiaryMedium,
-            enabled: isEnable,
+            enabled: widget.isEnable,
             validator: (value) {
-              if (isValidation != null && isValidation == true) {
+              if (widget.isValidation != null && widget.isValidation == true) {
                 if (value == null || value.isEmpty) {
                   return 'This field is required';
                 }
               }
               return null;
             },
-            textInputAction: textInputAction ?? TextInputAction.next,
-            controller: controller,
-            keyboardType: textInputType,
+            textInputAction: widget.textInputAction ?? TextInputAction.next,
+            controller: widget.controller,
+            obscureText: _isObscure,
+            keyboardType: widget.textInputType,
             decoration: InputDecoration(
-              hintText:hintText,
+              hintText: widget.hintText,
               hintStyle: context.getTextTheme.tertiaryMedium
                   .copyWith(color: context.getColorScheme.grey.normal),
+              suffixIcon: InkWell(
+                  onTap: () {
+                    setState(() {
+                      _isObscure = !_isObscure;
+                    });
+                  },
+                  child: Icon(
+                      _isObscure ? Icons.visibility_off : Icons.visibility)),
               contentPadding: const EdgeInsets.symmetric(
                 vertical: 12.0,
                 horizontal: 10.0,

@@ -27,6 +27,7 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         DLogOutLinedTextField(
+          hintText: "Enter phone no or email",
           controller: emailController,
           label: "Enter Phone no or email",
           textInputType: TextInputType.text,
