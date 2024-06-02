@@ -1,1 +1,1 @@
-export 'shipping_order_detail_items_view.dart';
+export 'details.dart';

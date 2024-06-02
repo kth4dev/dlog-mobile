@@ -5,7 +5,6 @@ import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:dlog/core/ui/text_fields/password_text_field.dart';
 import 'package:dlog/features/auth/presentation/screens/successful_bottom_sheet/show_successful_bottom_sheet.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class TextFieldAndButtonView extends StatefulWidget {
   const TextFieldAndButtonView({super.key});
@@ -47,7 +46,10 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
         DLogPrimaryButton(
           text: "Enter",
           onPressed: () {
-            showSuccessfulBottomSheet(context: context, text: "Password Reset Successful", route: AppRoute.home);
+            showSuccessfulBottomSheet(
+                context: context,
+                text: "Password Reset Successful",
+                route: AppRoute.home);
           },
           width: 160,
           height: 40,

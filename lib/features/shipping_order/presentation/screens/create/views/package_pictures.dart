@@ -20,7 +20,6 @@ class PackagePicturesView extends StatelessWidget {
           color: context.getColorScheme.blackColor,
         ),
         10.spacingHeight,
-
         Row(
           children: [
             Container(

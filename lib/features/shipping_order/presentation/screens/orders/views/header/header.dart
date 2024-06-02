@@ -8,7 +8,8 @@ class ShippingOrderHeaderView extends StatefulWidget {
   const ShippingOrderHeaderView({super.key});
 
   @override
-  State<ShippingOrderHeaderView> createState() => _ShippingOrderHeaderViewState();
+  State<ShippingOrderHeaderView> createState() =>
+      _ShippingOrderHeaderViewState();
 }
 
 class _ShippingOrderHeaderViewState extends State<ShippingOrderHeaderView> {
@@ -21,19 +22,27 @@ class _ShippingOrderHeaderViewState extends State<ShippingOrderHeaderView> {
   }
 
   @override
-  void dispose() {
-    searchController.dispose();
-    super.dispose();
-  }
-  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        DLogText("Shipping Order List",style: context.getTextTheme.secondHeaderBold,color: context.getColorScheme.blackColor,),
+        DLogText(
+          "Shipping Order List",
+          style: context.getTextTheme.secondHeaderBold,
+          color: context.getColorScheme.blackColor,
+        ),
         10.spacingHeight,
-        DLogSearchTextField(controller:searchController,text: "Filter order",)
+        DLogSearchTextField(
+          controller: searchController,
+          text: "Filter order",
+        )
       ],
     );
+  }
+
+  @override
+  void dispose() {
+    searchController.dispose();
+    super.dispose();
   }
 }

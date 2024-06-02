@@ -23,11 +23,11 @@ class _ShippingOrderScreenState extends State<ShippingOrderScreen> {
           children: [
             const ShippingOrderHeaderView(),
             20.spacingHeight,
-            const ShippingOrderListView(),
+            const ShippingOrderListView(), // todo : add bloc provider
           ],
         ),
       ),
-      floatingActionButton: const FloatingActionButtonView(),
+      floatingActionButton: const ShippingOrderFABView(),
     );
   }
 
