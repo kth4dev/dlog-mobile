@@ -3,8 +3,8 @@ import 'package:dlog/core/ui/bottom_nav/data.dart';
 import 'package:dlog/features/history/presentation/screens/screen.dart';
 import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/screen.dart';
-import 'package:dlog/features/profile/presentation/screens/screen.dart';
-import 'package:dlog/features/shippment_order/presentation/screens/screen.dart';
+import 'package:dlog/features/profile/presentation/screens/profile/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/list/screen.dart';
 
 enum MainBottomNavMenu {
   home(
@@ -18,7 +18,7 @@ enum MainBottomNavMenu {
     data: DLogBottomNavItemData(
       icon: DLogIcons.document,
       label: "Shippment Order",
-      screen: ShippmentOrderScreen(),
+      screen: ShippingOrderScreen(),
     ),
   ),
   history(
