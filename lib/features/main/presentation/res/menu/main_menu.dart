@@ -1,6 +1,6 @@
 import 'package:dlog/core/images/icons/icons.dart';
 import 'package:dlog/core/ui/bottom_nav/data.dart';
-import 'package:dlog/features/history/presentation/screens/screen.dart';
+import 'package:dlog/features/history/presentation/screens/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/profile/screen.dart';

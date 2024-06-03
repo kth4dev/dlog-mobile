@@ -5,6 +5,7 @@ import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/reset_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
+import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
@@ -27,6 +28,7 @@ class AppRoute {
   static const String createShippingOrder = "/createShippingOrder";
   static const String shippingOrderDetail = "/shippingOrderDetail";
   static const String setting = "/setting";
+  static const String shippingOrderHistoryDetail = "/shippingOrderHistoryDetail";
 
 
   static GoRouter router = GoRouter(
@@ -105,6 +107,12 @@ class AppRoute {
         path: setting,
         builder: (BuildContext context, GoRouterState state) {
           return const SettingScreen();
+        },
+      ),
+      GoRoute(
+        path: shippingOrderHistoryDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ShippingOrderHistoryDetailsScreen();
         },
       ),
     ],

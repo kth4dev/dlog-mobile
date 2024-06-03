@@ -1,8 +1,8 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
-import 'package:dlog/features/history/presentation/screens/views/header/header.dart';
-import 'package:dlog/features/history/presentation/screens/views/list/list.dart';
 import 'package:flutter/material.dart';
+
+import 'views/views.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({super.key});

@@ -5,8 +5,9 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class EmptyShippingOrderView extends StatelessWidget {
-  const EmptyShippingOrderView({super.key});
+class EmptyView extends StatelessWidget {
+  final String description;
+  const EmptyView({super.key,required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class EmptyShippingOrderView extends StatelessWidget {
           ),
           40.spacingHeight,
           DLogText(
-            "Empty Shipping order",
+            description,
             style: context.getTextTheme.secondHeaderMedium,
             color: context.getColorScheme.blackColor,
           )

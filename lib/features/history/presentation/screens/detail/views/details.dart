@@ -6,8 +6,8 @@ import 'package:dlog/features/shipping_order/presentation/screens/create/views/p
 import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
 import 'package:flutter/material.dart';
 
-class ShippingOrderDetailView extends StatelessWidget {
-  const ShippingOrderDetailView({super.key});
+class ShippingOrderHistoryDetailView extends StatelessWidget {
+  const ShippingOrderHistoryDetailView({super.key});
 
   @override
   Widget build(BuildContext context) {
