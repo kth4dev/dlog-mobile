@@ -1,7 +1,9 @@
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/features/profile/presentation/screens/profile/views/profile_header.dart';
+import 'package:dlog/features/profile/presentation/screens/profile/views/profile_menu.dart';
 import 'package:flutter/material.dart';
 
-import 'views/views.dart';
+
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

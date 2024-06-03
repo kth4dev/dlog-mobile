@@ -1,7 +1,9 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
 import 'package:dlog/features/profile/presentation/screens/profile/views/items/circle_image.dart';
+
 import 'package:flutter/material.dart';
 
 class ProfileHeaderView extends StatelessWidget {
@@ -25,7 +27,7 @@ class ProfileHeaderView extends StatelessWidget {
                         bottomLeft: Radius.circular(50),
                         bottomRight: Radius.circular(50))),
                 child: Center(
-                    child: DLogText('Profile',
+                    child: DLogText( context.getLocale(ProfileLocale.profile),
                         style: context.getTextTheme.secondHeaderBold,
                         color: context.getColorScheme.yellow.normal)),
               ),
