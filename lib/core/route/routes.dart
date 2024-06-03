@@ -6,8 +6,8 @@ import 'package:dlog/features/auth/presentation/screens/reset_password/screen.da
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
-import 'package:dlog/features/home/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';

@@ -13,7 +13,7 @@ class MoreMenuView extends StatelessWidget {
     return Column(
       children: [
          MoreMenuItem(
-            label: "Teams And Conditions", icon: DLogIcons.teams,onTap: (){
+            label: "Teams And Conditions", icon: DLogIcons.document1,onTap: (){
               context.push(AppRoute.teamsAndConditions);
         },),
         Divider(
