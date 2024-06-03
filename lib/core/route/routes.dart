@@ -8,6 +8,8 @@ import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/home/presentation/screens/screen.dart';
+import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
+import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:dlog/features/profile/presentation/screens/setting/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
@@ -29,6 +31,8 @@ class AppRoute {
   static const String shippingOrderDetail = "/shippingOrderDetail";
   static const String setting = "/setting";
   static const String shippingOrderHistoryDetail = "/shippingOrderHistoryDetail";
+  static const String teamsAndConditions = "/teamsAndConditions";
+  static const String policy = "/policy";
 
 
   static GoRouter router = GoRouter(
@@ -113,6 +117,19 @@ class AppRoute {
         path: shippingOrderHistoryDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const ShippingOrderHistoryDetailsScreen();
+        },
+      ),
+      GoRoute(
+        path: teamsAndConditions,
+        builder: (BuildContext context, GoRouterState state) {
+          return const TeamsAndConditionsScreen();
+        },
+      ),
+
+      GoRoute(
+        path: policy,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PolicyScreen();
         },
       ),
     ],
