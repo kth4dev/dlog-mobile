@@ -31,7 +31,7 @@ class _ShippingOrderHistoryHeaderViewState extends State<ShippingOrderHistoryHea
           style: context.getTextTheme.secondHeaderBold,
           color: context.getColorScheme.blackColor,
         ),
-        10.spacingHeight,
+        20.spacingHeight,
         DLogSearchTextField(
           controller: searchController,
           text: "Search",

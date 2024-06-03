@@ -32,7 +32,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
   EdgeInsets get _screenPadding => const EdgeInsets.only(
     left: 24,
     right: 24,
-    top: 20,
+    top: 30,
     bottom: 30,
   );
 }
