@@ -42,7 +42,6 @@ class DLogIcons {
   static const document = "$documentBasePath/Document.svg";
   static const document1 = "$documentBasePath/Document-1.svg";
   static const documentHistory = "$documentBasePath/Document-history.svg";
-  static const teams = "$documentBasePath/teams.svg";
 
   /////////////////////////////
   // General
