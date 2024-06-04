@@ -1,3 +1,4 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/features/profile/presentation/res/menu/settings.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/views/items/item.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class SettingsMenuListView extends StatelessWidget {
       itemBuilder: (context, index) {
         final menu = SettingsMenu.values[index];
         return SettingsMenuItem(
-          label: menu.label,
+          label: context.getLocale(menu.label),
           icon: menu.icon,
           onTap: () => onSelect(menu),
         );

@@ -5,12 +5,12 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class SettingsMenuItem extends StatelessWidget {
+class ProfileMenuItem extends StatelessWidget {
   final String label;
   final String icon;
   final VoidCallback onTap;
 
-  const SettingsMenuItem({
+  const ProfileMenuItem({
     super.key,
     required this.label,
     required this.icon,

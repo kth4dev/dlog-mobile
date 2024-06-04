@@ -2,7 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/icons/icons.dart';
 import 'package:dlog/core/route/routes.dart';
-import 'package:dlog/core/ui/image/circle_image.dart';
+import 'package:dlog/core/ui/image/circle_icon.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -28,7 +28,7 @@ class NotificationItem extends StatelessWidget {
         ),
         child: Row(
           children: [
-            DLogCircleImage(
+            DLogCircleIcon(
               path: DLogIcons.bell,
               iconSize: 24,
               size: 40,

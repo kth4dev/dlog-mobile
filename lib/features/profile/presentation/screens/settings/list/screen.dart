@@ -3,7 +3,6 @@ import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
 import 'package:dlog/features/profile/presentation/res/menu/settings.dart';
-import 'package:dlog/features/profile/presentation/screens/settings/list/views/items/item.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/views/menu_list.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -41,7 +40,8 @@ class _SettingScreenState extends State<SettingScreen> {
   }
 
   EdgeInsets get _screenPadding => const EdgeInsets.only(
-        top: 30,
-        bottom: 30,
-      );
+    left: 24,
+    right: 24,
+    top: 30,
+  );
 }

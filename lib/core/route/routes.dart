@@ -8,7 +8,6 @@ import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
-import 'package:dlog/features/home/presentation/screens/notification/detail/views/detail.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
