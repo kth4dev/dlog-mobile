@@ -13,7 +13,9 @@ class ProfileMenuListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        padding: const EdgeInsets.symmetric(horizontal: 24,),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+        ),
         itemCount: ProfileMenu.values.length,
         itemBuilder: (context, index) {
           final currentItem = ProfileMenu.values[index];

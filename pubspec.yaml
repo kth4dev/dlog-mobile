@@ -59,7 +59,7 @@ flutter:
     - assets/images/icons/hicon/Outline/
     - assets/images/icons/iconex/Light/
     - assets/images/icons/interface_essential/
-    - assets/images/icons/language/
+    - assets/images/icons/others/
     - assets/images/sample/
 
   fonts:

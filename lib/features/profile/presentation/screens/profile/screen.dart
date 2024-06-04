@@ -9,7 +9,7 @@ import 'package:dlog/features/profile/presentation/screens/profile/views/list.da
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class ProfileScreen extends StatefulWidget {
+class ProfileScreen extends StatefulWidget{
   const ProfileScreen({super.key});
 
   @override
@@ -17,6 +17,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,5 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/images/logo/logo.dart';
+import 'package:dlog/core/images/logo.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:dlog/features/auth/presentation/screens/sign_up/views/text_fields.dart';

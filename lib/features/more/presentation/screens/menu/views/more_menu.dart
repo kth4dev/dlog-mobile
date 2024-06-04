@@ -1,5 +1,5 @@
 import 'package:dlog/core/extensions/context_extension.dart';
-import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/features/more/presentation/screens/menu/views/items/item.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class MoreMenuView extends StatelessWidget {
         Divider(
           color: context.getColorScheme.yellow.normalActive,
         ),
-        MoreMenuItem(label: "Policy", icon: DLogIcons.iconex.lock,onTap: (){
+        MoreMenuItem(label: "Policy", icon: DLogIcons.lock,onTap: (){
          context.push(AppRoute.policy);
         },),
         Divider(

@@ -1,4 +1,4 @@
-import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
 
 enum SettingsMenu {
