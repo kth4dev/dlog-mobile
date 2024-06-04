@@ -7,6 +7,9 @@ import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
+import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/notification/detail/views/detail.dart';
+import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
@@ -36,6 +39,8 @@ class AppRoute {
   static const String teamsAndConditions = "/teamsAndConditions";
   static const String policy = "/policy";
   static const String languages = "/languages";
+  static const String notification = "/notification";
+  static const String notificationDetail = "/notificationDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -137,6 +142,18 @@ class AppRoute {
         path: policy,
         builder: (BuildContext context, GoRouterState state) {
           return const PolicyScreen();
+        },
+      ),
+      GoRoute(
+        path: notification,
+        builder: (BuildContext context, GoRouterState state) {
+          return const NotificationScreen();
+        },
+      ),
+      GoRoute(
+        path: notificationDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const NotificationDetailScreen();
         },
       ),
     ],
