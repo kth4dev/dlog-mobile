@@ -17,13 +17,15 @@ class _ShippingOrderDetailsScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const DLogAppBar(title: "Shipping Order Details"),
-      body: Padding(
-        padding: _screenPadding,
-        child: const ShippingOrderDetailView(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: _screenPadding,
+          child: const ShippingOrderDetailView(),
+        ),
       ),
     );
   }
 
   EdgeInsets get _screenPadding =>
-      const EdgeInsets.only(top: 40, left: 24, right: 24);
+      const EdgeInsets.only(top: 30, left: 24, right: 24,bottom: 30);
 }

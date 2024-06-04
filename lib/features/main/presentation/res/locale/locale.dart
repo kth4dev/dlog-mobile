@@ -10,7 +10,7 @@ class MainLocale {
 
   static const Map<String, dynamic> en = {
     home: "Home",
-    shippmentOrder: "Shippment Order",
+    shippmentOrder: "Shipping Order",
     history: "History",
     more: "More",
     profile: "Profile",

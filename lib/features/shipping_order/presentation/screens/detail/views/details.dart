@@ -11,7 +11,8 @@ class ShippingOrderDetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Material(
+      elevation: 8,
       child: Container(
         padding: _screenPadding,
         decoration: BoxDecoration(
@@ -53,6 +54,8 @@ class ShippingOrderDetailView extends StatelessWidget {
             ),
             20.spacingHeight,
             const WayBillPicturesView(),
+            20.spacingHeight,
+            const LabelDescription(label: "Order Lines", description: "filename.xml")
           ],
         ),
       ),

@@ -34,7 +34,7 @@ class _ShippingOrderScreenState extends State<ShippingOrderScreen> {
   EdgeInsets get _screenPadding => const EdgeInsets.only(
     left: 24,
     right: 24,
-    top: 20,
+    top: 30,
     bottom: 30,
   );
 }

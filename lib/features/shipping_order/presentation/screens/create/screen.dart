@@ -23,7 +23,7 @@ class _CreateShippingOrderScreenState extends State<CreateShippingOrderScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const CreateShippingOrderHeaderView(),
-            20.spacingHeight,
+            30.spacingHeight,
             const OrderView(),
             20.spacingHeight,
             const LocationView(),
@@ -48,7 +48,7 @@ class _CreateShippingOrderScreenState extends State<CreateShippingOrderScreen> {
   EdgeInsets get _screenPadding => const EdgeInsets.only(
     left: 24,
     right: 24,
-    top: 20,
+    top: 30,
     bottom: 30,
   );
 }

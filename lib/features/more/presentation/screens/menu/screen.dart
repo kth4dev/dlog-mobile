@@ -1,6 +1,7 @@
 import 'package:dlog/core/ui/app_bar/default.dart';
-import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
+
+import 'views/views.dart';
 
 class MoreScreen extends StatefulWidget {
   const MoreScreen({super.key});
@@ -12,9 +13,19 @@ class MoreScreen extends StatefulWidget {
 class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: DLogAppBar(title: "More"),
-      body: Center(child: DLogText("More")),
+    return  Scaffold(
+      appBar: const DLogAppBar(title: "More"),
+      body: Padding(
+        padding: _screenPadding,
+        child: const MoreMenuView(),
+      ),
     );
   }
+
+  EdgeInsets get _screenPadding => const EdgeInsets.only(
+    left: 24,
+    right: 24,
+    top: 30,
+    bottom: 30,
+  );
 }

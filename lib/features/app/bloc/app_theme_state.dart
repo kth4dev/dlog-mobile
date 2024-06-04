@@ -1,11 +1,11 @@
 part of 'app_theme_cubit.dart';
 
 class AppThemeState {
-  final Locale? locale;
+  final DLogLocale? locale;
 
   const AppThemeState({this.locale});
 
-  AppThemeState copyWith({Locale? locale}) {
+  AppThemeState copyWith({DLogLocale? locale}) {
     return AppThemeState(
       locale: locale ?? this.locale,
     );

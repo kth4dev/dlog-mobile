@@ -76,7 +76,7 @@ class DLogIcons {
   static const filter5 = "$hIconBoldBasePath/Filter 5.svg";
   static const locationTick = "$hIconBoldBasePath/Hide.svg";
   static const show = "$hIconBoldBasePath/Location Tick.svg";
-  static const tick = "$hIconBoldBasePath/Show.svg";
+  static const tick = "$hIconBoldBasePath/Tick.svg";
 
   /////////////////////////////
   // HIcon - Linear
