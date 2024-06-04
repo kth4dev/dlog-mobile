@@ -1,4 +1,6 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
+import 'package:dlog/features/more/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
 import 'views/views.dart';
@@ -14,7 +16,7 @@ class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const DLogAppBar(title: "More"),
+      appBar:  DLogAppBar(title: context.getLocale(MoreLocale.more)),
       body: Padding(
         padding: _screenPadding,
         child: const MoreMenuView(),
