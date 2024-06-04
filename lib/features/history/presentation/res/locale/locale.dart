@@ -65,7 +65,7 @@ class HistoryLocale {
     shippingOrderHistory: "ပို့ဆောင်ရေး မှတ်တမ်း",
     search: "ရှာဖွေရေး",
     nameOfShippingOrder: "ပို့ဆောင်ရေးအမည်",
-    orderNo: "အမှာစာနံပါတ်",
+    orderNo: "အော်ဒါ နံပါတ်",
     date: "နေ့စွဲ",
     fromLocation: "မှာယူသည့်နေရာ",
     toLocation: "ပို့သည့်နေရာ",
