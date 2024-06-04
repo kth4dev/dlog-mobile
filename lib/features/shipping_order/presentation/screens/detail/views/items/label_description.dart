@@ -8,6 +8,8 @@ class LabelDescription extends StatelessWidget {
   final String description;
   final Alignment? descriptionAlignment;
   final double? descriptionWidth, descriptionHeight;
+  final TextOverflow? overflow;
+  final double? labelWidth;
 
   const LabelDescription({
     super.key,
@@ -16,6 +18,8 @@ class LabelDescription extends StatelessWidget {
     this.descriptionWidth,
     this.descriptionHeight = 40,
     this.descriptionAlignment = Alignment.centerLeft,
+    this.overflow,
+    this.labelWidth
   });
 
   @override
@@ -23,10 +27,14 @@ class LabelDescription extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        DLogText(
-          label,
-          style: context.getTextTheme.tertiaryMedium,
-          color: context.getColorScheme.blackColor,
+        SizedBox(
+          width: labelWidth,
+          child: DLogText(
+            label,
+            style: context.getTextTheme.tertiaryMedium,
+            color: context.getColorScheme.blackColor,
+            overflow: overflow,
+          ),
         ),
         2.spacingHeight,
         Container(
