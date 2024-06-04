@@ -1,8 +1,8 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/route/routes.dart';
-import 'package:dlog/core/ui/image/circle_image.dart';
+import 'package:dlog/core/ui/image/circle_icon.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
@@ -29,8 +29,8 @@ class ShippingOrderHistoryItem extends StatelessWidget {
         ),
         child: Row(
           children: [
-            DLogCircleImage(
-              path: DLogIcons.documents.documentHistory,
+            DLogCircleIcon(
+              path: DLogIcons.documentHistory,
               iconSize: 24,
               size: 40,
               backgroundColor: context.getColorScheme.blackColor,

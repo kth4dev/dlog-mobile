@@ -2,12 +2,12 @@ import 'package:dlog/data/localization/app_locale.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/Views/list/items/item.dart';
 import 'package:flutter/material.dart';
 
-class LanguagesView extends StatelessWidget {
-  final Function(DLogLocale) onSelected;
+class LanguagesListView extends StatelessWidget {
+  final Function(DLogLocale) onSelect;
 
-  const LanguagesView({
+  const LanguagesListView({
     super.key,
-    required this.onSelected,
+    required this.onSelect,
   });
 
   @override
@@ -19,7 +19,7 @@ class LanguagesView extends StatelessWidget {
           final currentLocale = DLogLocale.values[index];
           return LanguageItem(
             locale: currentLocale,
-            onPressed: () => onSelected(currentLocale),
+            onPressed: () => onSelect(currentLocale),
           );
         },
       ),

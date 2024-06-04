@@ -1,6 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/home/presentation/res/locale/locale.dart';
 import 'package:dlog/features/home/presentation/screens/menu/views/items/item.dart';

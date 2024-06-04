@@ -33,8 +33,8 @@ class _LanguageScreenState extends State<LanguageScreen> {
               color: context.getColorScheme.blackColor,
             ),
             10.spacingHeight,
-            LanguagesView(
-              onSelected: (locale) {
+            LanguagesListView(
+              onSelect: (locale) {
                 final appTheme = context.read<AppThemeBloc>();
                 appTheme.add(SaveLocaleEvent(locale: locale));
               },

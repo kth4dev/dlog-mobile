@@ -1,5 +1,5 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/images/icons/icons.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/supplier_code_and_attach_file_container.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class SupplierCodeAndDetailFileView extends StatelessWidget {
     return Column(
       children: [
         SupplierCodeAndAttachFileContainer(
-          icon: DLogIcons.chevron.arrowDown,
+          icon: DLogIcons.arrowDown,
           label: "Customer’s Supplier Code",
           hintText: "Select Customer’s Supplier Code...",
           onTap: () {

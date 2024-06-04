@@ -1,8 +1,11 @@
 import 'package:dlog/core/extensions/context_extension.dart';
+import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
-import 'package:dlog/features/profile/presentation/screens/settings/list/views/setting_menu.dart';
+import 'package:dlog/features/profile/presentation/res/menu/settings.dart';
+import 'package:dlog/features/profile/presentation/screens/settings/list/views/menu_list.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -20,13 +23,25 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       body: Padding(
         padding: _screenPadding,
-        child: const SettingMenuView(),
+        child: SettingsMenuListView(onSelect: _onSelectMenu),
       ),
     );
   }
 
+  void _onSelectMenu(SettingsMenu menu) {
+    switch (menu) {
+      case SettingsMenu.language:
+        context.push(AppRoute.languages);
+        break;
+      case SettingsMenu.address:
+        //todo : navigate to address screen
+        break;
+    }
+  }
+
   EdgeInsets get _screenPadding => const EdgeInsets.only(
-        top: 30,
-        bottom: 30,
-      );
+    left: 24,
+    right: 24,
+    top: 30,
+  );
 }

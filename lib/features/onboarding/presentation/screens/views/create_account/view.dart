@@ -1,4 +1,4 @@
-import 'package:dlog/core/images/graphic/graphic.dart';
+import 'package:dlog/core/images/graphic.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/features/onboarding/presentation/screens/views/create_account/items/actions_buttons.dart';
 import 'package:dlog/features/onboarding/presentation/screens/views/create_account/items/description.dart';
