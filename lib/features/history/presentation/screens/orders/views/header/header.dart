@@ -2,6 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/search_text_field.dart';
+import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
 class ShippingOrderHistoryHeaderView extends StatefulWidget {
@@ -27,14 +28,14 @@ class _ShippingOrderHistoryHeaderViewState extends State<ShippingOrderHistoryHea
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Shipping Order History",
+          context.getLocale(HistoryLocale.shippingOrderHistory),
           style: context.getTextTheme.secondHeaderBold,
           color: context.getColorScheme.blackColor,
         ),
         20.spacingHeight,
         DLogSearchTextField(
           controller: searchController,
-          text: "Search",
+          text: context.getLocale(HistoryLocale.search),
         )
       ],
     );

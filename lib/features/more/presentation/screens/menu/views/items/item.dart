@@ -20,7 +20,7 @@ class MoreMenuItem extends StatelessWidget {
           children: [
             DLogSvgImage(path: icon,width: 24,height: 24,color: context.getColorScheme.yellow.normal,),
             10.spacingWidth,
-            DLogText(label,style: context.getTextTheme.bodyBold,color: context.getColorScheme.black.normal,)
+            Expanded(child: DLogText(label,style: context.getTextTheme.bodyBold,color: context.getColorScheme.black.normal,))
           ],
         ),
       ),
