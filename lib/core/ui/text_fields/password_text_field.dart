@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 // todo : filled color,error text style
 class DLogPasswordTextField extends StatefulWidget {
-  final TextEditingController controller;
   final String label;
   final String hintText;
   final TextInputType textInputType;
@@ -17,11 +16,11 @@ class DLogPasswordTextField extends StatefulWidget {
   final int? maxLength;
   final double? width;
   final double? height;
+  final Function(String?)? onChange;
 
   const DLogPasswordTextField({
     super.key,
     required this.hintText,
-    required this.controller,
     required this.label,
     required this.textInputType,
     this.isValidation,
@@ -30,6 +29,7 @@ class DLogPasswordTextField extends StatefulWidget {
     this.minLine,
     this.maxLine,
     this.maxLength,
+    this.onChange,
     this.width,
     this.height,
   });
@@ -40,6 +40,7 @@ class DLogPasswordTextField extends StatefulWidget {
 
 class _DLogPasswordTextFieldState extends State<DLogPasswordTextField> {
   bool _isObscure = true;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -69,7 +70,6 @@ class _DLogPasswordTextFieldState extends State<DLogPasswordTextField> {
               return null;
             },
             textInputAction: widget.textInputAction ?? TextInputAction.next,
-            controller: widget.controller,
             obscureText: _isObscure,
             keyboardType: widget.textInputType,
             decoration: InputDecoration(

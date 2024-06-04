@@ -14,13 +14,9 @@ class TextFieldAndButtonView extends StatefulWidget {
 }
 
 class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
-  late TextEditingController newPasswordController;
-  late TextEditingController confirmNewPasswordController;
 
   @override
   void initState() {
-    newPasswordController = TextEditingController();
-    confirmNewPasswordController = TextEditingController();
     super.initState();
   }
 
@@ -29,16 +25,14 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        DLogPasswordTextField(
+        const DLogPasswordTextField(
           hintText: "Enter New Password",
-          controller: newPasswordController,
           label: "Enter new Password",
           textInputType: TextInputType.text,
         ),
         20.spacingHeight,
-        DLogOutLinedTextField(
+        const DLogOutLinedTextField(
           hintText: "Confirm New Password",
-          controller: newPasswordController,
           label: "Confirm new Password",
           textInputType: TextInputType.text,
         ),
@@ -60,8 +54,6 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
 
   @override
   void dispose() {
-    newPasswordController.dispose();
-    confirmNewPasswordController.dispose();
     super.dispose();
   }
 }
