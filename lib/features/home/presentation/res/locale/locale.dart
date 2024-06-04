@@ -15,6 +15,8 @@ class HomeLocale {
   static const orderNo = "home_orderNo";
   static const date = "home_date";
   static const shippingMark = "home_shippingMark";
+  static const notification = "home_notification";
+  static const notificationDetail = "home_notificationDetail";
 
 
   static const Map<String, dynamic> en = {
@@ -30,7 +32,9 @@ class HomeLocale {
     nameOfShippingOrder : "Name of Shipping Order",
     orderNo : "Order no",
     date : "Date",
-    shippingMark : "Shipping Mark"
+    shippingMark : "Shipping Mark",
+    notification : "Notification",
+    notificationDetail : "Notification Detail"
   };
 
   static const Map<String, dynamic> zh = {
@@ -47,6 +51,8 @@ class HomeLocale {
     orderNo: "订单号",
     date: "日期",
     shippingMark: "运输标志",
+    notification: "通知",
+    notificationDetail: "通知详情",
   };
 
 
@@ -64,6 +70,8 @@ class HomeLocale {
     orderNo: "အော်ဒါ နံပါတ်",
     date: "နေ့စွဲ",
     shippingMark: "ပို့ဆောင်‌ရေး အမှတ်အသား",
+    notification: "အသိပေးချက်",
+    notificationDetail : "အသေးစိတ် အသိပေးချက် ",
   };
 
 }
