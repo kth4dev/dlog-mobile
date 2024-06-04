@@ -1,4 +1,3 @@
-import 'package:dlog/core/images/icons/icons.dart';
 
 enum DLogLocale {
   myanmar(

@@ -1,4 +1,4 @@
-part of 'app_theme_cubit.dart';
+part of 'app_theme_bloc.dart';
 
 class AppThemeState {
   final DLogLocale? locale;
@@ -10,5 +10,8 @@ class AppThemeState {
       locale: locale ?? this.locale,
     );
   }
-}
 
+  AppThemeState onTranslate() => copyWith();
+
+  AppThemeState saveLocale(DLogLocale locale) => copyWith(locale: locale);
+}

@@ -5,7 +5,6 @@ import 'package:dlog/data/app-pref/app_pref.dart';
 import 'package:dlog/data/localization/app_locale.dart';
 import 'package:dlog/data/localization/app_localization_manager.dart';
 import 'package:dlog/di/injection_container.dart';
-import 'package:dlog/features/app/bloc/app_theme_cubit.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 import 'package:logger/logger.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
@@ -39,10 +38,4 @@ Future<void> provideCore() async {
   );
   sl.registerSingleton<FlutterLocalization>(localization);
   sl.registerSingleton<AppLocalizationManager>(AppLocalizationManager(sl()));
-
-
-  /// ******************************************
-  ///  Title : Blocs
-  /// ******************************************
-  sl.registerFactory(() => AppThemeCubit());
 }

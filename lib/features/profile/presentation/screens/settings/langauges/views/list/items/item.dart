@@ -4,7 +4,7 @@ import 'package:dlog/core/images/icons/icons.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/data/localization/app_locale.dart';
-import 'package:dlog/features/app/bloc/app_theme_cubit.dart';
+import 'package:dlog/features/app/presentation/bloc/theme/app_theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -49,7 +49,7 @@ class LanguageItem extends StatelessWidget {
               color: context.getColorScheme.blackColor,
             ),
             const Spacer(),
-            BlocBuilder<AppThemeCubit, AppThemeState>(
+            BlocBuilder<AppThemeBloc, AppThemeState>(
               builder: (context, state) {
                 return Visibility(
                   visible: state.locale == locale,
@@ -68,10 +68,4 @@ class LanguageItem extends StatelessWidget {
     );
   }
 
-  EdgeInsets get _screenPadding =>
-      const EdgeInsets.only(
-        left: 24,
-        right: 24,
-        bottom: 10,
-      );
 }
