@@ -94,7 +94,8 @@ class DLogIcons {
   static const documentUpload2 = "$hIconOutLineBasePath/Document Upload 2.svg";
   static const logout = "$hIconOutLineBasePath/Logout.svg";
 
-
-
-
+  /// ******************************************
+  ///  Title: Need to Refactor
+  /// ******************************************
+  static const languageSquare = "assets/images/icons/language/language-square.svg";
 }
