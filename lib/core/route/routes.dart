@@ -8,6 +8,8 @@ import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/orders/screen.dart';
+import 'package:dlog/features/home/presentation/screens/draft_order/draft/screen.dart';
+import 'package:dlog/features/home/presentation/screens/draft_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
@@ -44,6 +46,8 @@ class AppRoute {
   static const String notificationDetail = "/notificationDetail";
   static const String confirmOrder = "/confirmOrder";
   static const String confirmOrderDetail = "/confirmOrderDetail";
+  static const String draftOrder = "/draftOrder";
+  static const String draftOrderDetail = "/draftOrderDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -169,6 +173,18 @@ class AppRoute {
         path: confirmOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const ConfirmOrderDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderDetailScreen();
         },
       ),
     ],

@@ -14,7 +14,7 @@ class _ConfirmOrderScreenState extends State<ConfirmOrderScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const DLogAppBar(title: "Confirm Order"),
+      appBar: const DLogAppBar(title: "Confirm Orders"),
       body: Padding(
         padding: _screenPadding,
         child: const ConfirmOrderListView(),

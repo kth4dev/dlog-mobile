@@ -22,7 +22,7 @@ class HomeLocale {
   static const Map<String, dynamic> en = {
     orderManagement : "Order Management",
     confirmOrder : "Confirm Orders",
-    orderDraft : "Order Draft",
+    orderDraft : "Draft Orders",
     receivedOrder : "Received Orders",
     arrivedOrder : "Arrived Orders",
     delivery : "Delivery",
@@ -39,7 +39,7 @@ class HomeLocale {
 
   static const Map<String, dynamic> zh = {
     orderManagement: "订单管理",
-    confirmOrder: "确认订单",
+    confirmOrder: "订单确认",
     orderDraft: "草稿订单",
     receivedOrder: "已收到的订单",
     arrivedOrder: "已到达的订单",
@@ -59,7 +59,7 @@ class HomeLocale {
   static const Map<String, dynamic> my = {
     orderManagement: "အော်ဒါ စီမံမှု",
     confirmOrder: "အတည်ပြူ အော်ဒါ",
-    orderDraft: "အော်ဒါ အကြမ်း",
+    orderDraft: " အကြမ်း အော်ဒါ",
     receivedOrder: "ရရှိသော အော်ဒါ",
     arrivedOrder: "ရောက်ရှိသော အော်ဒါ",
     delivery: "ပေးပို့ခြင်း",
