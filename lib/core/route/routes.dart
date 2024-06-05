@@ -6,6 +6,8 @@ import 'package:dlog/features/auth/presentation/screens/reset_password/screen.da
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/confirm_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/confirm_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
@@ -40,6 +42,8 @@ class AppRoute {
   static const String languages = "/languages";
   static const String notification = "/notification";
   static const String notificationDetail = "/notificationDetail";
+  static const String confirmOrder = "/confirmOrder";
+  static const String confirmOrderDetail = "/confirmOrderDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -153,6 +157,18 @@ class AppRoute {
         path: notificationDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const NotificationDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: confirmOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ConfirmOrderScreen();
+        },
+      ),
+      GoRoute(
+        path: confirmOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ConfirmOrderDetailScreen();
         },
       ),
     ],

@@ -12,28 +12,34 @@ class PackageMetricsView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-         LabelDescription(
-          label: context.getLocale(HistoryLocale.kg),
-          description: "10kg",
-          descriptionWidth: 80,
-          descriptionAlignment: Alignment.center,
-        ),
+         Expanded(
+           child: LabelDescription(
+            label: context.getLocale(HistoryLocale.kg),
+            description: "10kg",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+                   ),
+         ),
         21.spacingWidth,
-         LabelDescription(
-          label:context.getLocale(HistoryLocale.cbm),
-          description: "10CBM",
-          descriptionWidth: 80,
-          descriptionAlignment: Alignment.center,
-        ),
+         Expanded(
+           child: LabelDescription(
+            label:context.getLocale(HistoryLocale.cbm),
+            description: "10CBM",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+                   ),
+         ),
         21.spacingWidth,
-         LabelDescription(
-          label: context.getLocale(HistoryLocale.noOfCarton),
-          description: "10",
-          descriptionWidth: 80,
-          descriptionAlignment: Alignment.center,
-           overflow: TextOverflow.ellipsis,
-           labelWidth: 80,
-        )
+         Expanded(
+           child: LabelDescription(
+            label: context.getLocale(HistoryLocale.noOfCarton),
+            description: "10",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+             overflow: TextOverflow.ellipsis,
+             labelWidth: 80,
+                   ),
+         )
       ],
     );
   }
