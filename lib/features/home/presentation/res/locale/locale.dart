@@ -34,7 +34,7 @@ class HomeLocale {
     date : "Date",
     shippingMark : "Shipping Mark",
     notification : "Notification",
-    notificationDetail : "Notification Detail"
+    notificationDetail : "Details"
   };
 
   static const Map<String, dynamic> zh = {
@@ -52,7 +52,7 @@ class HomeLocale {
     date: "日期",
     shippingMark: "运输标志",
     notification: "通知",
-    notificationDetail: "通知详情",
+    notificationDetail: "详情",
   };
 
 
@@ -71,7 +71,7 @@ class HomeLocale {
     date: "နေ့စွဲ",
     shippingMark: "ပို့ဆောင်‌ရေး အမှတ်အသား",
     notification: "အသိပေးချက်",
-    notificationDetail : "အသေးစိတ် အသိပေးချက် ",
+    notificationDetail : "အသေးစိတ်များ",
   };
 
 }

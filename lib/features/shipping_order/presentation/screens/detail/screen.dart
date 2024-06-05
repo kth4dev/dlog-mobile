@@ -16,7 +16,7 @@ class _ShippingOrderDetailsScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const DLogAppBar(title: "Shipping Order Details"),
+      appBar: const DLogAppBar(title: "Details"),
       body: SingleChildScrollView(
         child: Padding(
           padding: _screenPadding,
