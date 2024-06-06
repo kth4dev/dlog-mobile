@@ -18,6 +18,11 @@ import 'package:dlog/features/home/presentation/screens/draft_order/orders/scree
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
+import 'package:dlog/features/home/presentation/screens/received_order/all_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/received_order/all_order/list/screen.dart';
+import 'package:dlog/features/home/presentation/screens/received_order/menu/screen.dart';
+import 'package:dlog/features/home/presentation/screens/received_order/partial_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/received_order/partial_order/list/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
@@ -54,10 +59,15 @@ class AppRoute {
   static const String draftOrder = "/draftOrder";
   static const String draftOrderDetail = "/draftOrderDetail";
   static const String arrivedOrderMenu = "/arrivedOrderMenu";
-  static const String partialOrder = "/partialOrder";
-  static const String partialOrderDetail = "/partialOrderDetail";
-  static const String allOrder = "/allOrder";
-  static const String allOrderDetail = "/allOrderDetail";
+  static const String arrivedPartialOrder = "/arrivedPartialOrder";
+  static const String arrivedPartialOrderDetail = "/arrivedPartialOrderDetail";
+  static const String arrivedAllOrder = "/arrivedAllOrder";
+  static const String arrivedAllOrderDetail = "/arrivedAllOrderDetail";
+  static const String receivedOrderMenu = "/receivedOrderMenu";
+  static const String receivedPartialOrder = "/receivedPartialOrder";
+  static const String receivedPartialOrderDetail = "/receivedPartialOrderDetail";
+  static const String receivedAllOrder = "/receivedAllOrder";
+  static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -197,6 +207,7 @@ class AppRoute {
           return const DraftOrderDetailScreen();
         },
       ),
+      ///arrived Order
       GoRoute(
         path: arrivedOrderMenu,
         builder: (BuildContext context, GoRouterState state) {
@@ -204,28 +215,61 @@ class AppRoute {
         },
       ),
       GoRoute(
-        path: partialOrder,
+        path: arrivedPartialOrder,
         builder: (BuildContext context, GoRouterState state) {
-          return const PartialOrderListScreen();
+          return const ArrivedPartialOrderListScreen();
         },
       ),
       GoRoute(
-        path: partialOrderDetail,
+        path: arrivedPartialOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
-          return const PartialOrderDetailScreen();
+          return const ArrivedPartialOrderDetailScreen();
         },
       ),
 
       GoRoute(
-        path: allOrder,
+        path: arrivedAllOrder,
         builder: (BuildContext context, GoRouterState state) {
-          return const AllOrderListScreen();
+          return const ArrivedAllOrderListScreen();
         },
       ),
       GoRoute(
-        path: partialOrderDetail,
+        path: arrivedAllOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
-          return const AllOrderDetailScreen();
+          return const ArrivedAllOrderDetailScreen();
+        },
+      ),
+
+      ///received Order
+      GoRoute(
+        path: receivedOrderMenu,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedOrderMenuScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedPartialOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedPartialOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedPartialOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedPartialOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: receivedAllOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedAllOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedAllOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedAllOrderDetailScreen();
         },
       ),
     ],

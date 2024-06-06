@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import 'views/views.dart';
 
-class ArrivedAllOrderDetailScreen extends StatefulWidget {
-  const ArrivedAllOrderDetailScreen({super.key});
+class ReceivedPartialOrderDetailScreen extends StatefulWidget {
+  const ReceivedPartialOrderDetailScreen({super.key});
 
   @override
-  State<ArrivedAllOrderDetailScreen> createState() => _ArrivedAllOrderDetailScreenState();
+  State<ReceivedPartialOrderDetailScreen> createState() => _ReceivedPartialOrderDetailScreenState();
 }
 
-class _ArrivedAllOrderDetailScreenState extends State<ArrivedAllOrderDetailScreen> {
+class _ReceivedPartialOrderDetailScreenState extends State<ReceivedPartialOrderDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -20,13 +20,13 @@ class _ArrivedAllOrderDetailScreenState extends State<ArrivedAllOrderDetailScree
           padding: _screenPadding,
           child: Column(
             children: [
-              const AllOrderDetailView(),
+              const PartialOrderDetailView(),
               20.spacingHeight,
-              const AllOrderWarehouseDetailView(),
+              const PartialOrderWarehouseDetailView(),
               20.spacingHeight,
-              const AllOrderReceivedDateView(),
+              const PartialOrderReceivedDateView(),
               20.spacingHeight,
-              const AllOrderPaymentDetailView(),
+              const PartialOrderPaymentDetailView(),
             ],
           ),
         )

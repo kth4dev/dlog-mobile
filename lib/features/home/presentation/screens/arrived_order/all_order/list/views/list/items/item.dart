@@ -14,7 +14,7 @@ class AllOrderItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        context.push(AppRoute.allOrderDetail);
+        context.push(AppRoute.arrivedAllOrderDetail);
       },
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),

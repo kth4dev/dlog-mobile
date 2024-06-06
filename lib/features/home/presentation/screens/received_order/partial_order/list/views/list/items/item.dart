@@ -14,7 +14,7 @@ class PartialOrderItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        context.push(AppRoute.arrivedPartialOrderDetail);
+        context.push(AppRoute.receivedPartialOrderDetail);
       },
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),

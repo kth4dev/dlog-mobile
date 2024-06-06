@@ -1,32 +1,32 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
-import 'package:dlog/features/home/presentation/res/menu/arrived_order.dart';
+import 'package:dlog/features/home/presentation/res/menu/received_order.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'views/views.dart';
 
-class ArrivedOrderMenuScreen extends StatefulWidget {
-  const ArrivedOrderMenuScreen({super.key});
+class ReceivedOrderMenuScreen extends StatefulWidget {
+  const ReceivedOrderMenuScreen({super.key});
 
   @override
-  State<ArrivedOrderMenuScreen> createState() => _ArrivedOrderMenuScreenState();
+  State<ReceivedOrderMenuScreen> createState() => _ReceivedOrderMenuScreenState();
 }
 
-class _ArrivedOrderMenuScreenState extends State<ArrivedOrderMenuScreen> {
+class _ReceivedOrderMenuScreenState extends State<ReceivedOrderMenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const DLogAppBar(title: "Arrived Orders"),
+      appBar: const DLogAppBar(title: "Received Orders"),
       body: Padding(
         padding: _screenPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ArrivedOrderHeaderView(),
+            const ReceivedOrderMenuHeaderView(),
             30.spacingHeight,
-            ArrivedOrderMenuListView(onSelect: _onSelectMenu)
+            ReceivedOrderMenuListView(onSelect: _onSelectMenu)
           ],
         ),
       ),
@@ -40,13 +40,13 @@ class _ArrivedOrderMenuScreenState extends State<ArrivedOrderMenuScreen> {
         bottom: 30,
       );
 
-  void _onSelectMenu(ArrivedOrderMenu menu) {
+  void _onSelectMenu(ReceivedOrderMenu menu) {
     switch (menu) {
-      case ArrivedOrderMenu.partialOrder:
-        context.push(AppRoute.arrivedPartialOrder);
+      case ReceivedOrderMenu.partialOrder:
+        context.push(AppRoute.receivedPartialOrder);
         break;
-      case ArrivedOrderMenu.allOrder:
-        context.push(AppRoute.arrivedAllOrder);
+      case ReceivedOrderMenu.allOrder:
+        context.push(AppRoute.receivedAllOrder);
         break;
     }
   }
