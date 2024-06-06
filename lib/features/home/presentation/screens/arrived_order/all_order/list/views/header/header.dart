@@ -4,15 +4,15 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/search_text_field.dart';
 import 'package:flutter/material.dart';
 
-class PartialOrderHeaderView extends StatefulWidget {
-  const PartialOrderHeaderView({super.key});
+class AllOrderHeaderView extends StatefulWidget {
+  const AllOrderHeaderView({super.key});
 
   @override
-  State<PartialOrderHeaderView> createState() =>
-      _PartialOrderHeaderViewState();
+  State<AllOrderHeaderView> createState() =>
+      _AllOrderHeaderViewState();
 }
 
-class _PartialOrderHeaderViewState extends State<PartialOrderHeaderView> {
+class _AllOrderHeaderViewState extends State<AllOrderHeaderView> {
   late TextEditingController searchController;
 
   @override
@@ -27,7 +27,7 @@ class _PartialOrderHeaderViewState extends State<PartialOrderHeaderView> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Partial Order Lists",
+          "All Order Lists",
           style: context.getTextTheme.secondHeaderBold,
           color: context.getColorScheme.blackColor,
         ),

@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 import 'items/item.dart';
 
-class PartialOrderListView extends StatelessWidget {
-  const PartialOrderListView({super.key});
+class AllOrderListView extends StatelessWidget {
+  const AllOrderListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class PartialOrderListView extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemCount: 3,
               itemBuilder: (context, index) {
-                return const PartialOrderItem();
+                return const AllOrderItem();
               },
             ),
           ],

@@ -7,8 +7,8 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class PartialOrderItem extends StatelessWidget {
-  const PartialOrderItem({super.key});
+class AllOrderItem extends StatelessWidget {
+  const AllOrderItem({super.key});
 
   @override
   Widget build(BuildContext context) {

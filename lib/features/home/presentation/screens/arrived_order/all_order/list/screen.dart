@@ -1,8 +1,8 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
-import 'package:dlog/features/home/presentation/screens/arrived_order/partial_order/list/views/header/header.dart';
-import 'package:dlog/features/home/presentation/screens/arrived_order/partial_order/list/views/list/list.dart';
 import 'package:flutter/material.dart';
+
+import 'views/views.dart';
 
 
 class AllOrderListScreen extends StatefulWidget {
@@ -23,7 +23,7 @@ class _AllOrderListScreenState extends State<AllOrderListScreen> {
             children: [
               const AllOrderHeaderView(),
               20.spacingHeight,
-              const AllOrderListView()
+              const AllOrderListView(),
             ],
           )
         )
