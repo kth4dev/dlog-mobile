@@ -40,4 +40,5 @@ class AppPref {
   //-----------------------------------------
   static const String keyFirstTime="app.firstTime";
   static const String keyAuthenticated="app.firstTime";
+  static const String keyLocale="app.locale";
 }

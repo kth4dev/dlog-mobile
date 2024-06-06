@@ -8,4 +8,8 @@ abstract class AppDataStore {
   Future<void> setLoggedIn(bool value);
 
   bool isLoggedIn();
+
+  Future<void> setLocale(int value);
+
+  int getLocale();
 }

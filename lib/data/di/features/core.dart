@@ -4,7 +4,7 @@ import 'package:dlog/data/app-pref/app_data_store_impl.dart';
 import 'package:dlog/data/app-pref/app_pref.dart';
 import 'package:dlog/data/localization/app_locale.dart';
 import 'package:dlog/data/localization/app_localization_manager.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 import 'package:logger/logger.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
