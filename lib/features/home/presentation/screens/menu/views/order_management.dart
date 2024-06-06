@@ -69,7 +69,9 @@ class OrderManagementView extends StatelessWidget {
                 icon: DLogIcons.delivery,
                 text: context.getLocale(HomeLocale.delivery),
                 qty: "3",
-                onTap: () {}),
+                onTap: () {
+                  context.push(AppRoute.deliveredOrder);
+                }),
             22.spacingWidth,
             OrderManagementItem(
                 icon: DLogIcons.document1,

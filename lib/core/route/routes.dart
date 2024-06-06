@@ -13,6 +13,8 @@ import 'package:dlog/features/home/presentation/screens/arrived_order/partial_or
 import 'package:dlog/features/home/presentation/screens/arrived_order/partial_order/list/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/orders/screen.dart';
+import 'package:dlog/features/home/presentation/screens/delivered_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/delivered_order/order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/draft_order/draft/screen.dart';
 import 'package:dlog/features/home/presentation/screens/draft_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
@@ -68,6 +70,8 @@ class AppRoute {
   static const String receivedPartialOrderDetail = "/receivedPartialOrderDetail";
   static const String receivedAllOrder = "/receivedAllOrder";
   static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
+  static const String deliveredOrder = "/deliveredOrder";
+  static const String deliveredOrderDetail = "/deliveredOrderDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -270,6 +274,19 @@ class AppRoute {
         path: receivedAllOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const ReceivedAllOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: deliveredOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DeliveredOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: deliveredOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DeliveredOrderDetailScreen();
         },
       ),
     ],
