@@ -6,14 +6,17 @@ import 'package:flutter/material.dart';
 
 import 'location.dart';
 
-class RouteDetailItem extends StatelessWidget {
-  const RouteDetailItem({super.key});
+class InTransitDetailItem extends StatelessWidget {
+  const InTransitDetailItem({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Divider(
+          color: context.getColorScheme.grey.lightActive,
+        ),
         Row(
           children: [
             DLogText(
@@ -32,16 +35,25 @@ class RouteDetailItem extends StatelessWidget {
         Divider(
           color: context.getColorScheme.grey.lightActive,
         ),
-        const LocationItem(label: "Delivery From", location: "Yangon"),
+        const LocationItem(location: "Irrawaddy"),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 6.5),
+          padding: EdgeInsets.symmetric(horizontal: 6.5, vertical: 5),
           child: DLogSvgImage(
             path: DLogIcons.downArrowRoute,
             width: 20,
             height: 20,
           ),
         ),
-        const LocationItem(label: "Delivery To", location: "Mandalay"),
+        const LocationItem(location: "Muse"),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 6.5, vertical: 5),
+          child: DLogSvgImage(
+            path: DLogIcons.downArrowRoute,
+            width: 20,
+            height: 20,
+          ),
+        ),
+        const LocationItem(location: "Yangon"),
       ],
     );
   }

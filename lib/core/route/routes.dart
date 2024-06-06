@@ -17,6 +17,7 @@ import 'package:dlog/features/home/presentation/screens/delivered_order/detail/s
 import 'package:dlog/features/home/presentation/screens/delivered_order/order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/draft_order/draft/screen.dart';
 import 'package:dlog/features/home/presentation/screens/draft_order/orders/screen.dart';
+import 'package:dlog/features/home/presentation/screens/in_transit/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
@@ -72,6 +73,7 @@ class AppRoute {
   static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
   static const String deliveredOrder = "/deliveredOrder";
   static const String deliveredOrderDetail = "/deliveredOrderDetail";
+  static const String inTransit = "/inTransit";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -287,6 +289,12 @@ class AppRoute {
         path: deliveredOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const DeliveredOrderDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: inTransit,
+        builder: (BuildContext context, GoRouterState state) {
+          return const InTransitListScreen();
         },
       ),
     ],
