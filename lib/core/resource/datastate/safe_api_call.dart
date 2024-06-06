@@ -19,14 +19,22 @@ Future<NetworkResponse<T>> safeApiCall<T>(
           data: httpResponse.data,
         );
       } else if (statusCode >= 400 && statusCode <= 499) {
-        final errorResponse = ServerErrorResponse.fromJson(
-          httpResponse.response.data!,
-        );
-        return NetworkFailed(
-          errorResponse: errorResponse,
-          message: errorResponse.message,
-          type: NetworkErrorType.dynamic,
-        );
+        try{
+          final errorResponse = ServerErrorResponse.fromJson(
+            httpResponse.response.data!,
+          );
+          return NetworkFailed(
+            errorResponse: errorResponse,
+            message: errorResponse.message,
+            type: NetworkErrorType.dynamic,
+          );
+        }catch(e){
+          return NetworkFailed(
+            message: 'Something went wrong',
+            type: NetworkErrorType.dynamic,
+          );
+        }
+
       } else {
         return NetworkFailed(
           message: 'Server is under maintenance',
