@@ -6,6 +6,11 @@ import 'package:dlog/features/auth/presentation/screens/reset_password/screen.da
 import 'package:dlog/features/auth/presentation/screens/sign_up/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/verify/screen.dart';
 import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/arrived_order/all_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/arrived_order/all_order/list/screen.dart';
+import 'package:dlog/features/home/presentation/screens/arrived_order/menu/screen.dart';
+import 'package:dlog/features/home/presentation/screens/arrived_order/partial_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/arrived_order/partial_order/list/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/confirm_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/draft_order/draft/screen.dart';
@@ -48,6 +53,11 @@ class AppRoute {
   static const String confirmOrderDetail = "/confirmOrderDetail";
   static const String draftOrder = "/draftOrder";
   static const String draftOrderDetail = "/draftOrderDetail";
+  static const String arrivedOrderMenu = "/arrivedOrderMenu";
+  static const String partialOrder = "/partialOrder";
+  static const String partialOrderDetail = "/partialOrderDetail";
+  static const String allOrder = "/allOrder";
+  static const String allOrderDetail = "/allOrderDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -185,6 +195,37 @@ class AppRoute {
         path: draftOrderDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const DraftOrderDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: arrivedOrderMenu,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedOrderMenuScreen();
+        },
+      ),
+      GoRoute(
+        path: partialOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PartialOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: partialOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PartialOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: allOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const AllOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: partialOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const AllOrderDetailScreen();
         },
       ),
     ],
