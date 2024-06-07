@@ -104,7 +104,7 @@ class ReceivedOrderLocale {
     orderLines: "အော်ဒါ စာရင်းများ",
     warehouseName: "ဂို‌ဒေါင် အမည်",
     warehouseAddress: "ဂို‌ဒေါင် လိပ်စာ",
-    receivedDate: "ရရှိနိုင်သော ရက်စွဲ",
+    receivedDate: "လက်ခံရရှိသော ရက်စွဲ",
     paymentDetail: "ငွေပေးချေစာရင်း",
     totalAmount: "စုစုပေါင်းပမာဏ",
   };

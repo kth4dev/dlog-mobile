@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/home/presentation/res/locale/delivered_order_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'items/item.dart';
@@ -24,7 +25,7 @@ class DeliveredRouteDetailView extends StatelessWidget {
         title: Row(
           children: [
             DLogText(
-              "Order No",
+              context.getLocale(DeliveredOrderLocale.orderNo),
               style: context.getTextTheme.bodyMedium,
               color: context.getColorScheme.blackColor,
             ),
@@ -35,7 +36,7 @@ class DeliveredRouteDetailView extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   color: context.getColorScheme.black.normal),
               child: DLogText(
-                "Delivered",
+                context.getLocale(DeliveredOrderLocale.status),
                 style: context.getTextTheme.bodyRegular,
                 color: context.getColorScheme.yellow.normal,
               ),

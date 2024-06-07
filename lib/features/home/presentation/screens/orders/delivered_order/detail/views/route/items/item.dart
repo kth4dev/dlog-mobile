@@ -2,6 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/home/presentation/res/locale/delivered_order_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'location.dart';
@@ -17,7 +18,7 @@ class RouteDetailItem extends StatelessWidget {
         Row(
           children: [
             DLogText(
-              "Delivered Date",
+              context.getLocale(DeliveredOrderLocale.deliveredDate),
               style: context.getTextTheme.tertiaryRegular,
               color: context.getColorScheme.blackColor,
             ),
@@ -32,7 +33,7 @@ class RouteDetailItem extends StatelessWidget {
         Divider(
           color: context.getColorScheme.grey.lightActive,
         ),
-        const LocationItem(label: "Delivery From", location: "Yangon"),
+         LocationItem(label:context.getLocale(DeliveredOrderLocale.deliveredFrom), location: "Yangon"),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 6.5),
           child: DLogSvgImage(
@@ -41,7 +42,7 @@ class RouteDetailItem extends StatelessWidget {
             height: 20,
           ),
         ),
-        const LocationItem(label: "Delivery To", location: "Mandalay"),
+         LocationItem(label: context.getLocale(DeliveredOrderLocale.deliveredTo), location: "Mandalay"),
       ],
     );
   }
