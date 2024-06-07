@@ -1,6 +1,7 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'item/payment_detail_item.dart';
@@ -13,13 +14,13 @@ class PartialOrderPaymentDetailView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Payment Details",
+          context.getLocale(ReceivedOrderLocale.paymentDetail),
           style: context.getTextTheme.secondaryBold,
           color: context.getColorScheme.blackColor,
         ),
         10.spacingHeight,
-        const PaymentDetailItem(
-          name: "No of Carton",
+         PaymentDetailItem(
+          name: context.getLocale(ReceivedOrderLocale.noOfCarton),
           price: "10000",
           value: "10 * price",
           isUnread: true,
@@ -33,8 +34,8 @@ class PartialOrderPaymentDetailView extends StatelessWidget {
           },
         ),
         5.spacingHeight,
-        const PaymentDetailItem(
-          name: "Total Amount",
+         PaymentDetailItem(
+          name:  context.getLocale(ReceivedOrderLocale.totalAmount),
           price: "100000",
         ),
       ],

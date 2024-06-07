@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'items/views.dart';
@@ -22,23 +23,23 @@ class PartialOrderDetailView extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const LabelDescription(
-              label: "Order No",
+             LabelDescription(
+              label: context.getLocale(ReceivedOrderLocale.orderNo),
               description: "Order001",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "Order Date",
+             LabelDescription(
+              label: context.getLocale(ReceivedOrderLocale.date),
               description: "24 Apr 2024",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "From Location",
+             LabelDescription(
+              label:  context.getLocale(ReceivedOrderLocale.fromLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "To Location",
+             LabelDescription(
+              label:  context.getLocale(ReceivedOrderLocale.toLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
@@ -46,14 +47,14 @@ class PartialOrderDetailView extends StatelessWidget {
             20.spacingHeight,
             const PackageMetricsView(),
             20.spacingHeight,
-            const LabelDescription(
-              label: "Customer’s Supplier Code",
+             LabelDescription(
+              label:context.getLocale(ReceivedOrderLocale.customerSupplierCode),
               description: "SP001",
             ),
             20.spacingHeight,
             const WayBillPicturesView(),
             20.spacingHeight,
-            const LabelDescription(label: "Order Lines", description: "filename.xml")
+             LabelDescription(label: context.getLocale(ReceivedOrderLocale.orderLines), description: "filename.xml")
           ],
         ),
       ),

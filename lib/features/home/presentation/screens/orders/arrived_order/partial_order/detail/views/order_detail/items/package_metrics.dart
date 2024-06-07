@@ -1,8 +1,9 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/history/presentation/res/locale/locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
+import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
 import 'package:flutter/material.dart';
+
+import 'label_description.dart';
 
 class PackageMetricsView extends StatelessWidget {
   const PackageMetricsView({super.key});
@@ -14,7 +15,7 @@ class PackageMetricsView extends StatelessWidget {
       children: [
         Expanded(
           child: LabelDescription(
-            label: context.getLocale(HistoryLocale.kg),
+            label: context.getLocale(ArrivedOrderLocale.kg),
             description: "10kg",
             descriptionWidth: 80,
             descriptionAlignment: Alignment.center,
@@ -23,7 +24,7 @@ class PackageMetricsView extends StatelessWidget {
         21.spacingWidth,
         Expanded(
           child: LabelDescription(
-            label:context.getLocale(HistoryLocale.cbm),
+            label:context.getLocale(ArrivedOrderLocale.cbm),
             description: "10CBM",
             descriptionWidth: 80,
             descriptionAlignment: Alignment.center,
@@ -32,7 +33,7 @@ class PackageMetricsView extends StatelessWidget {
         21.spacingWidth,
         Expanded(
           child: LabelDescription(
-            label: context.getLocale(HistoryLocale.noOfCarton),
+            label: context.getLocale(ArrivedOrderLocale.noOfCarton),
             description: "10",
             descriptionWidth: 80,
             descriptionAlignment: Alignment.center,

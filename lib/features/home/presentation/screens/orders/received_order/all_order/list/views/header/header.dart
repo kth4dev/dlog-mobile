@@ -2,6 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/search_text_field.dart';
+import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
 import 'package:flutter/material.dart';
 
 class AllOrderHeaderView extends StatefulWidget {
@@ -27,14 +28,14 @@ class _AllOrderHeaderViewState extends State<AllOrderHeaderView> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "All Order Lists",
+          context.getLocale(ReceivedOrderLocale.allOrderList),
           style: context.getTextTheme.secondHeaderBold,
           color: context.getColorScheme.blackColor,
         ),
         20.spacingHeight,
         DLogSearchTextField(
           controller: searchController,
-          text: "Search",
+          text: context.getLocale(ReceivedOrderLocale.search),
         ),
       ],
     );

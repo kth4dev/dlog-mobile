@@ -1,35 +1,35 @@
-class ArrivedOrderLocale {
+class ReceivedOrderLocale {
   /// ******************************************
   ///  Title : Localization's Key
   /// ******************************************
-  static const arrivedOrder = "arrivedOrder";
-  static const partialOrder = "arrived_partialOrder";
-  static const partialOrderList = "arrived_partialOrderList";
-  static const allOrder = "arrived_allOrder";
-  static const allOrderList = "arrived_allOrderList";
-  static const search = "arrivedOrder_search";
-  static const detail = "arrivedOrder_detail";
-  static const orderNo = "arrivedOrder_orderNo";
-  static const date = "arrivedOrder_date";
-  static const fromLocation = "arrivedOrder_fromLocation";
-  static const toLocation = "arrivedOrder_toLocation";
-  static const packagePictures = "arrivedOrder_packagePictures";
-  static const noOfPackage = "arrivedOrder_noOfPackage";
-  static const kg = "arrivedOrder_kg";
-  static const cbm = "arrivedOrder_cbm";
-  static const noOfCarton = "arrivedOrder_noOfCarton";
-  static const customerSupplierCode = "arrivedOrder_customerSupplierCode";
-  static const wayBillPhoto  = "arrivedOrder_wayBillPhoto";
-  static const orderLines = "arrivedOrder_orderLines";
-  static const warehouseName = "arrivedOrder_warehouseName";
-  static const warehouseAddress = "arrivedOrder_warehouseAddress";
-  static const receivedDate = "arrivedOrder_receivedDate";
-  static const paymentDetail = "arrivedOrder_paymentDetail";
-  static const totalAmount = "arrivedOrder_totalAmount";
+  static const receivedOrder = "receivedOrder";
+  static const partialOrder = "received_partialOrder";
+  static const partialOrderList = "received_partialOrderList";
+  static const allOrder = "received_allOrder";
+  static const allOrderList = "received_allOrderList";
+  static const search = "receivedOrder_search";
+  static const detail = "receivedOrder_detail";
+  static const orderNo = "receivedOrder_orderNo";
+  static const date = "receivedOrder_date";
+  static const fromLocation = "receivedOrder_fromLocation";
+  static const toLocation = "receivedOrderr_toLocation";
+  static const packagePictures = "receivedOrder_packagePictures";
+  static const noOfPackage = "receivedOrder_noOfPackage";
+  static const kg = "receivedOrder_kg";
+  static const cbm = "receivedOrder_cbm";
+  static const noOfCarton = "receivedOrder_noOfCarton";
+  static const customerSupplierCode = "receivedOrder_customerSupplierCode";
+  static const wayBillPhoto  = "receivedOrder_wayBillPhoto";
+  static const orderLines = "receivedOrder_orderLines";
+  static const warehouseName = "receivedOrder_warehouseName";
+  static const warehouseAddress = "receivedOrder_warehouseAddress";
+  static const receivedDate = "receivedOrder_receivedDate";
+  static const paymentDetail = "receivedOrder_paymentDetail";
+  static const totalAmount = "receivedOrder_totalAmount";
 
 
   static const Map<String, dynamic> en = {
-    arrivedOrder : "Arrived Orders",
+    receivedOrder: "Received Orders",
     partialOrder : "Partial Orders",
     partialOrderList : "Partial Order Lists",
     allOrder : "All Orders",
@@ -56,7 +56,7 @@ class ArrivedOrderLocale {
   };
 
   static const Map<String, String> zh = {
-    arrivedOrder: "已到达订单",
+    receivedOrder: "收到订单",
     partialOrder: "部分订单",
     partialOrderList: "部分订单列表",
     allOrder: "全部订单",
@@ -83,7 +83,7 @@ class ArrivedOrderLocale {
   };
 
   static const Map<String, String> my = {
-    arrivedOrder: "ရောက်ရှိသော အော်ဒါများ",
+    receivedOrder: "လက်ခံရရှိသော အော်ဒါများ",
     partialOrder: "တစ်စိတ်တစ်ပိုင်း အော်ဒါများ",
     partialOrderList: "တစ်စိတ်တစ်ပိုင်း အော်ဒါစာရင်း",
     allOrder: "အော်ဒါ အားလုံး",

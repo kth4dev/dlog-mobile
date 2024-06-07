@@ -4,11 +4,11 @@ import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class ArrivedOrderMenuItem extends StatelessWidget {
+class ReceivedOrderMenuItem extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
 
-  const ArrivedOrderMenuItem({
+  const ReceivedOrderMenuItem({
     super.key,
     required this.label,
     required this.onTap,

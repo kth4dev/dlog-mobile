@@ -2,6 +2,7 @@ import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/home_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/in_transit_order_locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
 import 'package:dlog/features/main/presentation/res/locale/locale.dart';
 import 'package:dlog/features/more/presentation/res/locale/locale.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
@@ -14,6 +15,7 @@ class AppLocalization {
     ...HistoryLocale.en,
     ...HomeLocale.en,
     ...ArrivedOrderLocale.en,
+    ...ReceivedOrderLocale.en,
     ...InTransitOrderLocale.en,
   };
   static const Map<String, dynamic> zh = {
@@ -23,6 +25,7 @@ class AppLocalization {
     ...HistoryLocale.zh,
     ...HomeLocale.zh,
     ...ArrivedOrderLocale.zh,
+    ...ReceivedOrderLocale.zh,
     ...InTransitOrderLocale.zh,
   };
   static const Map<String, dynamic> my = {
@@ -32,6 +35,7 @@ class AppLocalization {
     ...HistoryLocale.my,
     ...HomeLocale.my,
     ...ArrivedOrderLocale.my,
+    ...ReceivedOrderLocale.my,
     ...InTransitOrderLocale.my,
   };
 }

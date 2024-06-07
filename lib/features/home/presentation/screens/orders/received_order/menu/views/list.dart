@@ -1,3 +1,4 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/features/home/presentation/res/menu/received_order.dart';
 import 'package:flutter/material.dart';
 
@@ -16,9 +17,9 @@ class ReceivedOrderMenuListView extends StatelessWidget {
         itemCount: ReceivedOrderMenu.values.length,
         itemBuilder: (context, index) {
           final currentItem = ReceivedOrderMenu.values[index];
-          return ArrivedOrderMenuItem(
+          return ReceivedOrderMenuItem(
             onTap: () => onSelect(currentItem),
-            label:currentItem.label,
+            label:context.getLocale(currentItem.label),
           );
         },
       ),

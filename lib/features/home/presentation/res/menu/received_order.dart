@@ -1,9 +1,11 @@
+import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
+
 enum ReceivedOrderMenu {
   partialOrder(
-    label: "Partial Order",
+    label: ReceivedOrderLocale.partialOrder,
   ),
   allOrder(
-    label: "All Order",
+    label:ReceivedOrderLocale.allOrder,
   );
 
   final String label;

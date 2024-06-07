@@ -60,7 +60,7 @@ class HomeLocale {
     orderManagement: "အော်ဒါ စီမံမှု",
     confirmOrder: "အတည်ပြူ အော်ဒါ",
     orderDraft: " အကြမ်း အော်ဒါ",
-    receivedOrder: "ရရှိသော အော်ဒါ",
+    receivedOrder: "လက်ခံရရှိသော အော်ဒါ",
     arrivedOrder: "ရောက်ရှိသော အော်ဒါ",
     delivery: "ပေးပို့ခြင်း",
     inTransitOrder: "အကူးအပြောင်း အော်ဒါ",
