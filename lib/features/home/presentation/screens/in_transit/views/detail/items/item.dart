@@ -17,24 +17,6 @@ class InTransitDetailItem extends StatelessWidget {
         Divider(
           color: context.getColorScheme.grey.lightActive,
         ),
-        Row(
-          children: [
-            DLogText(
-              "Delivered Date",
-              style: context.getTextTheme.tertiaryRegular,
-              color: context.getColorScheme.blackColor,
-            ),
-            const Spacer(),
-            DLogText(
-              "24 Apr 2024",
-              style: context.getTextTheme.tertiaryRegular,
-              color: context.getColorScheme.blackColor,
-            ),
-          ],
-        ),
-        Divider(
-          color: context.getColorScheme.grey.lightActive,
-        ),
         const LocationItem(location: "Irrawaddy"),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 6.5, vertical: 5),
