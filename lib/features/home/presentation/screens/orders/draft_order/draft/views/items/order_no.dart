@@ -1,6 +1,7 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 
 class OrderNo extends StatelessWidget {
@@ -12,7 +13,7 @@ class OrderNo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Order no",
+          context.getLocale(DraftOrderLocale.orderNo),
           style: context.getTextTheme.tertiaryMedium,
           color: context.getColorScheme.blackColor,
         ),

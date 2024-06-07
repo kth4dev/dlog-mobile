@@ -1,7 +1,9 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 
-import 'items/metric_container.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/label_description.dart';
 
 class PackageMetricsView extends StatelessWidget {
   const PackageMetricsView({super.key});
@@ -11,11 +13,34 @@ class PackageMetricsView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const MetricContainer(label: "Kg", value: "10kg"),
+        Expanded(
+          child: LabelDescription(
+            label: context.getLocale(DraftOrderLocale.kg),
+            description: "10kg",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+          ),
+        ),
         21.spacingWidth,
-        const MetricContainer(label: "CBM", value: "10CBM"),
+        Expanded(
+          child: LabelDescription(
+            label:context.getLocale(DraftOrderLocale.cbm),
+            description: "10CBM",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+          ),
+        ),
         21.spacingWidth,
-        const MetricContainer(label: "No of Carton", value: "10")
+        Expanded(
+          child: LabelDescription(
+            label: context.getLocale(DraftOrderLocale.noOfCarton),
+            description: "10",
+            descriptionWidth: 80,
+            descriptionAlignment: Alignment.center,
+            overflow: TextOverflow.ellipsis,
+            labelWidth: 80,
+          ),
+        )
       ],
     );
   }

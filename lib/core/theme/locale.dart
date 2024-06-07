@@ -2,6 +2,7 @@ import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/confirm_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/delivered_order_locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/home_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/in_transit_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
@@ -20,7 +21,8 @@ class AppLocalization {
     ...ReceivedOrderLocale.en,
     ...InTransitOrderLocale.en,
     ...ConfirmOrderLocale.en,
-    ...DeliveredOrderLocale.en
+    ...DeliveredOrderLocale.en,
+    ...DraftOrderLocale.en
   };
   static const Map<String, dynamic> zh = {
     ...MainLocale.zh,
@@ -32,7 +34,8 @@ class AppLocalization {
     ...ReceivedOrderLocale.zh,
     ...InTransitOrderLocale.zh,
     ...ConfirmOrderLocale.zh,
-    ...DeliveredOrderLocale.zh
+    ...DeliveredOrderLocale.zh,
+    ...DraftOrderLocale.zh
   };
   static const Map<String, dynamic> my = {
     ...MainLocale.my,
@@ -44,6 +47,7 @@ class AppLocalization {
     ...ReceivedOrderLocale.my,
     ...InTransitOrderLocale.my,
     ...ConfirmOrderLocale.my,
-    ...DeliveredOrderLocale.my
+    ...DeliveredOrderLocale.my,
+    ...DraftOrderLocale.my
   };
 }

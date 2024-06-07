@@ -4,6 +4,7 @@ import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/image/circle_icon.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -50,13 +51,13 @@ class DraftOrderItem extends StatelessWidget {
                         ),
                         10.spacingHeight,
                         DLogText(
-                          "Order No: 123",
+                          "${context.getLocale(DraftOrderLocale.orderNo)}: 123",
                           style: context.getTextTheme.secondaryRegular,
                           color: context.getColorScheme.black.normal,
                         ),
                         10.spacingHeight,
                         DLogText(
-                          "Date: 10 Apr, 2024",
+                          "${context.getLocale(DraftOrderLocale.date)}: 10 Apr, 2024",
                           style: context.getTextTheme.secondaryRegular,
                           color: context.getColorScheme.black.normal,
                         ),
@@ -86,7 +87,7 @@ class DraftOrderItem extends StatelessWidget {
                 topLeft: Radius.circular(10),
                 bottomRight: Radius.circular(10))),
         child: DLogText(
-          "Draft",
+          context.getLocale(DraftOrderLocale.status),
           style: context.getTextTheme.tertiaryBold,
           color: context.getColorScheme.yellow.normal,
         ),

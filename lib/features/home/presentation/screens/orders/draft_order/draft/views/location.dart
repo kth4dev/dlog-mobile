@@ -1,5 +1,7 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 
 class LocationView extends StatefulWidget {
@@ -25,14 +27,14 @@ class _LocationViewState extends State<LocationView> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const DLogOutLinedTextField(
-            hintText: "Enter Location",
-            label: "From Location*",
+         DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterFromLocation),
+            label: "${context.getLocale(DraftOrderLocale.fromLocation)}*",
             textInputType: TextInputType.text),
         20.spacingHeight,
-        const DLogOutLinedTextField(
-            hintText: "Enter Location",
-            label: "To Location*",
+         DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterToLocation),
+            label: "${context.getLocale(DraftOrderLocale.toLocation)}*",
             textInputType: TextInputType.text),
       ],
     );

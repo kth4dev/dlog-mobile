@@ -1,6 +1,6 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/order_date.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/order_no.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/order_date.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/order_no.dart';
 import 'package:flutter/material.dart';
 
 class OrderView extends StatefulWidget {
