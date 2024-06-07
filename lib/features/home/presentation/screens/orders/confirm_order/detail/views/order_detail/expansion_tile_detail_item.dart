@@ -1,12 +1,12 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/confirm_order_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'items/views.dart';
 
-class AllOrderDetailView extends StatelessWidget {
-  const AllOrderDetailView({super.key});
+class ExpansionTileDetailView extends StatelessWidget {
+  const ExpansionTileDetailView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,22 +24,22 @@ class AllOrderDetailView extends StatelessWidget {
         child: Column(
           children: [
              LabelDescription(
-              label: context.getLocale(ReceivedOrderLocale.orderNo),
+              label: context.getLocale(ConfirmOrderLocale.orderNo),
               description: "Order001",
             ),
             20.spacingHeight,
              LabelDescription(
-              label: context.getLocale(ReceivedOrderLocale.date),
+              label: context.getLocale(ConfirmOrderLocale.date),
               description: "24 Apr 2024",
             ),
             20.spacingHeight,
              LabelDescription(
-              label: context.getLocale(ReceivedOrderLocale.fromLocation),
+              label:context.getLocale(ConfirmOrderLocale.fromLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
              LabelDescription(
-              label: context.getLocale(ReceivedOrderLocale.toLocation),
+              label:context.getLocale(ConfirmOrderLocale.toLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
@@ -48,14 +48,13 @@ class AllOrderDetailView extends StatelessWidget {
             const PackageMetrics(),
             20.spacingHeight,
              LabelDescription(
-              label: context.getLocale(ReceivedOrderLocale.customerSupplierCode),
+              label: context.getLocale(ConfirmOrderLocale.customerSupplierCode),
               description: "SP001",
             ),
             20.spacingHeight,
             const WayBillPictures(),
             20.spacingHeight,
-             LabelDescription(
-                label: context.getLocale(ReceivedOrderLocale.orderLines), description: "filename.xml")
+             LabelDescription(label:context.getLocale(ConfirmOrderLocale.orderLines), description: "filename.xml")
           ],
         ),
       ),
@@ -63,9 +62,9 @@ class AllOrderDetailView extends StatelessWidget {
   }
 
   EdgeInsets get _screenPadding => const EdgeInsets.only(
-        left: 30,
-        right: 30,
-        top: 20,
-        bottom: 20,
-      );
+    left: 30,
+    right: 30,
+    top: 20,
+    bottom: 20,
+  );
 }

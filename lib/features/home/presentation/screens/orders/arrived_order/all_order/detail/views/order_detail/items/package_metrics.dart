@@ -4,8 +4,8 @@ import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
 import 'package:flutter/material.dart';
 
-class PackageMetricsView extends StatelessWidget {
-  const PackageMetricsView({super.key});
+class PackageMetrics extends StatelessWidget {
+  const PackageMetrics({super.key});
 
   @override
   Widget build(BuildContext context) {

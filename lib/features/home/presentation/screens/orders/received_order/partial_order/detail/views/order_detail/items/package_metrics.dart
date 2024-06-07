@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 import 'label_description.dart';
 
-class PackageMetricsView extends StatelessWidget {
-  const PackageMetricsView({super.key});
+class PackageMetrics extends StatelessWidget {
+  const PackageMetrics({super.key});
 
   @override
   Widget build(BuildContext context) {

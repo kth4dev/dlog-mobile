@@ -43,16 +43,16 @@ class AllOrderDetailView extends StatelessWidget {
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
-            const PackagePicturesView(),
+            const PackagePictures(),
             20.spacingHeight,
-            const PackageMetricsView(),
+            const PackageMetrics(),
             20.spacingHeight,
              LabelDescription(
               label:context.getLocale(ArrivedOrderLocale.customerSupplierCode),
               description: "SP001",
             ),
             20.spacingHeight,
-            const WayBillPicturesView(),
+            const WayBillPictures(),
             20.spacingHeight,
              LabelDescription(
                 label: context.getLocale(ArrivedOrderLocale.orderLines), description: "filename.xml")

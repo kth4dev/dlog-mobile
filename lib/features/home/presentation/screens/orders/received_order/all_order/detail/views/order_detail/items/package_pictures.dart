@@ -7,8 +7,8 @@ import 'package:dlog/features/home/presentation/res/locale/received_order_locale
 import 'package:flutter/material.dart';
 
 
-class PackagePicturesView extends StatelessWidget {
-  const PackagePicturesView({super.key});
+class PackagePictures extends StatelessWidget {
+  const PackagePictures({super.key});
 
   @override
   Widget build(BuildContext context) {

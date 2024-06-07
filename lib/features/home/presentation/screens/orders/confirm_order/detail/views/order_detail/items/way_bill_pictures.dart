@@ -3,7 +3,7 @@ import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/graphic.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/confirm_order_locale.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,7 +16,7 @@ class WayBillPictures extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          context.getLocale(ReceivedOrderLocale.wayBillPhoto),
+          context.getLocale(ConfirmOrderLocale.wayBillPhoto),
           style: context.getTextTheme.tertiaryMedium,
           color: context.getColorScheme.blackColor,
         ),

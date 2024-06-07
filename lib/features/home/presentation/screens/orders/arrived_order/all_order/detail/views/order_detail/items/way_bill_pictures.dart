@@ -7,8 +7,8 @@ import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.
 import 'package:flutter/material.dart';
 
 
-class WayBillPicturesView extends StatelessWidget {
-  const WayBillPicturesView({super.key});
+class WayBillPictures extends StatelessWidget {
+  const WayBillPictures({super.key});
 
   @override
   Widget build(BuildContext context) {
