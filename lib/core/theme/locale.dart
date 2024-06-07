@@ -1,7 +1,7 @@
 import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/home_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/in_transit_order_locale.dart';
-import 'package:dlog/features/home/presentation/res/locale/locale.dart';
 import 'package:dlog/features/main/presentation/res/locale/locale.dart';
 import 'package:dlog/features/more/presentation/res/locale/locale.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
