@@ -1,3 +1,4 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/features/home/presentation/res/menu/arrived_order.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class ArrivedOrderMenuListView extends StatelessWidget {
           final currentItem = ArrivedOrderMenu.values[index];
           return ArrivedOrderMenuItem(
             onTap: () => onSelect(currentItem),
-            label:currentItem.label,
+            label:context.getLocale(currentItem.label),
           );
         },
       ),

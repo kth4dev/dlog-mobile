@@ -1,11 +1,9 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/way_bill_pictures.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/package_metrics.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/package_pictures.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
+import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
 import 'package:flutter/material.dart';
 
+import 'items/views.dart';
 class PartialOrderDetailView extends StatelessWidget {
   const PartialOrderDetailView({super.key});
 
@@ -24,23 +22,23 @@ class PartialOrderDetailView extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const LabelDescription(
-              label: "Order No",
+             LabelDescription(
+              label: context.getLocale(ArrivedOrderLocale.orderNo),
               description: "Order001",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "Order Date",
+             LabelDescription(
+              label:  context.getLocale(ArrivedOrderLocale.date),
               description: "24 Apr 2024",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "From Location",
+             LabelDescription(
+              label: context.getLocale(ArrivedOrderLocale.fromLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
-            const LabelDescription(
-              label: "To Location",
+             LabelDescription(
+              label: context.getLocale(ArrivedOrderLocale.toLocation),
               description: "No112, KyiMyinDine Township, Yangon",
             ),
             20.spacingHeight,
