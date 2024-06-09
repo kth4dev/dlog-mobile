@@ -4,19 +4,19 @@ enum DLogLocale {
     name: "my",
     value: 1,
     label: "Myanmar",
-    icon: "assets/images/icons/language/language-square.svg",
+    icon: "assets/images/icons/others/language-square.svg",
   ),
   english(
     name: "en",
     value: 0,
     label: "English",
-    icon: "assets/images/icons/language/language-square.svg",
+    icon: "assets/images/icons/others/language-square.svg",
   ),
   china(
     name: "zh_CN",
     value: 2,
     label: "Chinese",
-    icon: "assets/images/icons/language/language-square.svg",
+    icon: "assets/images/icons/others/language-square.svg",
   );
 
   final String name, label, icon;

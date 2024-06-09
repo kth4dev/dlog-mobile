@@ -10,6 +10,7 @@ class DLogIcons {
   static const chevronLeft = "$arrowChevronBasePath/Chevron-Left.svg";
   static const chevronRight = "$arrowChevronBasePath/chevron-right.svg";
   static const chevronUp = "$arrowChevronBasePath/chevron-up.svg";
+  static const downArrowRoute = "$arrowChevronBasePath/Arrow 4.svg";
 
   /// ******************************************
   ///  Title : Commercial

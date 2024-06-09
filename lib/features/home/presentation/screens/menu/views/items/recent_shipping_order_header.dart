@@ -1,6 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/home/presentation/res/locale/locale.dart';
+import 'package:dlog/features/home/presentation/res/locale/home_locale.dart';
 import 'package:flutter/material.dart';
 
 class RecentShippingOrderHeader extends StatelessWidget {

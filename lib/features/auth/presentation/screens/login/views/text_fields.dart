@@ -11,13 +11,10 @@ class LoginTextFieldsView extends StatefulWidget {
 }
 
 class _LoginTextFieldsViewState extends State<LoginTextFieldsView> {
-  late TextEditingController emailController, passwordController;
 
   @override
   void initState() {
     super.initState();
-    emailController = TextEditingController();
-    passwordController = TextEditingController();
   }
 
   @override
@@ -27,15 +24,14 @@ class _LoginTextFieldsViewState extends State<LoginTextFieldsView> {
       children: [
         DLogOutLinedTextField(
           hintText: "Enter username or phone number",
-          controller: emailController,
           label: "Username or Email",
           textInputType: TextInputType.text,
           isValidation: true,
+          onChange: (value) {},
         ),
         20.spacingHeight,
-        DLogPasswordTextField(
+        const DLogPasswordTextField(
           hintText: "Enter Password",
-          controller: passwordController,
           label: "Password",
           textInputType: TextInputType.text,
           isValidation: true,
@@ -46,8 +42,6 @@ class _LoginTextFieldsViewState extends State<LoginTextFieldsView> {
 
   @override
   void dispose() {
-    emailController.dispose();
-    passwordController.dispose();
     super.dispose();
   }
 }

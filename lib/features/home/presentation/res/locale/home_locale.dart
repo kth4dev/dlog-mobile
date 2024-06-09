@@ -22,7 +22,7 @@ class HomeLocale {
   static const Map<String, dynamic> en = {
     orderManagement : "Order Management",
     confirmOrder : "Confirm Orders",
-    orderDraft : "Order Draft",
+    orderDraft : "Draft Orders",
     receivedOrder : "Received Orders",
     arrivedOrder : "Arrived Orders",
     delivery : "Delivery",
@@ -34,12 +34,12 @@ class HomeLocale {
     date : "Date",
     shippingMark : "Shipping Mark",
     notification : "Notification",
-    notificationDetail : "Notification Detail"
+    notificationDetail : "Details"
   };
 
   static const Map<String, dynamic> zh = {
     orderManagement: "订单管理",
-    confirmOrder: "确认订单",
+    confirmOrder: "订单确认",
     orderDraft: "草稿订单",
     receivedOrder: "已收到的订单",
     arrivedOrder: "已到达的订单",
@@ -52,15 +52,15 @@ class HomeLocale {
     date: "日期",
     shippingMark: "运输标志",
     notification: "通知",
-    notificationDetail: "通知详情",
+    notificationDetail: "详情",
   };
 
 
   static const Map<String, dynamic> my = {
     orderManagement: "အော်ဒါ စီမံမှု",
     confirmOrder: "အတည်ပြူ အော်ဒါ",
-    orderDraft: "အော်ဒါ အကြမ်း",
-    receivedOrder: "ရရှိသော အော်ဒါ",
+    orderDraft: " အကြမ်း အော်ဒါ",
+    receivedOrder: "လက်ခံရရှိသော အော်ဒါ",
     arrivedOrder: "ရောက်ရှိသော အော်ဒါ",
     delivery: "ပေးပို့ခြင်း",
     inTransitOrder: "အကူးအပြောင်း အော်ဒါ",
@@ -71,7 +71,7 @@ class HomeLocale {
     date: "နေ့စွဲ",
     shippingMark: "ပို့ဆောင်‌ရေး အမှတ်အသား",
     notification: "အသိပေးချက်",
-    notificationDetail : "အသေးစိတ် အသိပေးချက် ",
+    notificationDetail : "အသေးစိတ်များ",
   };
 
 }

@@ -9,6 +9,23 @@ import 'package:dlog/features/history/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/menu/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/notification/notification/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/arrived_order/all_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/arrived_order/all_order/list/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/arrived_order/menu/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/arrived_order/partial_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/arrived_order/partial_order/list/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/confirm_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/confirm_order/orders/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/delivered_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/delivered_order/order/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/orders/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/in_transit_order/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/received_order/all_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/received_order/all_order/list/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/received_order/menu/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/received_order/partial_order/detail/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/received_order/partial_order/list/screen.dart';
 import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
@@ -40,6 +57,23 @@ class AppRoute {
   static const String languages = "/languages";
   static const String notification = "/notification";
   static const String notificationDetail = "/notificationDetail";
+  static const String confirmOrder = "/confirmOrder";
+  static const String confirmOrderDetail = "/confirmOrderDetail";
+  static const String draftOrder = "/draftOrder";
+  static const String draftOrderDetail = "/draftOrderDetail";
+  static const String arrivedOrderMenu = "/arrivedOrderMenu";
+  static const String arrivedPartialOrder = "/arrivedPartialOrder";
+  static const String arrivedPartialOrderDetail = "/arrivedPartialOrderDetail";
+  static const String arrivedAllOrder = "/arrivedAllOrder";
+  static const String arrivedAllOrderDetail = "/arrivedAllOrderDetail";
+  static const String receivedOrderMenu = "/receivedOrderMenu";
+  static const String receivedPartialOrder = "/receivedPartialOrder";
+  static const String receivedPartialOrderDetail = "/receivedPartialOrderDetail";
+  static const String receivedAllOrder = "/receivedAllOrder";
+  static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
+  static const String deliveredOrder = "/deliveredOrder";
+  static const String deliveredOrderDetail = "/deliveredOrderDetail";
+  static const String inTransit = "/inTransit";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -153,6 +187,114 @@ class AppRoute {
         path: notificationDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const NotificationDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: confirmOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ConfirmOrderScreen();
+        },
+      ),
+      GoRoute(
+        path: confirmOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ConfirmOrderDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderDetailScreen();
+        },
+      ),
+      ///arrived Order
+      GoRoute(
+        path: arrivedOrderMenu,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedOrderMenuScreen();
+        },
+      ),
+      GoRoute(
+        path: arrivedPartialOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedPartialOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: arrivedPartialOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedPartialOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: arrivedAllOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedAllOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: arrivedAllOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ArrivedAllOrderDetailScreen();
+        },
+      ),
+
+      ///received Order
+      GoRoute(
+        path: receivedOrderMenu,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedOrderMenuScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedPartialOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedPartialOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedPartialOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedPartialOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: receivedAllOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedAllOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: receivedAllOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ReceivedAllOrderDetailScreen();
+        },
+      ),
+
+      GoRoute(
+        path: deliveredOrder,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DeliveredOrderListScreen();
+        },
+      ),
+      GoRoute(
+        path: deliveredOrderDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DeliveredOrderDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: inTransit,
+        builder: (BuildContext context, GoRouterState state) {
+          return const InTransitListScreen();
         },
       ),
     ],

@@ -22,7 +22,7 @@ class HistoryLocale {
 
   static const Map<String, dynamic> en = {
     history : "History",
-    historyDetail : "History Detail",
+    historyDetail : "Details",
     shippingOrderHistory : "Shipping Order History",
     search : "Search",
     nameOfShippingOrder : "Name of shipping Order",
@@ -41,7 +41,7 @@ class HistoryLocale {
 
   static const Map<String, dynamic> zh = {
     history: "历史",
-    historyDetail: "历史细节",
+    historyDetail: "详情",
     shippingOrderHistory: "货运订单历史",
     search: "搜索",
     nameOfShippingOrder: "货运订单名称",
@@ -61,7 +61,7 @@ class HistoryLocale {
 
   static const Map<String, dynamic> my = {
     history: "မှတ်တမ်း",
-    historyDetail : "အသေးစိတ် မှတ်တမ်း",
+    historyDetail : "အသေးစိတ်များ",
     shippingOrderHistory: "ပို့ဆောင်ရေး မှတ်တမ်း",
     search: "ရှာဖွေရေး",
     nameOfShippingOrder: "ပို့ဆောင်ရေးအမည်",
@@ -75,6 +75,6 @@ class HistoryLocale {
     noOfCarton: "ကာတွန်အရေအတွက်",
     customerSupplierCode: "ဝယ်သူ/ကုန်သည့်ကုတ်",
     wayBill: "ဘောင်ချာ",
-    orderLines: "အမှာစာများ",
+    orderLines: "အော်ဒါများ",
   };
 }
