@@ -2,7 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/supplier_code_and_attach_file_container.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/supplier_code_and_attach_file_container.dart';
 import 'package:flutter/material.dart';
 
 import 'customer_supplier_code_dialog.dart';

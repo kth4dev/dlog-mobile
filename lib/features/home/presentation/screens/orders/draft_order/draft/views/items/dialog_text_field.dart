@@ -1,5 +1,7 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 
 class DialogTextField extends StatefulWidget {
@@ -15,29 +17,29 @@ class _DialogTextFieldState extends State<DialogTextField> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const DLogOutLinedTextField(
-            hintText: "Enter username",
-            label: "User Name",
+        DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterUserName),
+            label: context.getLocale(DraftOrderLocale.supplierName),
             textInputType: TextInputType.text),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-            hintText: "Enter Address",
-            label: "Address",
+        DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterAddress),
+            label: context.getLocale(DraftOrderLocale.address),
             textInputType: TextInputType.text),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-            hintText: "Enter code",
-            label: "Code",
+        DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterCode),
+            label: context.getLocale(DraftOrderLocale.code),
             textInputType: TextInputType.text),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-            hintText: "Enter contact person name",
-            label: "Contact Person Name",
+        DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterContactPersonName),
+            label: context.getLocale(DraftOrderLocale.contactPersonName),
             textInputType: TextInputType.text),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-            hintText: "Enter contact phone number",
-            label: "Contact PhoneNumber",
+        DLogOutLinedTextField(
+            hintText: context.getLocale(DraftOrderLocale.enterContactPhoneNo),
+            label: context.getLocale(DraftOrderLocale.contactPhoneNo),
             textInputType: TextInputType.number),
       ],
     );

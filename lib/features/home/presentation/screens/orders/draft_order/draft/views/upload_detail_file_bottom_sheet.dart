@@ -1,9 +1,10 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_header.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/upload_container.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/upload_detail_file_exits_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import 'items/dialog_header.dart';
+import 'items/upload_container.dart';
+import 'upload_detail_file_exits_bottom_sheet.dart';
 
 class UploadDetailFileView extends StatelessWidget {
   const UploadDetailFileView({super.key});

@@ -1,10 +1,11 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/check_box_and_text.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_description.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_header.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/dialog_header.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import 'items/check_box_and_text.dart';
+import 'items/dialog_description.dart';
 
 class TeamsAndConditionView extends StatefulWidget {
   const TeamsAndConditionView({super.key});

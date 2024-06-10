@@ -32,6 +32,7 @@ import 'package:dlog/features/more/presentation/screens/teams_and_conditions/scr
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/add_order_line/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
@@ -68,12 +69,14 @@ class AppRoute {
   static const String arrivedAllOrderDetail = "/arrivedAllOrderDetail";
   static const String receivedOrderMenu = "/receivedOrderMenu";
   static const String receivedPartialOrder = "/receivedPartialOrder";
-  static const String receivedPartialOrderDetail = "/receivedPartialOrderDetail";
+  static const String receivedPartialOrderDetail =
+      "/receivedPartialOrderDetail";
   static const String receivedAllOrder = "/receivedAllOrder";
   static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
   static const String deliveredOrder = "/deliveredOrder";
   static const String deliveredOrderDetail = "/deliveredOrderDetail";
   static const String inTransit = "/inTransit";
+  static const String addOrderLine = "/addOrderLine";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -148,11 +151,11 @@ class AppRoute {
         },
       ),
       GoRoute(
-          path: setting,
-          builder: (BuildContext context, GoRouterState state) {
-            return const SettingScreen();
-          },
-         ),
+        path: setting,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SettingScreen();
+        },
+      ),
       GoRoute(
         path: languages,
         builder: (BuildContext context, GoRouterState state) {
@@ -213,6 +216,7 @@ class AppRoute {
           return const DraftOrderDetailScreen();
         },
       ),
+
       ///arrived Order
       GoRoute(
         path: arrivedOrderMenu,
@@ -295,6 +299,12 @@ class AppRoute {
         path: inTransit,
         builder: (BuildContext context, GoRouterState state) {
           return const InTransitListScreen();
+        },
+      ),
+      GoRoute(
+        path: addOrderLine,
+        builder: (BuildContext context, GoRouterState state) {
+          return const AddOrderLineScreen();
         },
       ),
     ],

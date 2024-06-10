@@ -1,10 +1,11 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_header.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/upload_container.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/uploading_buttons.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/uploading_file.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import 'items/dialog_header.dart';
+import 'items/upload_container.dart';
+import 'items/uploading_buttons.dart';
+import 'items/uploading_file.dart';
 
 class UploadDetailFileExitsView extends StatelessWidget {
   const UploadDetailFileExitsView({super.key});

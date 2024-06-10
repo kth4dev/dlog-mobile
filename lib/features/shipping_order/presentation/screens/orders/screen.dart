@@ -1,5 +1,7 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
 import 'views/views.dart';
@@ -16,7 +18,7 @@ class _ShippingOrderScreenState extends State<ShippingOrderScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const DLogAppBar(title: "Shipping Order"),
+      appBar:DLogAppBar(title: context.getLocale(ShippingOrderLocale.shippingOrder)),
       body: Padding(
         padding: _screenPadding,
         child: Column(

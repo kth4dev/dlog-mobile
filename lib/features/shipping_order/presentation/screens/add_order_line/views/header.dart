@@ -1,0 +1,17 @@
+import 'package:dlog/core/extensions/context_extension.dart';
+import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
+import 'package:flutter/material.dart';
+
+class AddOrderLineHeaderView extends StatelessWidget {
+  const AddOrderLineHeaderView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return DLogText(
+     context.getLocale(ShippingOrderLocale.addOrderLines),
+      style: context.getTextTheme.secondHeaderBold,
+      color: context.getColorScheme.blackColor,
+    );
+  }
+}

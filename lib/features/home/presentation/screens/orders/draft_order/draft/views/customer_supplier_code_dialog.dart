@@ -2,8 +2,8 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_header.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/items/dialog_text_field.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/dialog_header.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/items/dialog_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
