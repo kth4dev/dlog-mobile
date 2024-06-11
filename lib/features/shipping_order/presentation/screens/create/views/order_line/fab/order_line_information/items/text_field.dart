@@ -1,6 +1,7 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
@@ -18,29 +19,19 @@ class _DialogTextFieldState extends State<DialogTextField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterUserName),
-            label: context.getLocale(ShippingOrderLocale.supplierName),
+            hintText: context.getLocale(ShippingOrderLocale.enterEstimatePrice),
+            label: context.getLocale(ShippingOrderLocale.estimatePrice),
             textInputType: TextInputType.text),
         10.spacingHeight,
         DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterAddress),
-            label: context.getLocale(ShippingOrderLocale.address),
+            hintText: context.getLocale(ShippingOrderLocale.enterOrderQty),
+            label: context.getLocale(ShippingOrderLocale.orderQty),
             textInputType: TextInputType.text),
         10.spacingHeight,
         DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterCode),
-            label: context.getLocale(ShippingOrderLocale.code),
+            hintText: context.getLocale(ShippingOrderLocale.enterRemark),
+            label: context.getLocale(ShippingOrderLocale.remark),
             textInputType: TextInputType.text),
-        10.spacingHeight,
-        DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterContactPersonName),
-            label: context.getLocale(ShippingOrderLocale.contactPersonName),
-            textInputType: TextInputType.text),
-        10.spacingHeight,
-        DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterContactPhoneNo),
-            label: context.getLocale(ShippingOrderLocale.contactPhoneNo),
-            textInputType: TextInputType.number),
       ],
     );
   }

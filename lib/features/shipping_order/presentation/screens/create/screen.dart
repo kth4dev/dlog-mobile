@@ -16,19 +16,9 @@ class _CreateShippingOrderScreenState extends State<CreateShippingOrderScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  DLogAppBar(title:context.getLocale(ShippingOrderLocale.shippingOrder)),
-      body: Padding(
-        padding: _screenPadding,
-        child: const CreateShippingOrderView(),
-      ),
+      body: const CreateShippingOrderView(),
     );
   }
-
-  EdgeInsets get _screenPadding => const EdgeInsets.only(
-    left: 24,
-    right: 24,
-    top: 30,
-    bottom: 30,
-  );
 }
 
 

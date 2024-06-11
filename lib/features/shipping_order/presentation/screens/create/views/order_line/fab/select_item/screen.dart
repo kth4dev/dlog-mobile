@@ -1,34 +1,39 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/fab.dart';
+import 'package:dlog/core/ui/app_bar/default.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
-import 'views.dart';
 
-class OrderLineView extends StatelessWidget {
-  const OrderLineView({super.key});
+import 'views/views.dart';
+
+class SelectItemScreen extends StatelessWidget {
+  const SelectItemScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: const OrderLineFABView(),
+      appBar: DLogAppBar(
+        title: context.getLocale(ShippingOrderLocale.selectItem),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: _screenPadding,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const HeaderView(),
+             const SelectItemHeaderView(),
               20.spacingHeight,
-              const OrderLineListView()
+              //const SelectItemListView()
             ],
           ),
         ),
       ),
     );
   }
+
   EdgeInsets get _screenPadding => const EdgeInsets.only(
     left: 24,
     right: 24,
+    top: 30,
     bottom: 30,
-    top: 5,
   );
 }

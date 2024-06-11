@@ -21,30 +21,27 @@ class _CreateShippingOrderViewState extends State<CreateShippingOrderView> {
       length: label.length,
       child: Column(
         children: [
-          TabBar(
-              dividerColor: context.getColorScheme.grey.light,
-              labelColor: context.getColorScheme.whiteColor,
-              unselectedLabelColor: context.getColorScheme.yellow.normal,
-              indicatorSize: TabBarIndicatorSize.tab,
-              indicatorWeight: 0,
-              indicator:ShapeDecoration(
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.horizontal(
-                    left: Radius.circular(12),
-                    right: Radius.circular(12)
-                  ),
-                ),
-                color: context.getColorScheme.blackColor,
-              ),
-              tabs: label
-                  .map((label) => Tab(
-                        child: DLogText(
-                          label,
-                          style: context.getTextTheme.bodyRegular,
-                          textAlign: TextAlign.center,
-                        ),
-                      ))
-                  .toList()),
+          Padding(
+            padding: _screenPadding,
+            child: TabBar(
+                dividerColor: context.getColorScheme.grey.light,
+                labelColor: context.getColorScheme.whiteColor,
+                unselectedLabelColor: context.getColorScheme.yellow.normal,
+                indicatorSize: TabBarIndicatorSize.tab,
+                indicatorWeight: 0,
+                indicator: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: context.getColorScheme.blackColor),
+                tabs: label
+                    .map((label) => Tab(
+                          child: DLogText(
+                            label,
+                            style: context.getTextTheme.bodyRegular,
+                            textAlign: TextAlign.center,
+                          ),
+                        ))
+                    .toList()),
+          ),
           24.spacingHeight,
           Expanded(
             child: TabBarView(
@@ -60,4 +57,10 @@ class _CreateShippingOrderViewState extends State<CreateShippingOrderView> {
       ),
     );
   }
+
+  EdgeInsets get _screenPadding => const EdgeInsets.only(
+        left: 24,
+        right: 24,
+        top: 30,
+      );
 }

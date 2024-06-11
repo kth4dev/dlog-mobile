@@ -46,7 +46,35 @@ class ShippingOrderLocale {
   static const receivingAddress = "shippingOrder_receivingAddress";
   static const enterReceivingAddress = "shippingOrder_enterReceivingAddress";
   static const selectRoute = "shippingOrder_selectRoute";
-
+  static const orderLineList = "shippingOrder_orderLineList";
+  static const orderLineInformation = "shippingOrder_orderLineInformation";
+  static const estimatePrice = "shippingOrder_estimatePrice";
+  static const enterEstimatePrice = "shippingOrder_enterEstimatePrice";
+  static const orderQty = "shippingOrder_orderQty";
+  static const enterOrderQty = "shippingOrder_enterOrderQty";
+  static const remark = "shippingOrder_remark";
+  static const enterRemark = "shippingOrder_enterRemark";
+  static const item = "shippingOrder_item";
+  static const selectItemOrAddNewItem = "shippingOrder_selectItemOrAddNewItem";
+  static const addNewItem = "shippingOrder_addNewItem";
+  static const selectItem = "shippingOrder_selectItem";
+  static const addItem = "shippingOrder_addItem";
+  static const brandedCargo = "shippingOrder_brandedCargo";
+  static const specialCareCargo = "shippingOrder_shippingCareCargo";
+  static const productDescription = "shippingOrder_productDescription";
+  static const enterProductDescription = "shippingOrder_enterProductDescription";
+  static const itemCategories = "shippingOrder_itemCategories";
+  static const enterItemCategories = "shippingOrder_enterItemCategories";
+  static const productDimension = "shippingOrder_productDimension";
+  static const length = "shippingOrder_length";
+  static const width = "shippingOrder_width";
+  static const height = "shippingOrder_height";
+  static const weight = "shippingOrder_weight";
+  static const productDetails = "shippingOrder_productDetails";
+  static const dimension = "shippingOrder_dimension";
+  static const yes = "shippingOrder_yes";
+  static const no = "shippingOrder_no";
+  static const save = "shippingOrder_save";
 
   static const Map<String, dynamic> en = {
     shippingOrder: "Shipping Order",
@@ -79,6 +107,7 @@ class ShippingOrderLocale {
     contactPhoneNo: "Contact Phone Number",
     enterContactPhoneNo: "Enter phone number",
     wayBillPictures : "WayBill Pictures",
+    productDetails : "Product Details",
     create : "Create",
     status : "Draft",
     detail : "Detail",
@@ -87,7 +116,38 @@ class ShippingOrderLocale {
     selectRoute : "Select Route",
     receivingAddress : "Receiving Address",
     enterReceivingAddress : "Enter Receiving Address",
-
+    orderLineList : "Order Line Lists",
+    orderLineInformation : "Order Line Information",
+    estimatePrice : "Estimate Price",
+    enterEstimatePrice : "Enter Estimate Price",
+    orderQty : "Order Qty",
+    enterOrderQty : "Enter Order Qty",
+    remark : "Remark",
+    enterRemark : "Enter Remark",
+    item : "Item",
+    selectItemOrAddNewItem : "Select Item or Add New Item",
+    selectItem : "Select Item",
+    addNewItem : "Add New Item",
+    addItem : "Add Item",
+    productNameOfEnglish : "Product Name of English",
+    productNameOfChinese : "Product Name of Chinese",
+    productNameOfMyanmar : "Product Name of Myanmar",
+    itemName : "Item Name",
+    itemPhoto : "Item Photo",
+    brandedCargo : "Branded Cargo",
+    specialCareCargo : "Special Care Cargo",
+    productDescription : "Product Description*",
+    enterProductDescription : "Enter Product Description",
+    itemCategories : "Item Categories",
+    enterItemCategories : "Enter Item Categories",
+    dimension : "Dimension",
+    length : "Length",
+    width : "Width",
+    height : "Height",
+    weight : "Weight",
+    yes : "Yes",
+    no : "No",
+    save : "Save"
   };
 
   static const Map<String, dynamic> zh = {
@@ -128,8 +188,40 @@ class ShippingOrderLocale {
     orderLines: "订单行",
     selectRoute : "选择路线",
     receivingAddress : "收货地址",
-    enterReceivingAddress : "输入收货地址"
-
+    enterReceivingAddress : "输入收货地址",
+    orderLineList: "订单行列表",
+    orderLineInformation: "订单行信息",
+    estimatePrice: "预估价格",
+    enterEstimatePrice: "输入预估价格",
+    orderQty: "订单数量",
+    enterOrderQty: "输入订单数量",
+    remark: "备注",
+    enterRemark: "输入备注",
+    item: "商品",
+    selectItemOrAddNewItem: "选择商品或添加新商品",
+    selectItem: "选择商品",
+    addNewItem: "添加新商品",
+    addItem: "添加商品",
+    productNameOfEnglish: "英文产品名称",
+    productNameOfChinese: "中文产品名称",
+    productNameOfMyanmar: "缅甸产品名称",
+    itemName: "商品名称",
+    itemPhoto: "商品照片",
+    brandedCargo: "品牌货物",
+    specialCareCargo: "特殊关照货物",
+    productDescription: "产品描述*",
+    enterProductDescription: "输入产品描述",
+    itemCategories: "商品类别",
+    enterItemCategories: "输入商品类别",
+    dimension: "尺寸",
+    length: "长度",
+    width: "宽度",
+    height: "高度",
+    weight: "重量",
+    productDetails : "产品详情",
+    yes : "是",
+    no : "否",
+    save : "保存"
   };
 
   static const Map<String, dynamic> my = {
@@ -170,7 +262,40 @@ class ShippingOrderLocale {
     orderLines: "အော်ဒါ စာရင်းများ",
     selectRoute :"လမ်းများကိုရွေးချယ်ရန်",
     receivingAddress : "ပို့ဆောင်ရန်လိပ်စာ",
-    enterReceivingAddress : " ပို့ဆောင်ရန်လိပ်စာထည့်ရန်"
+    enterReceivingAddress : " ပို့ဆောင်ရန်လိပ်စာထည့်ရန်",
+    orderLineList: "အော်ဒါစာရင်းများ",
+    orderLineInformation: "အော်ဒါစာရင်း အချက်အလက်",
+    estimatePrice: "ခန့်မှန်း တန်ဖိုး",
+    enterEstimatePrice: "ခန့်မှန်း တန်ဖိုးထည့်ပါ",
+    orderQty: "အော်ဒါအရေအတွက်",
+    enterOrderQty: "အော်ဒါအရေအတွက်ထည့်ပါ",
+    remark: "မှတ်ချက်",
+    enterRemark: "မှတ်ချက်ထည့်ပါ",
+    item: "ပစ္စည်း",
+    selectItemOrAddNewItem: "ပစ္စည်းရွေးချယ်ရန်(သို့)အသစ်ထည့်ရန်",
+    selectItem: "ပစ္စည်းရွေးချယ်ရန်",
+    addNewItem: "အသစ်ထည့်ပါ",
+    addItem: "ပစ္စည်းထည့်ပါ",
+    productNameOfEnglish: "ပစ္စည်းအမည် (အင်္ဂလိပ်)",
+    productNameOfChinese: "ပစ္စည်းအမည် (တရုတ်)",
+    productNameOfMyanmar: "ပစ္စည်းအမည် (မြန်မာ)",
+    itemName: "ပစ္စည်းအမည်",
+    itemPhoto: "ပစ္စည်းဓာတ်ပုံ",
+    brandedCargo: "အဆင့်မြင့် ကာဂို",
+    specialCareCargo: "စပယ်ရှယ် ကာဂို",
+    productDescription: "ပစ္စည်း ဖော်ပြချက်*",
+    enterProductDescription: "ပစ္စည်းဖော်ပြချက်ထည့်ပါ",
+    itemCategories: "ပစ္စည်းအမျိုးအစားများ",
+    enterItemCategories: "ပစ္စည်းအမျိုးအစားထည့်ပါ",
+    dimension: "အရွယ်အစား",
+    length: "အလျား",
+    width: "အနံ့",
+    height: "အမြင့်",
+    weight: "အလေးချိန်",
+    productDetails : "ပစ္စည်း အသေးစိတ်",
+    yes : "ဟုတ်",
+    no : "မဟုတ်",
+    save : "သိမ်းဆည်းသည်"
   };
 
 }

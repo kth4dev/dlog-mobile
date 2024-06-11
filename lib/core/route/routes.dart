@@ -32,8 +32,9 @@ import 'package:dlog/features/more/presentation/screens/teams_and_conditions/scr
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/screen.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/add_order_line/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/add_new_item/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/select_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,8 @@ class AppRoute {
   static const String deliveredOrder = "/deliveredOrder";
   static const String deliveredOrderDetail = "/deliveredOrderDetail";
   static const String inTransit = "/inTransit";
-  static const String addOrderLine = "/addOrderLine";
+  static const String addNewItem = "/addNewItem";
+  static const String selectItem = "/selectItem";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -302,9 +304,15 @@ class AppRoute {
         },
       ),
       GoRoute(
-        path: addOrderLine,
+        path: addNewItem,
         builder: (BuildContext context, GoRouterState state) {
-          return const AddOrderLineScreen();
+          return const AddNewItemScreen();
+        },
+      ),
+      GoRoute(
+        path: selectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SelectItemScreen();
         },
       ),
     ],

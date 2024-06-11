@@ -21,5 +21,5 @@ class DLogGraphic {
   static const String security = "$graphicPath/security.svg";
   static const String shipping = "$graphicPath/shipping.svg";
   static const String welcome = "$graphicPath/welcome.svg";
-
+  static const String uploadBox = "$graphicPath/upload_box.svg";
 }

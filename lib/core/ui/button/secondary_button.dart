@@ -27,7 +27,7 @@ class DLogSecondaryButton extends StatelessWidget {
                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
               backgroundColor: Colors.white,
               side: BorderSide(
-                color: context.getColorScheme.black.normal,
+                color: context.getColorScheme.yellow.normal,
               )),
           child: DLogText(
             text,

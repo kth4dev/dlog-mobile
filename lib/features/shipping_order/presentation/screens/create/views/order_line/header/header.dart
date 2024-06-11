@@ -9,7 +9,7 @@ class HeaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DLogText(
-      context.getLocale(ShippingOrderLocale.createShippingOrder),
+      context.getLocale(ShippingOrderLocale.orderLineList),
       style: context.getTextTheme.secondHeaderBold,
       color: context.getColorScheme.blackColor,
     );
