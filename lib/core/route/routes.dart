@@ -35,6 +35,7 @@ import 'package:dlog/features/profile/presentation/screens/settings/list/screen.
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/add_new_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/select_item/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/package/fab/package_select_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -79,6 +80,7 @@ class AppRoute {
   static const String inTransit = "/inTransit";
   static const String addNewItem = "/addNewItem";
   static const String selectItem = "/selectItem";
+  static const String packageSelectItem = "/packageSelectItem";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -313,6 +315,12 @@ class AppRoute {
         path: selectItem,
         builder: (BuildContext context, GoRouterState state) {
           return const SelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: packageSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PackageSelectItemScreen();
         },
       ),
     ],

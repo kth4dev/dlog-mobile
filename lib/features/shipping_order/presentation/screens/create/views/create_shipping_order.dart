@@ -1,12 +1,15 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_information/order_information.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/order_line.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
+import 'views.dart';
+
 class CreateShippingOrderView extends StatefulWidget {
-  const CreateShippingOrderView({super.key});
+  const CreateShippingOrderView({
+    super.key,
+  });
 
   @override
   State<CreateShippingOrderView> createState() =>
@@ -14,9 +17,15 @@ class CreateShippingOrderView extends StatefulWidget {
 }
 
 class _CreateShippingOrderViewState extends State<CreateShippingOrderView> {
-  List<String> label = ["Order Info", "Order Line", "Package"];
   @override
   Widget build(BuildContext context) {
+    List<String>  label = [
+      context.getLocale(ShippingOrderLocale.orderInfo),
+      context.getLocale(
+        ShippingOrderLocale.orderLine,
+      ),
+      context.getLocale(ShippingOrderLocale.package),
+    ];
     return DefaultTabController(
       length: label.length,
       child: Column(
@@ -43,13 +52,13 @@ class _CreateShippingOrderViewState extends State<CreateShippingOrderView> {
                     .toList()),
           ),
           24.spacingHeight,
-          Expanded(
+          const Expanded(
             child: TabBarView(
-              physics: const NeverScrollableScrollPhysics(),
+              physics: NeverScrollableScrollPhysics(),
               children: [
-                const OrderInformationView(),
-                const OrderLineView(),
-                Container()
+                OrderInformationView(),
+                OrderLineView(),
+                PackageView(),
               ],
             ),
           ),

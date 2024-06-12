@@ -13,8 +13,10 @@ class AddItem extends StatelessWidget {
         context.push(AppRoute.addNewItem);
       },
       child: Container(
+        height: 44,
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
           border: Border.all(
             color: context.getColorScheme.yellow.normal,
           ),

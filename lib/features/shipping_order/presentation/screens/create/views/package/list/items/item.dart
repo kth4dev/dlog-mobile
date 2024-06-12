@@ -2,10 +2,11 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
-class OrderLineItem extends StatelessWidget {
-  const OrderLineItem({super.key});
+class PackageItem extends StatelessWidget {
+  const PackageItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class OrderLineItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const DLogAssetImage(
-              path: "assets/images/sample/Rectangle 41175.jpg"),
+              path: "assets/images/sample/Rectangle 41176.png"),
           30.spacingWidth,
           Padding(
             padding: _screenPadding,
@@ -28,7 +29,7 @@ class OrderLineItem extends StatelessWidget {
                 SizedBox(
                   width : 80,
                   child: DLogText(
-                    "Bottle",
+                    "Package",
                     style: context.getTextTheme.secondaryBold,
                     color: context.getColorScheme.black.normal,
                     overflow: TextOverflow.ellipsis,
@@ -36,13 +37,13 @@ class OrderLineItem extends StatelessWidget {
                 ),
                 5.spacingHeight,
                 DLogText(
-                  "Item Category",
+                  "4 Cartons",
                   style: context.getTextTheme.tertiaryRegular,
                   color: context.getColorScheme.black.normal,
                 ),
                 5.spacingHeight,
                 DLogText(
-                  "10000MMK",
+                  "5 Items",
                   style: context.getTextTheme.tertiaryRegular,
                   color: context.getColorScheme.black.normal,
                 ),
@@ -50,34 +51,50 @@ class OrderLineItem extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          _qtyContainer(context),
+          Padding(
+            padding: _screenPadding,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _qtyContainer(context,
+                    context.getLocale(ShippingOrderLocale.weight), "12"),
+                5.5.spacingHeight,
+                _qtyContainer(
+                    context, context.getLocale(ShippingOrderLocale.cbm), "6"),
+                5.5.spacingHeight,
+                _qtyContainer(
+                    context, context.getLocale(ShippingOrderLocale.cbm), "75%"),
+              ],
+            ),
+          )
         ],
       ),
     );
   }
 
-  Widget _qtyContainer(BuildContext context) {
-    return Padding(
-      padding: _screenPadding,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: context.getColorScheme.black.light),
-        child: Row(
-          children: [
-            DLogText(
-              "Qty:",
-              style: context.getTextTheme.smallBold,
-              color: context.getColorScheme.blackColor,
-            ),
-            DLogText(
-              "2",
-              style: context.getTextTheme.smallRegular,
-              color: context.getColorScheme.blackColor,
-            )
-          ],
-        ),
+  Widget _qtyContainer(BuildContext context, String label, String value) {
+    return Container(
+      width: 73,
+      padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: context.getColorScheme.black.light),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          DLogText(
+            "$label:",
+            style: context.getTextTheme.smallBold,
+            color: context.getColorScheme.blackColor,
+            textAlign: TextAlign.center,
+          ),
+          DLogText(
+            value,
+            style: context.getTextTheme.smallRegular,
+            color: context.getColorScheme.blackColor,
+            textAlign: TextAlign.center,
+          )
+        ],
       ),
     );
   }

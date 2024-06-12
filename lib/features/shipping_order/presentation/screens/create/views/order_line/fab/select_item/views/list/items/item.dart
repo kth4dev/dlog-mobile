@@ -8,74 +8,82 @@ class SelectItem extends StatefulWidget {
   const SelectItem({super.key});
 
   @override
-  State<SelectItem> createState() => _SelectItemState();
+  State<SelectItem> createState() => _PackageSelectItemState();
 }
 
-class _SelectItemState extends State<SelectItem> {
-  bool? _isChecked;
+class _PackageSelectItemState extends State<SelectItem> {
+  bool? _isSelect;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Checkbox(value: _isChecked, onChanged: (value){
-          setState(() {
-            _isChecked = value;
-          });
-        }),
-        Card(
-          color: context.getColorScheme.grey.light,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
+        SizedBox(
+          width: 20,
+          height: 20,
+          child: Radio<bool>(
+            fillColor: WidgetStateProperty.resolveWith<Color>((states) {
+              if (states.contains(WidgetState.selected)) {
+                return context.getColorScheme.yellow.normal;
+              } else {
+                return context.getColorScheme.yellow.normal;
+              }
+            }),
+            value: _isSelect ?? false,
+            groupValue: _isSelect,
+            onChanged: (bool? value) {
+              setState(() {
+                _isSelect = value ?? false;
+              });
+            },
           ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const DLogAssetImage(path: "assets/images/sample/Rectangle 41175.jpg"),
-              30.spacingWidth,
-              Padding(
-                padding: _screenPadding,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    DLogText("Bottle",style: context.getTextTheme.secondaryBold,color: context.getColorScheme.black.normal,),
-                    5.spacingHeight,
-                    DLogText("Item Category",style: context.getTextTheme.tertiaryRegular,color: context.getColorScheme.black.normal,),
-                    5.spacingHeight,
-                    DLogText("10000MMK",style: context.getTextTheme.tertiaryRegular,color: context.getColorScheme.black.normal,),
-                  ],
+        ),
+        10.spacingWidth,
+        Expanded(
+          child: Card(
+            color: context.getColorScheme.grey.light,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const DLogAssetImage(
+                    path: "assets/images/sample/Rectangle 41175.jpg"),
+                30.spacingWidth,
+                Padding(
+                  padding: _screenPadding,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width : 80,
+                        child: DLogText(
+                          "Bottle",
+                          style: context.getTextTheme.secondaryBold,
+                          color: context.getColorScheme.black.normal,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      5.spacingHeight,
+                      DLogText(
+                        "Item Category",
+                        style: context.getTextTheme.tertiaryRegular,
+                        color: context.getColorScheme.black.normal,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              const Spacer(),
-              _qtyContainer(context),
-            ],
+              ],
+            ),
           ),
         ),
       ],
     );
   }
 
-  Widget  _qtyContainer(BuildContext context){
-    return Padding(
-      padding: _screenPadding,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 2),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: context.getColorScheme.black.light
-        ),
-        child: Row(
-          children: [
-            DLogText("Qty:",style: context.getTextTheme.smallBold,color: context.getColorScheme.blackColor,),
-            DLogText("2",style: context.getTextTheme.smallRegular,color: context.getColorScheme.blackColor,)
-          ],
-        ),
-      ),
-    );
-  }
-
   EdgeInsets get _screenPadding => const EdgeInsets.only(
-    right: 10,
-    top: 10,
-    bottom: 10,
-  );
+        right: 10,
+        top: 10,
+        bottom: 10,
+      );
 }

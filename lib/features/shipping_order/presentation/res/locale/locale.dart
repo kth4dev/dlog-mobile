@@ -75,6 +75,25 @@ class ShippingOrderLocale {
   static const yes = "shippingOrder_yes";
   static const no = "shippingOrder_no";
   static const save = "shippingOrder_save";
+  static const orderInfo = "shippingOrder_orderInfo";
+  static const orderLine = "shippingOrder_orderLine";
+  static const package = "shippingOrder_package";
+  static const  packageList = "shippingOrder_packageList";
+  static const carton = "shippingOrder_carton";
+  static const createPackage = "shippingOrder_createPackage";
+  static const cartonName = "shippingOrder_cartonName";
+  static const enterCartonName = "shippingOrder_enterCartonName";
+  static const howManyCarton = "shippingOrder_howManyCarton";
+  static const pack = "shippingOrder_pack";
+  static const left = "shippingOrder_left";
+  static const qtyInCarton = "shippingOrder_qtyInCarton";
+  static const enterQty = "shippingOrder_enterQty";
+  static const itemCBM = "shippingOrder_itemCBM";
+  static const enterItemCBM = "shippingOrder_enterItemCBM";
+  static  const max = "shippingOrder_max";
+  static const packageSelectItem = "shippingOrder_packageSelectItem";
+  static const qty = "shippingOrder_qty";
+  static const savePacking = "shippingOrder_savePacking";
 
   static const Map<String, dynamic> en = {
     shippingOrder: "Shipping Order",
@@ -147,7 +166,26 @@ class ShippingOrderLocale {
     weight : "Weight",
     yes : "Yes",
     no : "No",
-    save : "Save"
+    save : "Save",
+    orderInfo : "Order Info",
+    orderLine : "Order Line",
+    package : "Package",
+    packageList : "Package List",
+    carton : "Carton",
+    createPackage : "Create Package",
+    cartonName : "Carton Name",
+    enterCartonName : "Enter Carton Name",
+    howManyCarton : "How many Carton?",
+    pack : "Pack",
+    left : "Left",
+    qtyInCarton : "Qty In Carton",
+    enterQty : "Enter Qty",
+    itemCBM : "Item CBM in %",
+    enterItemCBM : "Enter Item CBM in %",
+    max : "Max",
+    packageSelectItem : "Package Select Item",
+    qty : "Qty",
+    savePacking : "Save Packing",
   };
 
   static const Map<String, dynamic> zh = {
@@ -221,7 +259,26 @@ class ShippingOrderLocale {
     productDetails : "产品详情",
     yes : "是",
     no : "否",
-    save : "保存"
+    save : "保存",
+    orderInfo: "订单信息",
+    orderLine: "订单行",
+    package: "包裹",
+    packageList : "包裹清单",
+    carton : "纸箱",
+    createPackage : "创建包裹",
+    cartonName : "纸箱名称",
+    enterCartonName : "输入纸箱名称",
+    howManyCarton : "有多少个纸箱？",
+    pack : "包装",
+    left : "剩余",
+    qtyInCarton : "每个纸箱中的数量",
+    enterQty : "输入数量",
+    itemCBM : "项目体积百分比",
+    enterItemCBM : "输入项目体积百分比",
+    max : "最大",
+    packageSelectItem : "包裹选择物品",
+    qty : "数量",
+    savePacking : "保存包装"
   };
 
   static const Map<String, dynamic> my = {
@@ -295,7 +352,26 @@ class ShippingOrderLocale {
     productDetails : "ပစ္စည်း အသေးစိတ်",
     yes : "ဟုတ်",
     no : "မဟုတ်",
-    save : "သိမ်းဆည်းသည်"
+    save : "သိမ်းဆည်းသည်",
+    orderInfo: "အော်ဒါအချက်အလက်",
+    orderLine: "အော်ဒါများ",
+    package: "ထုတ်ပိုး",
+    packageList : "ထုတ်ပိုး စာရင်း",
+    carton : "ကာတွန်",
+    createPackage : "ကာတွန် ဖန်တီးရန်",
+    cartonName : "ကာတွန် အမည်",
+    enterCartonName : "ကာတွန်အမည် ထည့်ပါ",
+    howManyCarton : "ကာတွန် ဘယ်နှစ်ခုလဲ?",
+    pack : "ထည့်ပါ",
+    left : "ကျန်",
+    qtyInCarton : "ပစ္စည်းအရေတွက်",
+    enterQty : "အရေအတွက်ထည့်ပါ",
+    itemCBM : "ဆီဘီအမ် (%)",
+    enterItemCBM : "ဆီဘီအမ်(%) ထည့်ပါ",
+    max : "အများဆုံး",
+    packageSelectItem : "ထုတ်ပိုး ပစ္စည်းရွေးချယ်ရန်",
+    qty : "အရေအတွက်",
+    savePacking : "ထုတ်ပို့  သိမ်းဆည်း"
   };
 
 }

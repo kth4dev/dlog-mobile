@@ -7,7 +7,6 @@ class SelectItemListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
         itemCount: 3,
         shrinkWrap: true,
         itemBuilder: (context,index){

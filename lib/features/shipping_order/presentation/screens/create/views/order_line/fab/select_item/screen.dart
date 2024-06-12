@@ -15,16 +15,14 @@ class SelectItemScreen extends StatelessWidget {
       appBar: DLogAppBar(
         title: context.getLocale(ShippingOrderLocale.selectItem),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: _screenPadding,
-          child: Column(
-            children: [
-             const SelectItemHeaderView(),
-              20.spacingHeight,
-              //const SelectItemListView()
-            ],
-          ),
+      body: Padding(
+        padding: _screenPadding,
+        child: Column(
+          children: [
+           const SelectItemHeaderView(),
+            20.spacingHeight,
+            const SelectItemListView()
+          ],
         ),
       ),
     );
