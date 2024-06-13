@@ -11,7 +11,7 @@ class OrderLineInformationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Padding(
       padding: _screenPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,9 +23,19 @@ class OrderLineInformationView extends StatelessWidget {
             },
           ),
           10.spacingHeight,
-          const DialogTextField(),
-          10.spacingHeight,
-          const DialogAddItem(),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const DialogTextField(),
+                  10.spacingHeight,
+                  const DialogAddItem(),
+                ],
+              ),
+            ),
+          )
+
         ],
       ),
     );
@@ -44,12 +54,17 @@ void showOrderLineInformationDialog({required BuildContext context}) {
       barrierDismissible: false,
       context: context,
       builder: (context) {
-        return Dialog(
-          insetPadding: const EdgeInsets.symmetric(horizontal: 10),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
+        return Center(
+          child: SizedBox(
+            height: 404,
+            child: Dialog(
+              insetPadding: const EdgeInsets.symmetric(horizontal: 10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const OrderLineInformationView(),
+            ),
           ),
-          child: const OrderLineInformationView(),
         );
       });
 }

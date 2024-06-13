@@ -19,6 +19,8 @@ import 'package:dlog/features/home/presentation/screens/orders/confirm_order/ord
 import 'package:dlog/features/home/presentation/screens/orders/delivered_order/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/delivered_order/order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/add_new_item/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/select_item/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/in_transit_order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/received_order/all_order/detail/screen.dart';
@@ -81,6 +83,9 @@ class AppRoute {
   static const String addNewItem = "/addNewItem";
   static const String selectItem = "/selectItem";
   static const String packageSelectItem = "/packageSelectItem";
+  static const String draftOrderAddNewItem = "/draftOrderNewItem";
+  static const String draftOrderSelectItem = "/draftOrderSelectItem";
+  static const String draftOrderPackageSelectItem = "/draftOrderPackageSelectItem";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -319,6 +324,24 @@ class AppRoute {
       ),
       GoRoute(
         path: packageSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PackageSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderAddNewItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderAddNewItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderPackageSelectItem,
         builder: (BuildContext context, GoRouterState state) {
           return const PackageSelectItemScreen();
         },

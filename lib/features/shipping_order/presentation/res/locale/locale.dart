@@ -9,7 +9,7 @@ class ShippingOrderLocale {
   static const orderNo = "shippingOrder_orderNo";
   static const date = "shippingOrder_date";
   static const shippingMark = "shippingOrder_shippingMark";
-  static const createShippingOrder = "createShippingOrder";
+  static const orderInformation = "shippingOrder_orderInformation";
   static const fromLocation = "shippingOrder_fromLocation";
   static const enterFromLocation = "shippingOrder_enterFromLocation";
   static const toLocation = "shippingOrder_toLocation";
@@ -102,7 +102,7 @@ class ShippingOrderLocale {
     orderNo: "Order No",
     date: "Date",
     shippingMark : "Shipping Mark",
-    createShippingOrder: "Create Shipping Order",
+    orderInformation: "Order Information",
     fromLocation: "From Location",
     enterFromLocation : "Enter Location",
     toLocation: "To Location",
@@ -194,7 +194,7 @@ class ShippingOrderLocale {
     orderNo: "订单号",
     date: "日期",
     filterOrder: "搜索",
-    createShippingOrder: "创建发货订单",
+    orderInformation: "订单信息",
     shippingMark : "发货标记",
     fromLocation: "起运地点",
     enterFromLocation: "输入起运地点",
@@ -286,7 +286,7 @@ class ShippingOrderLocale {
     shippingOrderList: "ပို့ဆောင်ရေး အော်ဒါစာရင်း",
     orderNo: "အော်ဒါ နံပါတ်",
     date: "နေ့စွဲ",
-    createShippingOrder: "ပို့ဆောင်ရေး အော်ဒါ ဖန်တီးရန်",
+    orderInformation: "အော်ဒါ အချက်အလက်",
     shippingMark : "ပို့ဆောင်ရေး အမှတ်အသား",
     filterOrder : "ရှာရန်",
     fromLocation: "မှ",

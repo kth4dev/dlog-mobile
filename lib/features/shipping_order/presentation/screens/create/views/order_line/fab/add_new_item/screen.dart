@@ -1,8 +1,10 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
+import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import 'views/views.dart';
 
@@ -19,16 +21,21 @@ class _AddNewItemScreenState extends State<AddNewItemScreen> {
     return Scaffold(
       appBar: DLogAppBar(
         title: context.getLocale(ShippingOrderLocale.addNewItem),
-        // actions: [
-        //   Padding(
-        //     padding: const EdgeInsets.only(right: 10),
-        //     child: DLogText(
-        //       context.getLocale(ShippingOrderLocale.save),
-        //       style: context.getTextTheme.bodyMedium,
-        //       color: context.getColorScheme.yellow.normal,
-        //     ),
-        //   ),
-        // ],
+        actions: [
+          InkWell(
+            onTap: (){
+              context.pop();
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: DLogText(
+                context.getLocale(ShippingOrderLocale.save),
+                style: context.getTextTheme.bodyMedium,
+                color: context.getColorScheme.yellow.normal,
+              ),
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(

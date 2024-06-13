@@ -25,7 +25,7 @@ class HomeLocale {
     orderDraft : "Draft Orders",
     receivedOrder : "Received Orders",
     arrivedOrder : "Arrived Orders",
-    delivery : "Delivery",
+    delivery : "Delivered Orders",
     inTransitOrder : "In Transit Orders",
     recentShippingOrder : "Recent Shipping Order",
     more : "More",
