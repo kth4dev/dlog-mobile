@@ -23,7 +23,6 @@ class _BrandedCargoState extends State<BrandedCargo> {
             context.getLocale(ShippingOrderLocale.brandedCargo),
             style: context.getTextTheme.tertiaryMedium,
             color: context.getColorScheme.blackColor,
-            overflow: TextOverflow.ellipsis,
           ),
         ),
 
@@ -31,7 +30,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
           child: Row(
             children: [
               _buildRadioItem(value: true, label: context.getLocale(ShippingOrderLocale.yes)),
-              10.spacingWidth,
+              20.spacingWidth,
               _buildRadioItem(value: false, label: context.getLocale(ShippingOrderLocale.no)),
             ],
           ),
@@ -43,7 +42,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
 
 
   Widget  _buildRadioItem({required bool value,required String label}){
-    return  Row(
+    return   Row(
       children: [
         Radio<bool>(
           value: value,

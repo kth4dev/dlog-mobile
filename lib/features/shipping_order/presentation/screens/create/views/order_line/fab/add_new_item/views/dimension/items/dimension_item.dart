@@ -43,7 +43,6 @@ class DimensionItem extends StatelessWidget {
             label: context.getLocale(ShippingOrderLocale.weight),
             textInputType: TextInputType.number,
           ),
-          10.spacingHeight,
         ],
       ),
     );

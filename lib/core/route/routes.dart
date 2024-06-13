@@ -39,6 +39,7 @@ import 'package:dlog/features/shipping_order/presentation/screens/create/views/o
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/select_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/views/package/fab/package_select_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/detail/views/order_line/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -86,6 +87,7 @@ class AppRoute {
   static const String draftOrderAddNewItem = "/draftOrderNewItem";
   static const String draftOrderSelectItem = "/draftOrderSelectItem";
   static const String draftOrderPackageSelectItem = "/draftOrderPackageSelectItem";
+  static const String orderLineDetail = "/orderLineDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -344,6 +346,12 @@ class AppRoute {
         path: draftOrderPackageSelectItem,
         builder: (BuildContext context, GoRouterState state) {
           return const PackageSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: orderLineDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const OrderLineDetailScreen();
         },
       ),
     ],

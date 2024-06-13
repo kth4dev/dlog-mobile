@@ -129,7 +129,7 @@ class ShippingOrderLocale {
     productDetails : "Product Details",
     create : "Create",
     status : "Draft",
-    detail : "Detail",
+    detail : "Details",
     wayBillPhoto : "WayBill",
     orderLines : "Order Lines",
     selectRoute : "Select Route",

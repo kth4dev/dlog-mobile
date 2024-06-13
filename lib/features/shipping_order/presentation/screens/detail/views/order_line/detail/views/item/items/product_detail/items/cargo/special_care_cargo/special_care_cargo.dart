@@ -4,14 +4,14 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
-class BrandedCargo extends StatefulWidget {
-  const BrandedCargo({super.key});
+class SpecialCareCargo extends StatefulWidget {
+  const SpecialCareCargo({super.key});
 
   @override
-  State<BrandedCargo> createState() => _BrandedCargoState();
+  State<SpecialCareCargo> createState() => _SpecialCareCargoState();
 }
 
-class _BrandedCargoState extends State<BrandedCargo> {
+class _SpecialCareCargoState extends State<SpecialCareCargo> {
   bool? _isBrandedCargo;
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
         SizedBox(
           width: 90,
           child: DLogText(
-            context.getLocale(ShippingOrderLocale.brandedCargo),
+            context.getLocale(ShippingOrderLocale.specialCareCargo),
             style: context.getTextTheme.tertiaryMedium,
             color: context.getColorScheme.blackColor,
             overflow: TextOverflow.ellipsis,
@@ -31,7 +31,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
           child: Row(
             children: [
               _buildRadioItem(value: true, label: context.getLocale(ShippingOrderLocale.yes)),
-              10.spacingWidth,
+              20.spacingWidth,
               _buildRadioItem(value: false, label: context.getLocale(ShippingOrderLocale.no)),
             ],
           ),
@@ -43,7 +43,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
 
 
   Widget  _buildRadioItem({required bool value,required String label}){
-    return  Row(
+    return   Row(
       children: [
         Radio<bool>(
           value: value,
@@ -55,7 +55,7 @@ class _BrandedCargoState extends State<BrandedCargo> {
           },
         ),
         DLogText(
-           label,
+          label,
           style: context.getTextTheme.tertiaryRegular,
         ),
       ],
