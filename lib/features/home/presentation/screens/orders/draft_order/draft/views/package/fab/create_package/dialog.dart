@@ -35,7 +35,6 @@ class CreatePackageView extends StatelessWidget {
               ),
             ),
           )
-
         ],
       ),
     );

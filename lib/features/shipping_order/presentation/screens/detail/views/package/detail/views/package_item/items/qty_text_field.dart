@@ -2,18 +2,17 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
-import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
-class DialogQtyTextField extends StatefulWidget {
-  const DialogQtyTextField({super.key});
+class QtyTextField extends StatefulWidget {
+  const QtyTextField({super.key});
 
   @override
-  State<DialogQtyTextField> createState() => _DialogQtyTextFieldState();
+  State<QtyTextField> createState() => _QtyTextFieldState();
 }
 
-class _DialogQtyTextFieldState extends State<DialogQtyTextField> {
+class _QtyTextFieldState extends State<QtyTextField> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -23,13 +22,13 @@ class _DialogQtyTextFieldState extends State<DialogQtyTextField> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               DLogOutLinedTextField(
-                  hintText: context.getLocale(DraftOrderLocale.enterQty),
-                  label: context.getLocale(DraftOrderLocale.qtyInCarton),
+                  hintText: "22",
+                  label: context.getLocale(ShippingOrderLocale.qtyInCarton),
                   textInputType: TextInputType.number),
               2.spacingHeight,
               DLogText(
                 context.getLocale(
-                  DraftOrderLocale.max,
+                  ShippingOrderLocale.max,
                 ),
                 style: context.getTextTheme.tertiaryMedium,
                 color: context.getColorScheme.yellow.normal,
@@ -43,17 +42,17 @@ class _DialogQtyTextFieldState extends State<DialogQtyTextField> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               DLogOutLinedTextField(
-                  hintText: context.getLocale(DraftOrderLocale.enterItemCBM),
-                  label: "${context.getLocale(DraftOrderLocale.itemCBM)}(%)",
+                  hintText:"50%",
+                  label:  context.getLocale(ShippingOrderLocale.enterItemCBM),
                   textInputType: TextInputType.number),
               2.spacingHeight,
               DLogText(
                 context.getLocale(
-                  DraftOrderLocale.max,
+                  ShippingOrderLocale.max,
                 ),
                 style: context.getTextTheme.tertiaryMedium,
                 color: context.getColorScheme.yellow.normal,
-              )
+              ),
             ],
           ),
         ),

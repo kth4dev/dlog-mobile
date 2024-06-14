@@ -370,7 +370,7 @@ class DraftOrderLocale {
     max : "အများဆုံး",
     packageSelectItem : "ထုတ်ပိုး ပစ္စည်းရွေးချယ်ရန်",
     qty : "အရေအတွက်",
-    savePacking : "ထုတ်ပို့  သိမ်းဆည်း",
+    savePacking : "သိမ်းမည်",
     search : "ရှာရန်",
 
   };

@@ -31,7 +31,7 @@ class OrderInformationView extends StatelessWidget {
                 child: Column(
                   children: [
                     LabelDescription(
-                      label:context.getLocale(ShippingOrderLocale.detail),
+                      label:context.getLocale(ShippingOrderLocale.orderNo),
                       description: "Order001",
                     ),
                     20.spacingHeight,

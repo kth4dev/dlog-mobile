@@ -21,7 +21,7 @@ class TotalView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          DLogText("Total",style: context.getTextTheme.bodyBold,color: context.getColorScheme.blackColor,),
+          DLogText(context.getLocale(ShippingOrderLocale.total),style: context.getTextTheme.bodyBold,color: context.getColorScheme.blackColor,),
           20.spacingHeight,
           LabelDescription(label: context.getLocale(ShippingOrderLocale.estimatePrice), description: "100000MMK"),
           10.spacingHeight,

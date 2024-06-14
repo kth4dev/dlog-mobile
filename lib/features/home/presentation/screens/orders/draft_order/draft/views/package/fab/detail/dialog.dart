@@ -1,10 +1,10 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/package/fab/detail/items/add_new_item.dart';
+import 'package:dlog/features/home/presentation/res/locale/draft_order_locale.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'items/add_new_item.dart';
 import 'items/button.dart';
 import 'items/items.dart';
 
@@ -19,7 +19,7 @@ class CreatePackageView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           DialogHeader(
-            header:context.getLocale(ShippingOrderLocale.createPackage),
+            header:context.getLocale(DraftOrderLocale.createPackage),
             onTap: () {
               context.pop();
             },

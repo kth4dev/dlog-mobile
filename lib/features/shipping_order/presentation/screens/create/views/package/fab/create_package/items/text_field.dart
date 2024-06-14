@@ -18,8 +18,8 @@ class _DialogTextFieldState extends State<DialogTextField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogOutLinedTextField(
-            hintText: context.getLocale(ShippingOrderLocale.enterCartonName),
-            label: context.getLocale(ShippingOrderLocale.cartonName),
+            hintText: context.getLocale(ShippingOrderLocale.enterPackageName),
+            label: context.getLocale(ShippingOrderLocale.packageName),
             textInputType: TextInputType.text),
         10.spacingHeight,
         DLogOutLinedTextField(

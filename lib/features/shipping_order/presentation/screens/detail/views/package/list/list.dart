@@ -1,5 +1,6 @@
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/package/list/items/item.dart';
 import 'package:flutter/material.dart';
+
+import 'items/item.dart';
 
 class PackageListView extends StatelessWidget {
   const PackageListView({super.key});

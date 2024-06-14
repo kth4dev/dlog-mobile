@@ -81,10 +81,11 @@ class ShippingOrderLocale {
   static const  packageList = "shippingOrder_packageList";
   static const carton = "shippingOrder_carton";
   static const createPackage = "shippingOrder_createPackage";
-  static const cartonName = "shippingOrder_cartonName";
-  static const enterCartonName = "shippingOrder_enterCartonName";
+  static const packageName = "shippingOrder_packageName";
+  static const enterPackageName = "shippingOrder_enterPackageName";
   static const howManyCarton = "shippingOrder_howManyCarton";
   static const pack = "shippingOrder_pack";
+  static const total = "shippingOrder_total";
   static const left = "shippingOrder_left";
   static const qtyInCarton = "shippingOrder_qtyInCarton";
   static const enterQty = "shippingOrder_enterQty";
@@ -94,6 +95,8 @@ class ShippingOrderLocale {
   static const packageSelectItem = "shippingOrder_packageSelectItem";
   static const qty = "shippingOrder_qty";
   static const savePacking = "shippingOrder_savePacking";
+  static const packageDetail = "shippingOrder_packageDetails";
+  static const packageItem = "shippingOrder_packageItems";
 
   static const Map<String, dynamic> en = {
     shippingOrder: "Shipping Order",
@@ -170,13 +173,14 @@ class ShippingOrderLocale {
     orderInfo : "Order Info",
     orderLine : "Order Line",
     package : "Package",
-    packageList : "Package List",
+    packageList : "Package Lists",
     carton : "Carton",
     createPackage : "Create Package",
-    cartonName : "Carton Name",
-    enterCartonName : "Enter Carton Name",
+    packageName : "Package Name",
+    enterPackageName : "Enter Package Name",
     howManyCarton : "How many Carton?",
     pack : "Pack",
+    total : "Total",
     left : "Left",
     qtyInCarton : "Qty In Carton",
     enterQty : "Enter Qty",
@@ -186,6 +190,8 @@ class ShippingOrderLocale {
     packageSelectItem : "Package Select Item",
     qty : "Qty",
     savePacking : "Save Packing",
+    packageDetail : "Package Details",
+    packageItem : "Package Items",
   };
 
   static const Map<String, dynamic> zh = {
@@ -266,10 +272,11 @@ class ShippingOrderLocale {
     packageList : "包裹清单",
     carton : "纸箱",
     createPackage : "创建包裹",
-    cartonName : "纸箱名称",
-    enterCartonName : "输入纸箱名称",
+    packageName: "包名",
+    enterPackageName: "输入包名",
     howManyCarton : "有多少个纸箱？",
     pack : "包装",
+    total: "总计",
     left : "剩余",
     qtyInCarton : "每个纸箱中的数量",
     enterQty : "输入数量",
@@ -278,7 +285,9 @@ class ShippingOrderLocale {
     max : "最大",
     packageSelectItem : "包裹选择物品",
     qty : "数量",
-    savePacking : "保存包装"
+    savePacking : "保存包装",
+    packageDetail: "包详情",
+    packageItem: "包物品",
   };
 
   static const Map<String, dynamic> my = {
@@ -359,10 +368,11 @@ class ShippingOrderLocale {
     packageList : "ထုတ်ပိုး စာရင်း",
     carton : "ကာတွန်",
     createPackage : "ကာတွန် ဖန်တီးရန်",
-    cartonName : "ကာတွန် အမည်",
-    enterCartonName : "ကာတွန်အမည် ထည့်ပါ",
+    packageName: "ထုတ်ပိုး အမည်",
+    enterPackageName: "ထုတ်ပိုး အမည်ထည့်ပါ",
     howManyCarton : "ကာတွန် ဘယ်နှစ်ခုလဲ?",
     pack : "ထည့်ပါ",
+    total: "စုစုပေါင်း",
     left : "ကျန်",
     qtyInCarton : "ပစ္စည်းအရေတွက်",
     enterQty : "အရေအတွက်ထည့်ပါ",
@@ -371,7 +381,8 @@ class ShippingOrderLocale {
     max : "အများဆုံး",
     packageSelectItem : "ထုတ်ပိုး ပစ္စည်းရွေးချယ်ရန်",
     qty : "အရေအတွက်",
-    savePacking : "ထုတ်ပို့  သိမ်းဆည်း"
+    savePacking : "သိမ်းမည်",
+    packageDetail: "ထုတ်ပိုး အသေးစိတ်",
+    packageItem: "ထုတ်ပိုး ပစ္စည်းများ",
   };
-
 }
