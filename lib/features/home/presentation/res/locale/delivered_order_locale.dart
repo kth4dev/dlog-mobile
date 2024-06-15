@@ -30,7 +30,7 @@ class DeliveredOrderLocale {
 
 
   static const Map<String, dynamic> en = {
-    deliveredOrder : "Delivered Order",
+    deliveredOrder : "Delivered Orders",
     deliveredOrderList : "Delivered Order Lists",
     search : "Search",
     status : "Delivered",
@@ -86,7 +86,7 @@ class DeliveredOrderLocale {
   };
 
   static const Map<String, dynamic> my = {
-    deliveredOrder: "ပေးပို့ပြီး အော်ဒါ",
+    deliveredOrder: "ပေးပို့ပြီး အော်ဒါများ",
     deliveredOrderList: "ပေးပို့ပြီး အော်ဒါစာရင်းများ",
     search: "ရှာဖွေရန်",
     status: "ပို့ဆောင်ပြီးသည်",

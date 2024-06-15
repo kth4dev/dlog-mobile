@@ -9,6 +9,7 @@ import 'package:dlog/features/home/presentation/res/locale/received_order_locale
 import 'package:dlog/features/main/presentation/res/locale/locale.dart';
 import 'package:dlog/features/more/presentation/res/locale/locale.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 
 class AppLocalization {
   static const Map<String, dynamic> en = {
@@ -22,7 +23,8 @@ class AppLocalization {
     ...InTransitOrderLocale.en,
     ...ConfirmOrderLocale.en,
     ...DeliveredOrderLocale.en,
-    ...DraftOrderLocale.en
+    ...DraftOrderLocale.en,
+    ...ShippingOrderLocale.en,
   };
   static const Map<String, dynamic> zh = {
     ...MainLocale.zh,
@@ -35,7 +37,8 @@ class AppLocalization {
     ...InTransitOrderLocale.zh,
     ...ConfirmOrderLocale.zh,
     ...DeliveredOrderLocale.zh,
-    ...DraftOrderLocale.zh
+    ...DraftOrderLocale.zh,
+    ...ShippingOrderLocale.zh
   };
   static const Map<String, dynamic> my = {
     ...MainLocale.my,
@@ -48,6 +51,7 @@ class AppLocalization {
     ...InTransitOrderLocale.my,
     ...ConfirmOrderLocale.my,
     ...DeliveredOrderLocale.my,
-    ...DraftOrderLocale.my
+    ...DraftOrderLocale.my,
+    ...ShippingOrderLocale.my
   };
 }

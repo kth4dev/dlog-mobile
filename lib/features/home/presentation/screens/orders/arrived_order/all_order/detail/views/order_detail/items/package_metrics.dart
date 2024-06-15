@@ -1,8 +1,9 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
 import 'package:flutter/material.dart';
+
+import 'label_description.dart';
 
 class PackageMetrics extends StatelessWidget {
   const PackageMetrics({super.key});

@@ -3,7 +3,7 @@ import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/features/home/presentation/res/locale/received_order_locale.dart';
 import 'package:flutter/material.dart';
 
-import 'items/views.dart';
+import 'items/items.dart';
 
 class AllOrderDetailView extends StatelessWidget {
   const AllOrderDetailView({super.key});

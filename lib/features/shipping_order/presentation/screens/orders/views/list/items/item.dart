@@ -4,6 +4,7 @@ import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/image/circle_icon.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/shipping_order/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -49,19 +50,19 @@ class ShippingOrderItem extends StatelessWidget {
                   ),
                   10.spacingHeight,
                   DLogText(
-                    "Order no : 123",
+                    "${context.getLocale(ShippingOrderLocale.orderNo)}: 123",
                     style: context.getTextTheme.secondaryRegular,
                     color: context.getColorScheme.black.normal,
                   ),
                   10.spacingHeight,
                   DLogText(
-                    "Date: 10 Apr, 2024",
+                    "${context.getLocale(ShippingOrderLocale.date)}: 10 Apr, 2024",
                     style: context.getTextTheme.secondaryRegular,
                     color: context.getColorScheme.black.normal,
                   ),
                   10.spacingHeight,
                   DLogText(
-                    "Shipping mark : 232",
+                    "${context.getLocale(ShippingOrderLocale.shippingMark)} : 232",
                     style: context.getTextTheme.secondaryRegular,
                     color: context.getColorScheme.black.normal,
                   ),

@@ -1,11 +1,12 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/features/history/presentation/res/locale/locale.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/way_bill_pictures.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/package_metrics.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/create/views/package_pictures.dart';
-import 'package:dlog/features/shipping_order/presentation/screens/detail/views/items/label_description.dart';
 import 'package:flutter/material.dart';
+
+import 'items/label_description.dart';
+import 'items/package_metrics.dart';
+import 'items/package_pictures.dart';
+import 'items/way_bill_pictures.dart';
 
 class ShippingOrderHistoryDetailView extends StatelessWidget {
   const ShippingOrderHistoryDetailView({super.key});

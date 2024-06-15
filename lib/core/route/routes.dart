@@ -19,6 +19,8 @@ import 'package:dlog/features/home/presentation/screens/orders/confirm_order/ord
 import 'package:dlog/features/home/presentation/screens/orders/delivered_order/detail/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/delivered_order/order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/add_new_item/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/select_item/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/in_transit_order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/received_order/all_order/detail/screen.dart';
@@ -33,7 +35,12 @@ import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/add_new_item/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/order_line/fab/select_item/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/create/views/package/fab/package_select_item/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/detail/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/detail/views/order_line/detail/screen.dart';
+import 'package:dlog/features/shipping_order/presentation/screens/detail/views/package/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -68,12 +75,21 @@ class AppRoute {
   static const String arrivedAllOrderDetail = "/arrivedAllOrderDetail";
   static const String receivedOrderMenu = "/receivedOrderMenu";
   static const String receivedPartialOrder = "/receivedPartialOrder";
-  static const String receivedPartialOrderDetail = "/receivedPartialOrderDetail";
+  static const String receivedPartialOrderDetail =
+      "/receivedPartialOrderDetail";
   static const String receivedAllOrder = "/receivedAllOrder";
   static const String receivedAllOrderDetail = "/receivedAllOrderDetail";
   static const String deliveredOrder = "/deliveredOrder";
   static const String deliveredOrderDetail = "/deliveredOrderDetail";
   static const String inTransit = "/inTransit";
+  static const String addNewItem = "/addNewItem";
+  static const String selectItem = "/selectItem";
+  static const String packageSelectItem = "/packageSelectItem";
+  static const String draftOrderAddNewItem = "/draftOrderNewItem";
+  static const String draftOrderSelectItem = "/draftOrderSelectItem";
+  static const String draftOrderPackageSelectItem = "/draftOrderPackageSelectItem";
+  static const String orderLineDetail = "/orderLineDetail";
+  static const String packageDetail = "/packageDetail";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -148,11 +164,11 @@ class AppRoute {
         },
       ),
       GoRoute(
-          path: setting,
-          builder: (BuildContext context, GoRouterState state) {
-            return const SettingScreen();
-          },
-         ),
+        path: setting,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SettingScreen();
+        },
+      ),
       GoRoute(
         path: languages,
         builder: (BuildContext context, GoRouterState state) {
@@ -213,6 +229,7 @@ class AppRoute {
           return const DraftOrderDetailScreen();
         },
       ),
+
       ///arrived Order
       GoRoute(
         path: arrivedOrderMenu,
@@ -295,6 +312,54 @@ class AppRoute {
         path: inTransit,
         builder: (BuildContext context, GoRouterState state) {
           return const InTransitListScreen();
+        },
+      ),
+      GoRoute(
+        path: addNewItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const AddNewItemScreen();
+        },
+      ),
+      GoRoute(
+        path: selectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: packageSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PackageSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderAddNewItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderAddNewItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const DraftOrderSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: draftOrderPackageSelectItem,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PackageSelectItemScreen();
+        },
+      ),
+      GoRoute(
+        path: orderLineDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const OrderLineDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: packageDetail,
+        builder: (BuildContext context, GoRouterState state) {
+          return const PackageDetailScreen();
         },
       ),
     ],

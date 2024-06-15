@@ -2,8 +2,8 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/home/presentation/res/locale/confirm_order_locale.dart';
+import 'package:dlog/features/home/presentation/screens/orders/confirm_order/detail/views/order_detail/items/expansion_tile_detail.dart';
 import 'package:flutter/material.dart';
-import 'expansion_tile_detail_item.dart';
 import 'items/order_detail_item.dart';
 
 class OrderDetailView extends StatelessWidget {
@@ -44,7 +44,7 @@ class OrderDetailView extends StatelessWidget {
                 ),
                 title: const DLogText(""),
                 children: const [
-                  ExpansionTileDetailView(),
+                  ExpansionTileDetailItem(),
                 ],
               )
             ],
