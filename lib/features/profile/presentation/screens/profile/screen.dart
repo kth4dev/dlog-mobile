@@ -37,6 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   void _onSelectMenu(ProfileMenu menu) {
     switch (menu) {
       case ProfileMenu.manageProfile:
+        context.push(AppRoute.manageProfile);
         // TODO: Handle this case.
         break;
       case ProfileMenu.settings:

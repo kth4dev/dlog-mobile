@@ -41,6 +41,7 @@ class DLogIcons {
   static const box2 = "$iconExBasePath/Box 2.svg";
   static const calendar = "$iconExBasePath/Calendar.svg";
   static const lock = "$iconExBasePath/Lock.svg";
+  static const location = "$iconExBasePath/Location.svg";
   final trashCan = "$iconExBasePath/Trash can.svg";
 
   /// ******************************************
@@ -58,8 +59,9 @@ class DLogIcons {
   static const add = "$hIconBoldBasePath/Add.svg";
   static const close = "$hIconBoldBasePath/Close.svg";
   static const filter5 = "$hIconBoldBasePath/Filter 5.svg";
-  static const locationTick = "$hIconBoldBasePath/Hide.svg";
-  static const show = "$hIconBoldBasePath/Location Tick.svg";
+  static const hide = "$hIconBoldBasePath/Hide.svg";
+  static const locationTick = "$hIconBoldBasePath/Location Tick.svg";
+  static const show = "$hIconBoldBasePath/Show.svg";
   static const tick = "$hIconBoldBasePath/Tick.svg";
 
   /// ******************************************
