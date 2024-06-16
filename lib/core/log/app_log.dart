@@ -1,4 +1,4 @@
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:logger/logger.dart';
 
 

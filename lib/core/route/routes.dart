@@ -1,5 +1,5 @@
 import 'package:dlog/data/app-pref/app_data_store.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:dlog/features/auth/presentation/screens/forget_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/reset_password/screen.dart';
@@ -32,6 +32,7 @@ import 'package:dlog/features/main/presentation/screens/screen.dart';
 import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:dlog/features/profile/presentation/screens/manage_profile/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
@@ -90,6 +91,7 @@ class AppRoute {
   static const String draftOrderPackageSelectItem = "/draftOrderPackageSelectItem";
   static const String orderLineDetail = "/orderLineDetail";
   static const String packageDetail = "/packageDetail";
+  static const String manageProfile = "/manageProfile";
 
   static GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -360,6 +362,12 @@ class AppRoute {
         path: packageDetail,
         builder: (BuildContext context, GoRouterState state) {
           return const PackageDetailScreen();
+        },
+      ),
+      GoRoute(
+        path: manageProfile,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ManageProfileScreen();
         },
       ),
     ],

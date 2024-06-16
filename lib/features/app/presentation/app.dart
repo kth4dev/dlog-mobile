@@ -1,5 +1,5 @@
 import 'package:dlog/core/route/routes.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:dlog/features/app/presentation/bloc/theme/app_theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,6 +12,7 @@ class DLogApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final localization = sl<FlutterLocalization>();
     final appTheme = context.read<AppThemeBloc>();
+    appTheme.add(InitLocaleEvent());
     localization.onTranslatedLanguage = (_) => appTheme.add(OnTranslateEvent());
 
     return BlocBuilder<AppThemeBloc, AppThemeState>(

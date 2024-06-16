@@ -1,8 +1,10 @@
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/logo.dart';
+import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import 'views/views.dart';
 
@@ -29,9 +31,20 @@ class _LoginScreenState extends State<LoginScreen> {
             40.spacingHeight,
             const LoginTextFieldsView(),
             20.spacingHeight,
-            const ForgetPasswordView(),
+            ForgetPasswordView(
+              onPressed: () {
+                context.push(AppRoute.forgetPassword);
+              },
+            ),
             40.spacingHeight,
-            const LoginAndSingUpViews(),
+            LoginAndSingUpViews(
+              onLogin: () {
+                context.go(AppRoute.home);
+              },
+              onSignUp: () {
+                context.go(AppRoute.signUp);
+              },
+            ),
           ],
         ),
       ),

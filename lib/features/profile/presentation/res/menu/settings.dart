@@ -8,7 +8,7 @@ enum SettingsMenu {
   ),
   address(
     label: ProfileLocale.address,
-    icon: DLogIcons.locationTick,
+    icon: DLogIcons.location,
   );
 
   final String label, icon;

@@ -9,6 +9,7 @@ class SaveLocaleUseCase extends UseCase<void, DLogLocale> {
 
   @override
   Future<void> call({DLogLocale? params}) async {
-    await appRepo.translateLocale(params!.name);
+    await appRepo.saveLocale(params!.value);
+    await appRepo.translateLocale(params.name);
   }
 }

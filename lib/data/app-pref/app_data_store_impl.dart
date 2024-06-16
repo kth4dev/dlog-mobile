@@ -25,4 +25,14 @@ class AppDataStoreImpl extends AppDataStore {
   bool isLoggedIn() {
     return appPref.getData(key: AppPref.keyAuthenticated) ?? false;
   }
+
+  @override
+  int getLocale() {
+    return appPref.getData(key: AppPref.keyLocale) ?? 0;
+  }
+
+  @override
+  Future<void> setLocale(int value) async {
+    await appPref.saveData(key: AppPref.keyLocale, value: value);
+  }
 }

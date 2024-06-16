@@ -1,13 +1,17 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class LoginAndSingUpViews extends StatelessWidget {
-  const LoginAndSingUpViews({super.key});
+  final VoidCallback onLogin, onSignUp;
+
+  const LoginAndSingUpViews({
+    super.key,
+    required this.onLogin,
+    required this.onSignUp,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +20,7 @@ class LoginAndSingUpViews extends StatelessWidget {
       children: [
         DLogPrimaryButton(
           text: "Login",
-          onPressed: () {
-            context.go(AppRoute.home);
-          },
+          onPressed: onLogin,
           width: 160,
           height: 40,
         ),
@@ -26,19 +28,20 @@ class LoginAndSingUpViews extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            DLogText("Don't have an account?",
-                style: context.getTextTheme.tertiaryRegular,
-                color: context.getColorScheme.grey.normalActive),
+            DLogText(
+              "Don't have an account?",
+              style: context.getTextTheme.tertiaryRegular,
+              color: context.getColorScheme.grey.normalActive,
+            ),
             5.spacingWidth,
             InkWell(
-                onTap: () {
-                  context.go(AppRoute.signUp);
-                },
-                child: DLogText(
-                  "Sign Up",
-                  style: context.getTextTheme.tertiaryBold,
-                  color: context.getColorScheme.black.normal,
-                ))
+              onTap: onSignUp,
+              child: DLogText(
+                "Sign Up",
+                style: context.getTextTheme.tertiaryBold,
+                color: context.getColorScheme.black.normal,
+              ),
+            )
           ],
         )
       ],

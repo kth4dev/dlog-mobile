@@ -1,6 +1,8 @@
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import 'views/views.dart';
 
@@ -24,11 +26,17 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             20.spacingHeight,
             const DescriptionView(),
             30.spacingHeight,
-            const TextFieldAndButtonView(),
+            TextFieldAndButtonView(
+              onEnter: _enter,
+            ),
           ],
         ),
       ),
     );
+  }
+
+  void _enter() {
+    context.push(AppRoute.verify);
   }
 
   EdgeInsets get _screenPadding => const EdgeInsets.only(

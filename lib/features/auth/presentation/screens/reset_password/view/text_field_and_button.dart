@@ -1,24 +1,13 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:dlog/core/ui/text_fields/password_text_field.dart';
-import 'package:dlog/features/auth/presentation/screens/successful_bottom_sheet/show_successful_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
-class TextFieldAndButtonView extends StatefulWidget {
-  const TextFieldAndButtonView({super.key});
+class TextFieldAndButtonView extends StatelessWidget {
+  final VoidCallback onReset;
 
-  @override
-  State<TextFieldAndButtonView> createState() => _TextFieldAndButtonViewState();
-}
-
-class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
-
-  @override
-  void initState() {
-    super.initState();
-  }
+  const TextFieldAndButtonView({super.key, required this.onReset});
 
   @override
   Widget build(BuildContext context) {
@@ -39,21 +28,11 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
         52.spacingHeight,
         DLogPrimaryButton(
           text: "Enter",
-          onPressed: () {
-            showSuccessfulBottomSheet(
-                context: context,
-                text: "Password Reset Successful",
-                route: AppRoute.home);
-          },
+          onPressed: onReset,
           width: 160,
           height: 40,
         )
       ],
     );
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }

@@ -4,13 +4,17 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:pinput/pinput.dart';
 
-import '../../../../../../core/route/routes.dart';
-
 class OtpView extends StatefulWidget {
-  const OtpView({super.key});
+  final Function(String) onVerify;
+  final VoidCallback onRetry;
+
+  const OtpView({
+    super.key,
+    required this.onVerify,
+    required this.onRetry,
+  });
 
   @override
   State<OtpView> createState() => _OtpViewState();
@@ -24,17 +28,9 @@ class _OtpViewState extends State<OtpView> {
   @override
   void initState() {
     otpController = TextEditingController();
-    otpController.addListener(() {
-      _goNextPage();
-    });
+    otpController.addListener(_listener);
     _startTimer();
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    otpController.dispose();
-    super.dispose();
   }
 
   @override
@@ -44,12 +40,13 @@ class _OtpViewState extends State<OtpView> {
       children: [
         Pinput(
           defaultPinTheme: PinTheme(
-              width: 40,
-              height: 50,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  border:
-                      Border.all(color: context.getColorScheme.yellow.normal))),
+            width: 40,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: context.getColorScheme.yellow.normal),
+            ),
+          ),
           controller: otpController,
           length: 6,
           textInputAction: TextInputAction.go,
@@ -75,6 +72,12 @@ class _OtpViewState extends State<OtpView> {
     );
   }
 
+  @override
+  void dispose() {
+    otpController.dispose();
+    super.dispose();
+  }
+
   void _startTimer() {
     timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
@@ -87,9 +90,9 @@ class _OtpViewState extends State<OtpView> {
     });
   }
 
-  void _goNextPage() {
+  void _listener() {
     if (otpController.text.length == 6) {
-      context.go(AppRoute.resetPassword);
+      widget.onVerify(otpController.text);
     }
   }
 }
