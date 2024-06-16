@@ -45,8 +45,8 @@ class AppThemeBloc extends Bloc<AppThemeEvent, AppThemeState> {
   void _handleSaveLocaleEvent(
     DLogLocale locale,
     Emitter<AppThemeState> emit,
-  ) async {
-    await saveLocale.call(params: locale);
+  )  {
+    saveLocale.call(params: locale);
     emit(state.saveLocale(locale));
   }
 }

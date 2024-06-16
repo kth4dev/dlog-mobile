@@ -1,25 +1,12 @@
 import 'package:dlog/core/extensions/num_extension.dart';
-import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-class TextFieldAndButtonView extends StatefulWidget {
-  const TextFieldAndButtonView({super.key});
+class TextFieldAndButtonView extends StatelessWidget {
+  final VoidCallback onEnter;
 
-  @override
-  State<TextFieldAndButtonView> createState() => _TextFieldAndButtonViewState();
-}
-
-class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
-  late TextEditingController emailController;
-
-  @override
-  void initState() {
-    emailController = TextEditingController();
-    super.initState();
-  }
+  const TextFieldAndButtonView({super.key, required this.onEnter});
 
   @override
   Widget build(BuildContext context) {
@@ -34,19 +21,11 @@ class _TextFieldAndButtonViewState extends State<TextFieldAndButtonView> {
         50.spacingHeight,
         DLogPrimaryButton(
           text: "Enter",
-          onPressed: () {
-            context.go(AppRoute.verify);
-          },
+          onPressed: onEnter,
           width: 160,
           height: 40,
         )
       ],
     );
-  }
-
-  @override
-  void dispose() {
-    emailController.dispose();
-    super.dispose();
   }
 }

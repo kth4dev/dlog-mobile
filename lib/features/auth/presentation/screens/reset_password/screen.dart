@@ -1,4 +1,6 @@
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/route/routes.dart';
+import 'package:dlog/core/ui/bottom_sheet/success.dart';
 import 'package:flutter/material.dart';
 
 import 'view/views.dart';
@@ -18,7 +20,14 @@ class ResetPasswordScreen extends StatelessWidget {
             40.spacingHeight,
             const DescriptionView(),
             20.spacingHeight,
-            const TextFieldAndButtonView(),
+            TextFieldAndButtonView(
+              onReset: () {
+                showDlogSuccessfulBottomSheet(
+                    context: context,
+                    text: "Password Reset Successful",
+                    route: AppRoute.home);
+              },
+            ),
           ],
         ),
       ),
@@ -26,9 +35,9 @@ class ResetPasswordScreen extends StatelessWidget {
   }
 
   EdgeInsets get _screenPadding => const EdgeInsets.only(
-    left: 24,
-    right: 24,
-    top: 78,
-    bottom: 112
-  );
+        left: 24,
+        right: 24,
+        top: 78,
+        bottom: 112,
+      );
 }

@@ -1,6 +1,6 @@
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/data/app-pref/app_data_store.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'views/views.dart';
@@ -67,7 +67,6 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       );
 
 
-  //todo : write bloc , repo & use case
   void _next() {
     if (_tabController.index < _tabController.length - 1) {
       _tabController.animateTo(_tabController.index + 1);

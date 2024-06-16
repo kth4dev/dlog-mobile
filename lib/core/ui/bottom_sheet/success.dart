@@ -6,23 +6,27 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
-class SuccessfulBottomSheet extends StatefulWidget {
+class DlogSuccessfulBottomSheet extends StatefulWidget {
   final String text;
   final String route;
-  const SuccessfulBottomSheet({super.key, required this.text,required this.route});
+
+  const DlogSuccessfulBottomSheet({
+    super.key,
+    required this.text,
+    required this.route,
+  });
 
   @override
-  State<SuccessfulBottomSheet> createState() => _SuccessfulBottomSheetState();
+  State<DlogSuccessfulBottomSheet> createState() => _DlogSuccessfulBottomSheetState();
 }
 
-class _SuccessfulBottomSheetState extends State<SuccessfulBottomSheet> {
-
+class _DlogSuccessfulBottomSheetState extends State<DlogSuccessfulBottomSheet> {
   @override
   void initState() {
-   _initRoute();
+    _initRoute();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -43,24 +47,32 @@ class _SuccessfulBottomSheetState extends State<SuccessfulBottomSheet> {
       ),
     );
   }
+
   _initRoute() async {
     await Future.delayed(
       const Duration(seconds: 1),
-          () => context.go(widget.route),
+      () => context.go(widget.route),
     );
   }
 }
 
- void showSuccessfulBottomSheet(
-    {required BuildContext context, required String text,required String route}) {
+void showDlogSuccessfulBottomSheet({
+  required BuildContext context,
+  required String text,
+  required String route,
+}) {
   showModalBottomSheet(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-        )
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.only(
+        topLeft: Radius.circular(20),
+        topRight: Radius.circular(20),
       ),
-      backgroundColor: context.getColorScheme.whiteColor,
-      builder: (context) => SuccessfulBottomSheet(text: text,route: route,));
+    ),
+    backgroundColor: context.getColorScheme.whiteColor,
+    builder: (context) => DlogSuccessfulBottomSheet(
+      text: text,
+      route: route,
+    ),
+  );
 }

@@ -1,7 +1,7 @@
 import 'package:dlog/core/extensions/context_extension.dart';
+import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/ui/text/dlog_text.dart';
 
 class DescriptionView extends StatelessWidget {
   const DescriptionView({super.key});

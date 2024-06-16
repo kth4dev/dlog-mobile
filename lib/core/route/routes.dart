@@ -1,5 +1,5 @@
 import 'package:dlog/data/app-pref/app_data_store.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:dlog/features/auth/presentation/screens/forget_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/reset_password/screen.dart';

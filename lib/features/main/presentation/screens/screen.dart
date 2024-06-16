@@ -1,5 +1,5 @@
 import 'package:dlog/core/ui/bottom_nav/bar.dart';
-import 'package:dlog/di/injection_container.dart';
+import 'package:dlog/data/di/injection_container.dart';
 import 'package:dlog/features/main/presentation/blocs/main_bottom_nav.dart';
 import 'package:dlog/features/main/presentation/res/menu/main_menu.dart';
 import 'package:flutter/material.dart';

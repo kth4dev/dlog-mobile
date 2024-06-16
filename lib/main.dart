@@ -7,10 +7,7 @@ import 'features/app/presentation/bloc/blocs.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Future.sync((){
-
-  });
-  await initDependencies();
+  await Future.wait([initDependencies()]);
   runApp(
     MultiBlocProvider(
       providers: appBlocs,
