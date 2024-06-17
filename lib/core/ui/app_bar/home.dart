@@ -17,7 +17,7 @@ class DLogHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
           child: Column(
             children: [
-              const DLogHomeAppBarHeader(),
+              const Expanded(child:  DLogHomeAppBarHeader()),
               20.spacingHeight,
               const DLogSearchTextField(isEnabled: false)
             ],

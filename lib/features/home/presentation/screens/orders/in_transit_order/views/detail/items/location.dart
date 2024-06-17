@@ -13,7 +13,7 @@ class LocationItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const DLogSvgImage(path: DLogIcons.show,width: 20,height: 20,),
+        const DLogSvgImage(path: DLogIcons.locationTick,width: 20,height: 20,),
         5.spacingWidth,
         DLogText(
           location,

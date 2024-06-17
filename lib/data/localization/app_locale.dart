@@ -1,22 +1,24 @@
 
+import 'package:dlog/core/images/icons.dart';
+
 enum DLogLocale {
   myanmar(
     name: "my",
     value: 1,
     label: "Myanmar",
-    icon: "assets/images/icons/others/language-square.svg",
+    icon: DLogIcons.languageSquare,
   ),
   english(
     name: "en",
     value: 0,
     label: "English",
-    icon: "assets/images/icons/others/language-square.svg",
+    icon: DLogIcons.languageSquare,
   ),
   china(
     name: "zh_CN",
     value: 2,
     label: "Chinese",
-    icon: "assets/images/icons/others/language-square.svg",
+    icon: DLogIcons.languageSquare,
   );
 
   final String name, label, icon;

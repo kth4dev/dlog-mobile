@@ -46,33 +46,31 @@ class _PackageSelectItemState extends State<PackageSelectItem> {
                 30.spacingWidth,
                 Padding(
                   padding: _screenPadding,
-                  child: Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width : 80,
-                          child: DLogText(
-                            "Package",
-                            style: context.getTextTheme.secondaryBold,
-                            color: context.getColorScheme.black.normal,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        5.spacingHeight,
-                        DLogText(
-                          "4 Cartons",
-                          style: context.getTextTheme.tertiaryRegular,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width : 80,
+                        child: DLogText(
+                          "Package",
+                          style: context.getTextTheme.secondaryBold,
                           color: context.getColorScheme.black.normal,
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        5.spacingHeight,
-                        DLogText(
-                          "5 Items",
-                          style: context.getTextTheme.tertiaryRegular,
-                          color: context.getColorScheme.black.normal,
-                        ),
-                      ],
-                    ),
+                      ),
+                      5.spacingHeight,
+                      DLogText(
+                        "4 Cartons",
+                        style: context.getTextTheme.tertiaryRegular,
+                        color: context.getColorScheme.black.normal,
+                      ),
+                      5.spacingHeight,
+                      DLogText(
+                        "5 Items",
+                        style: context.getTextTheme.tertiaryRegular,
+                        color: context.getColorScheme.black.normal,
+                      ),
+                    ],
                   ),
                 ),
                 const Spacer(),
@@ -102,7 +100,7 @@ class _PackageSelectItemState extends State<PackageSelectItem> {
 
   Widget _qtyContainer(BuildContext context, String label, String value) {
     return Container(
-      width: 80,
+      width: 90,
       padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

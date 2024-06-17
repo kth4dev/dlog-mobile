@@ -1,8 +1,10 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/logo.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/image/asset_image.dart';
+import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const DLogAppBar(title: "Login"),
+      appBar:  DLogAppBar(title: context.getLocale(LoginLocale.login)),
       body: SingleChildScrollView(
         padding: _screenPadding,
         child: Column(

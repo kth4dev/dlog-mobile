@@ -2,6 +2,7 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/button/primary_button.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
 import 'package:flutter/material.dart';
 
 class LoginAndSingUpViews extends StatelessWidget {
@@ -19,7 +20,7 @@ class LoginAndSingUpViews extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         DLogPrimaryButton(
-          text: "Login",
+          text: context.getLocale(LoginLocale.login),
           onPressed: onLogin,
           width: 160,
           height: 40,
@@ -29,7 +30,7 @@ class LoginAndSingUpViews extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             DLogText(
-              "Don't have an account?",
+              "${ context.getLocale(LoginLocale.haveAccount)}?",
               style: context.getTextTheme.tertiaryRegular,
               color: context.getColorScheme.grey.normalActive,
             ),
@@ -37,7 +38,7 @@ class LoginAndSingUpViews extends StatelessWidget {
             InkWell(
               onTap: onSignUp,
               child: DLogText(
-                "Sign Up",
+                context.getLocale(LoginLocale.signUp),
                 style: context.getTextTheme.tertiaryBold,
                 color: context.getColorScheme.black.normal,
               ),

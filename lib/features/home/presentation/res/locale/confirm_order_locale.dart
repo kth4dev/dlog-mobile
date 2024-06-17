@@ -20,9 +20,11 @@ class ConfirmOrderLocale {
   static const warehouseAddress = "confirmOrder_warehouseAddress";
   static const paymentDetail = "confirmOrder_paymentDetail";
   static const totalAmount = "confirmOrder_totalAmount";
+  static const confirmOrderList = "confirmOrderLists";
 
   static const Map<String, dynamic> en = {
     confirmOrder : "Confirm Orders",
+    confirmOrderList : "Confirm Order Lists",
     orderNo : "Order No",
     date : "Order Date",
     detail : "Details",
@@ -45,6 +47,7 @@ class ConfirmOrderLocale {
   static const Map<String, dynamic> zh = {
     confirmOrder: "确认订单",
     orderNo: "订单编号",
+    confirmOrderList : "确认订单列表",
     date: "下单日期",
     detail: "详情",
     orderDetail: "订单详情",
@@ -65,6 +68,7 @@ class ConfirmOrderLocale {
 
   static const Map<String, dynamic> my = {
     confirmOrder: "အတည်ပြု အော်ဒါ",
+    confirmOrderList : "အတည်ပြု အော်ဒါ စာရင်း",
     orderNo: "အော်ဒါ နံပါတ်",
     date: "နေ့စွဲ",
     detail: "အသေးစိတ်",

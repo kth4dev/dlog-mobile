@@ -1,88 +1,39 @@
 import 'package:dlog/core/utils/constants.dart';
 
 class DLogIcons {
-  /// ******************************************
-  ///  Title : Arrow Chevron
-  /// ******************************************
-  static const arrowChevronBasePath = "$iconsPath/Arrows-chevron";
-
-  static const arrowDown = "$arrowChevronBasePath/Arrow-Down.svg";
-  static const chevronLeft = "$arrowChevronBasePath/Chevron-Left.svg";
-  static const chevronRight = "$arrowChevronBasePath/chevron-right.svg";
-  static const chevronUp = "$arrowChevronBasePath/chevron-up.svg";
-  static const downArrowRoute = "$arrowChevronBasePath/Arrow 4.svg";
-
-  /// ******************************************
-  ///  Title : Commercial
-  /// ******************************************
-  static const commercialBasePath = "$iconsPath/comercial";
-  static const delivery = "$commercialBasePath/Delivery.svg";
-  static const deliveryTime = "$commercialBasePath/Delivery time.svg";
-
-  /// ******************************************
-  ///  Title : Documents
-  /// ******************************************
-  static const documentBasePath = '$iconsPath/documents';
-  static const document = "$documentBasePath/Document.svg";
-  static const document1 = "$documentBasePath/Document-1.svg";
-  static const documentHistory = "$documentBasePath/Document-history.svg";
-
-  /// ******************************************
-  ///  Title : General
-  /// ******************************************
-  static const generalBasePath = "$iconsPath/general";
-  static const bell = "$generalBasePath/Bell.svg";
-  static const edit1 = "$generalBasePath/Edit 1.svg";
-
-  /// ******************************************
-  ///  Title : IconEx
-  /// ******************************************
-  static const iconExBasePath = "$iconsPath/iconex/Light";
-  static const box2 = "$iconExBasePath/Box 2.svg";
-  static const calendar = "$iconExBasePath/Calendar.svg";
-  static const lock = "$iconExBasePath/Lock.svg";
-  static const location = "$iconExBasePath/Location.svg";
-  final trashCan = "$iconExBasePath/Trash can.svg";
-
-  /// ******************************************
-  ///  Title : Interface Essential
-  /// ******************************************
-  static const interfaceEssentialBasePath = '$iconsPath/interface_essential';
-  static const home = "$interfaceEssentialBasePath/Home.svg";
-  static const menu4 = "$interfaceEssentialBasePath/Menu-4.svg";
-
-  /// ******************************************
-  ///  Title : HIcon - Bold
-  /// ******************************************
-  static const hIconBasePath = "$iconsPath/hicon";
-  static const hIconBoldBasePath = "$hIconBasePath/Bold";
-  static const add = "$hIconBoldBasePath/Add.svg";
-  static const close = "$hIconBoldBasePath/Close.svg";
-  static const filter5 = "$hIconBoldBasePath/Filter 5.svg";
-  static const hide = "$hIconBoldBasePath/Hide.svg";
-  static const locationTick = "$hIconBoldBasePath/Location Tick.svg";
-  static const show = "$hIconBoldBasePath/Show.svg";
-  static const tick = "$hIconBoldBasePath/Tick.svg";
-
-  /// ******************************************
-  ///  Title : HIcon - Linear
-  /// ******************************************
-  static const hiIconLinearBasePath = "$hIconBasePath/Linear";
-  static const password6 = "$hiIconLinearBasePath/Password 6.svg";
-  static const profileCircle = "$hiIconLinearBasePath/Profile Circle.svg";
-  static const search2 = "$hiIconLinearBasePath/Search 2.svg";
-  static const setting = "$hiIconLinearBasePath/Setting.svg";
-
-  /// ******************************************
-  ///  Title : HIcon - Outline
-  /// ******************************************
-  static const hIconOutLineBasePath = "$hIconBasePath/Outline";
-  static const documentUpload2 = "$hIconOutLineBasePath/Document Upload 2.svg";
-  static const logout = "$hIconOutLineBasePath/Logout.svg";
-
-  /// ******************************************
-  ///  Title: Others
-  /// ******************************************
-  static const otherIconBasePath = "$iconsPath/others";
-  static const languageSquare = "$otherIconBasePath/language-square.svg";
+  static const arrowDown = "$iconsPath/Add.svg";
+  static const chevronLeft = "$iconsPath/Chevron-Left.svg";
+  static const chevronRight = "$iconsPath/chevron-right.svg";
+  static const chevronUp = "$iconsPath/chevron-up.svg";
+  static const downArrowRoute = "$iconsPath/Arrow 4.svg";
+  static const delivery = "$iconsPath/Delivery.svg";
+  static const deliveryTime = "$iconsPath/Delivery time.svg";
+  static const document = "$iconsPath/Document.svg";
+  static const document1 = "$iconsPath/Document-1.svg";
+  static const documentHistory = "$iconsPath/Document-history.svg";
+  static const bell = "$iconsPath/Bell.svg";
+  static const edit1 = "$iconsPath/Edit 1.svg";
+  static const box2 = "$iconsPath/Box 2.svg";
+  static const calendar = "$iconsPath/Calendar.svg";
+  static const lock = "$iconsPath/Lock.svg";
+  static const location = "$iconsPath/Location.svg";
+  static const trashCan = "$iconsPath/Trash can.svg";
+  static const home = "$iconsPath/Home.svg";
+  static const menu4 = "$iconsPath/Menu-4.svg";
+  static const add = "$iconsPath/Add.svg";
+  static const close = "$iconsPath/Close.svg";
+  static const filter5 = "$iconsPath/Filter 5.svg";
+  static const hide = "$iconsPath/Hide.svg";
+  static const locationTick = "$iconsPath/Location Tick.svg";
+  static const show = "$iconsPath/Show.svg";
+  static const tick = "$iconsPath/Tick.svg";
+  static const password6 = "$iconsPath/Password 6.svg";
+  static const profileCircle = "$iconsPath/Profile Circle.svg";
+  static const search2 = "$iconsPath/Search 2.svg";
+  static const setting = "$iconsPath/Setting.svg";
+  static const documentDownload2 = "$iconsPath/Document Download 2.svg";
+  static const documentUpload2 = "$iconsPath/Document Upload 2.svg";
+  static const logout = "$iconsPath/Logout.svg";
+  static const languageSquare = "$iconsPath/language-square.svg";
+  static const attachment = "$iconsPath/Attachment.svg";
 }

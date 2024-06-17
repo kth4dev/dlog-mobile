@@ -9,8 +9,8 @@ import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft
 
 import 'views/views.dart';
 
-class PackageSelectItemScreen extends StatelessWidget {
-  const PackageSelectItemScreen({super.key});
+class DraftOrderPackageSelectItemScreen extends StatelessWidget {
+  const DraftOrderPackageSelectItemScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

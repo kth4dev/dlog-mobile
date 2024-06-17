@@ -50,16 +50,7 @@ flutter:
   assets:
     - assets/images/graphic/
     - assets/images/logo/
-    - assets/images/icons/Arrows-chevron/
-    - assets/images/icons/comercial/
-    - assets/images/icons/documents/
-    - assets/images/icons/general/
-    - assets/images/icons/hicon/Bold/
-    - assets/images/icons/hicon/Linear/
-    - assets/images/icons/hicon/Outline/
-    - assets/images/icons/iconex/Light/
-    - assets/images/icons/interface_essential/
-    - assets/images/icons/others/
+    - assets/images/icons/
     - assets/images/sample/
 
   fonts:

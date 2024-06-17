@@ -16,8 +16,8 @@ class OrderManagementItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: 160,
-         height: MediaQuery.of(context).size.height * 0.18,
+         width: 160,
+         height: MediaQuery.of(context).size.height * 0.20,
         padding: _screenPadding,
         decoration: BoxDecoration(
             border: Border.all(color: context.getColorScheme.yellow.normal),

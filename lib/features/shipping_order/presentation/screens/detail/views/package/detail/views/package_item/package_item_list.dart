@@ -12,7 +12,7 @@ class PackageItemListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 17.5, vertical: 17.5),
+      padding: const EdgeInsets.only(top: 17.5,bottom: 7.5,left: 17.5,right: 17.5),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           border: Border.all(

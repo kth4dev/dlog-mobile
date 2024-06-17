@@ -1,6 +1,8 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:dlog/core/ui/text_fields/password_text_field.dart';
+import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
 import 'package:flutter/material.dart';
 
 class LoginTextFieldsView extends StatelessWidget {
@@ -12,16 +14,16 @@ class LoginTextFieldsView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         DLogOutLinedTextField(
-          hintText: "Enter username or phone number",
-          label: "Username or Email",
+          hintText: context.getLocale(LoginLocale.enterUserNameOrEmail),
+          label: context.getLocale(LoginLocale.userNameOrEmail),
           textInputType: TextInputType.text,
           isValidation: true,
           onChange: (value) {},
         ),
         20.spacingHeight,
-        const DLogPasswordTextField(
-          hintText: "Enter Password",
-          label: "Password",
+         DLogPasswordTextField(
+          hintText:context.getLocale(LoginLocale.enterPassword),
+          label: context.getLocale(LoginLocale.password),
           textInputType: TextInputType.text,
           isValidation: true,
         )
