@@ -74,7 +74,7 @@ class PackageItem extends StatelessWidget {
 
   Widget _qtyContainer(BuildContext context, String label, String value) {
     return Container(
-      width: 73,
+      width: 90,
       padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -87,6 +87,7 @@ class PackageItem extends StatelessWidget {
             style: context.getTextTheme.smallBold,
             color: context.getColorScheme.blackColor,
             textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
           ),
           DLogText(
             value,

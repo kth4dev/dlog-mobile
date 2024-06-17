@@ -100,7 +100,7 @@ class _PackageSelectItemState extends State<PackageSelectItem> {
 
   Widget _qtyContainer(BuildContext context, String label, String value) {
     return Container(
-      width: 80,
+      width: 90,
       padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
