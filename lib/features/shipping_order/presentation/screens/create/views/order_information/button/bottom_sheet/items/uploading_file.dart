@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class UploadingFile extends StatelessWidget {
                   onTap: (){
                     (context).pop();
                   },
-                  child: DLogSvgImage(path: "assets/images/icons/hicon/Bold/Close.svg",width: 18,height: 18,color: context.getColorScheme.blackColor,))
+                  child: DLogSvgImage(path: DLogIcons.close,width: 18,height: 18,color: context.getColorScheme.blackColor,))
             ],
           ),
         )

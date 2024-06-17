@@ -25,7 +25,7 @@ class SupplierCodeAndDetailFileView extends StatelessWidget {
         ),
         20.spacingHeight,
         SupplierCodeAndDetailFileItem(
-          icon: "assets/images/icons/hicon/Linear/Attachment.svg",
+          icon:DLogIcons.attachment,
           label: "${context.getLocale(DraftOrderLocale.shippingDetailFile)}*",
           hintText: "Shippment Details File.xml",
           onTap: () {},

@@ -21,6 +21,7 @@ import 'package:dlog/features/home/presentation/screens/orders/delivered_order/o
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/add_new_item/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/order_line/fab/select_item/screen.dart';
+import 'package:dlog/features/home/presentation/screens/orders/draft_order/draft/views/package/fab/package_select_item/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/draft_order/orders/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/in_transit_order/screen.dart';
 import 'package:dlog/features/home/presentation/screens/orders/received_order/all_order/detail/screen.dart';
@@ -349,7 +350,7 @@ class AppRoute {
       GoRoute(
         path: draftOrderPackageSelectItem,
         builder: (BuildContext context, GoRouterState state) {
-          return const PackageSelectItemScreen();
+          return const DraftOrderPackageSelectItemScreen();
         },
       ),
       GoRoute(

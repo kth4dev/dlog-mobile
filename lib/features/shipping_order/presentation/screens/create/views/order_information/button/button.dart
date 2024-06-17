@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:flutter/material.dart';
 
 import 'bottom_sheet/upload_detail_file.dart';
@@ -14,7 +15,7 @@ class DownloadAndUploadButtonView extends StatelessWidget {
       children: [
         ButtonItem(
           color: context.getColorScheme.blackColor,
-          icon: "assets/images/icons/hicon/Outline/Document Download 2.svg",
+          icon:  DLogIcons.documentDownload2,
           textColor: context.getColorScheme.yellow.normal,
           text: "Download File",
           onTap: () {},
@@ -22,7 +23,7 @@ class DownloadAndUploadButtonView extends StatelessWidget {
         58.spacingWidth,
         ButtonItem(
           color: context.getColorScheme.yellow.normal,
-          icon: "assets/images/icons/hicon/Outline/Document Upload 2.svg",
+          icon:  DLogIcons.documentUpload2,
           textColor: context.getColorScheme.blackColor,
           text: "Upload File",
           onTap: () {

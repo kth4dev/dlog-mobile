@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
+import 'package:dlog/core/images/icons.dart';
 import 'package:dlog/core/ui/image/svg_image.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,7 @@ class UploadItem extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              DLogSvgImage(path: "assets/images/icons/hicon/Outline/Document Upload 2.svg",width: 40,height: 40,color: context.getColorScheme.blackColor,),
+              DLogSvgImage(path: DLogIcons.documentUpload2,width: 40,height: 40,color: context.getColorScheme.blackColor,),
               22.spacingHeight,
               DLogText("Drag and drop your file here to start uploading",style: context.getTextTheme.secondaryRegular,color: context.getColorScheme.blackColor,textAlign: TextAlign.center,)
             ],
