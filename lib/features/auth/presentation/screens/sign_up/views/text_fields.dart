@@ -3,6 +3,7 @@ import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/core/ui/text_fields/outline_text_field.dart';
 import 'package:dlog/core/ui/text_fields/password_text_field.dart';
+import 'package:dlog/features/auth/presentation/res/locale/sign_up_locale.dart';
 import 'package:flutter/material.dart';
 
 class SingUpTextFieldsView extends StatefulWidget {
@@ -24,56 +25,56 @@ class _SingUpTextFieldsViewState extends State<SingUpTextFieldsView> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Create an Account",
+          context.getLocale(SignUpLocale.createAccount),
           style: context.getTextTheme.tertiaryHeaderMedium,
           color: context.getColorScheme.blackColor,
         ),
         30.spacingHeight,
-        const DLogOutLinedTextField(
-          hintText: "Enter Customer Name",
-          label: "Customer Number",
+         DLogOutLinedTextField(
+          hintText: context.getLocale(SignUpLocale.enterCustomerNumber),
+          label: context.getLocale(SignUpLocale.customerNumber),
           textInputType: TextInputType.text,
           isValidation: true,
         ),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-          hintText: "Enter User Name",
-          label: "User Name",
+         DLogOutLinedTextField(
+          hintText:context.getLocale(SignUpLocale.enterUserName),
+          label:context.getLocale(SignUpLocale.userName),
           textInputType: TextInputType.text,
           isEnable: true,
         ),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-          hintText: "Enter Phone Number",
-          label: "Phone no",
+         DLogOutLinedTextField(
+          hintText:context.getLocale(SignUpLocale.enterPhoneNo),
+          label: context.getLocale(SignUpLocale.phoneNo),
           textInputType: TextInputType.number,
           isEnable: true,
         ),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-          hintText: "Enter Email",
-          label: "Email",
+         DLogOutLinedTextField(
+          hintText:context.getLocale(SignUpLocale.enterEmail),
+          label: context.getLocale(SignUpLocale.email),
           textInputType: TextInputType.text,
           isEnable: true,
         ),
         10.spacingHeight,
-        const DLogPasswordTextField(
-          hintText: "Enter Password",
-          label: "Password",
+         DLogPasswordTextField(
+          hintText:context.getLocale(SignUpLocale.enterPassword),
+          label: context.getLocale(SignUpLocale.password),
           textInputType: TextInputType.text,
           isValidation: true,
         ),
         10.spacingHeight,
-        const DLogPasswordTextField(
-          hintText: "Enter Confirm Password",
-          label: "Confirm Password",
+         DLogPasswordTextField(
+          hintText:context.getLocale(SignUpLocale.enterConfirmPassword),
+          label:context.getLocale(SignUpLocale.confirmPassword),
           textInputType: TextInputType.text,
           isValidation: true,
         ),
         10.spacingHeight,
-        const DLogOutLinedTextField(
-          hintText: "Enter Customer Shipping Mark",
-          label: "Customer Shipping Mark",
+         DLogOutLinedTextField(
+          hintText:context.getLocale(SignUpLocale.enterCustomerShippingMark),
+          label: context.getLocale(SignUpLocale.customerShippingMark),
           textInputType: TextInputType.text,
           isValidation: true,
         ),
