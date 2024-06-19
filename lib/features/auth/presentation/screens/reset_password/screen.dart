@@ -1,6 +1,8 @@
+import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/bottom_sheet/success.dart';
+import 'package:dlog/features/auth/presentation/res/locale/reset_password_locale.dart';
 import 'package:flutter/material.dart';
 
 import 'view/views.dart';
@@ -24,7 +26,7 @@ class ResetPasswordScreen extends StatelessWidget {
               onReset: () {
                 showDlogSuccessfulBottomSheet(
                     context: context,
-                    text: "Password Reset Successful",
+                    text: context.getLocale(ResetPasswordLocale.successful),
                     route: AppRoute.home);
               },
             ),

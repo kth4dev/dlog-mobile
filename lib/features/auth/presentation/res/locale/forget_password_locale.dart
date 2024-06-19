@@ -32,7 +32,7 @@ class ForgetPasswordLocale {
 
   static const Map<String, dynamic> my = {
     forgetPassword: 'စကားဝှက် မေ့နေပါ သလား',
-    passwordRequirement: 'သင့်စကားဝှက်ကို အောက်ပါအတိုင်း ထားပါ _',
+    passwordRequirement: 'သင့်စကားဝှက်ကို အောက်ပါအတိုင်း ဖြစ်ရမည် _',
     passwordRule: '  1.  အနည်းဆုံး ၈ လုံးရှိရမည်။\n  2. အက္ခရာရှိရမည်။\n  3. နံပါတ်ရှိရမည်။\n  4. "password"စာကြောင့်မရှိရပါ။\n  5. သင်၏ ရှေဆုံးနာမည် (သို့) နောက်ဆုံးနာမည် မပါဝင်ရပါ။',
     resetInputPrompt: 'ကျေးဇူးပြု၍ သင့်စကားဝှက်ကို ထပ်မံသိမ်းရန် သင်၏ဖုန်းနံပါတ် (သို့) အီးမေးလိပ်စာကို ထည့်သွင်းပါ။',
     passwordChangeRequirement: 'သင့်စကားဝှက်ကို ပြောင်းလဲရန် လိုအပ်ပါသည်*။',
