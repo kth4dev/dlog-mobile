@@ -1,3 +1,4 @@
+import 'package:dlog/features/auth/presentation/res/locale/forget_password_locale.dart';
 import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
 import 'package:dlog/features/auth/presentation/res/locale/sign_up_locale.dart';
 import 'package:dlog/features/history/presentation/res/locale/locale.dart';
@@ -29,6 +30,7 @@ class AppLocalization {
     ...ShippingOrderLocale.en,
     ...LoginLocale.en,
     ...SignUpLocale.en,
+    ...ForgetPasswordLocale.en
   };
   static const Map<String, dynamic> zh = {
     ...MainLocale.zh,
@@ -44,7 +46,8 @@ class AppLocalization {
     ...DraftOrderLocale.zh,
     ...ShippingOrderLocale.zh,
     ...LoginLocale.zh,
-    ...SignUpLocale.zh
+    ...SignUpLocale.zh,
+    ...ForgetPasswordLocale.zh,
   };
   static const Map<String, dynamic> my = {
     ...MainLocale.my,
@@ -60,6 +63,7 @@ class AppLocalization {
     ...DraftOrderLocale.my,
     ...ShippingOrderLocale.my,
     ...LoginLocale.my,
-    ...SignUpLocale.my
+    ...SignUpLocale.my,
+    ...ForgetPasswordLocale.my,
   };
 }
