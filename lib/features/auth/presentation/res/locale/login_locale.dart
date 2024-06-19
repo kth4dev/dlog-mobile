@@ -1,5 +1,4 @@
 class LoginLocale{
-
   static const userNameOrEmail = "login_userNameOrEmail";
   static const enterUserNameOrEmail = "login_enterUserNameOrEmail";
   static const password = "login_password";
