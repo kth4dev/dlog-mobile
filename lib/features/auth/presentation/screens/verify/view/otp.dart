@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/auth/presentation/res/locale/verify_locale.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
@@ -57,7 +58,7 @@ class _OtpViewState extends State<OtpView> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             DLogText(
-              "Resend code again in ",
+              context.getLocale(VerifyLocale.resendCodeIn),
               style: context.getTextTheme.tertiaryRegular,
               color: context.getColorScheme.blackColor,
             ),
