@@ -1,5 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
+import 'package:dlog/features/auth/presentation/res/locale/reset_password_locale.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,27 +13,11 @@ class DescriptionView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          "Enter your new password must:",
+          context.getLocale(ResetPasswordLocale.newPasswordRequirement),
           style: context.getTextTheme.tertiaryMedium,
         ),
         DLogText(
-          "  1. be at least 8 characters",
-          style: context.getTextTheme.tertiaryMedium,
-        ),
-        DLogText(
-          "  2. contain a letter",
-          style: context.getTextTheme.tertiaryMedium,
-        ),
-        DLogText(
-          "  3. contain a number",
-          style: context.getTextTheme.tertiaryMedium,
-        ),
-        DLogText(
-          "  4. not contain the word 'password'",
-          style: context.getTextTheme.tertiaryMedium,
-        ),
-        DLogText(
-          "  5. not contain your first name or last name",
+          context.getLocale(ResetPasswordLocale.newPasswordRule),
           style: context.getTextTheme.tertiaryMedium,
         ),
       ],

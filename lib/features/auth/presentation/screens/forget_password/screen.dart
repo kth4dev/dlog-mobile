@@ -21,6 +21,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
       body: SingleChildScrollView(
         padding: _screenPadding,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const HeaderView(),
             20.spacingHeight,

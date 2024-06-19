@@ -1,5 +1,8 @@
+import 'package:dlog/features/auth/presentation/res/locale/forget_password_locale.dart';
 import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
+import 'package:dlog/features/auth/presentation/res/locale/reset_password_locale.dart';
 import 'package:dlog/features/auth/presentation/res/locale/sign_up_locale.dart';
+import 'package:dlog/features/auth/presentation/res/locale/verify_locale.dart';
 import 'package:dlog/features/history/presentation/res/locale/locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/arrived_order_locale.dart';
 import 'package:dlog/features/home/presentation/res/locale/confirm_order_locale.dart';
@@ -29,6 +32,9 @@ class AppLocalization {
     ...ShippingOrderLocale.en,
     ...LoginLocale.en,
     ...SignUpLocale.en,
+    ...ForgetPasswordLocale.en,
+    ...VerifyLocale.en,
+    ...ResetPasswordLocale.en,
   };
   static const Map<String, dynamic> zh = {
     ...MainLocale.zh,
@@ -44,7 +50,10 @@ class AppLocalization {
     ...DraftOrderLocale.zh,
     ...ShippingOrderLocale.zh,
     ...LoginLocale.zh,
-    ...SignUpLocale.zh
+    ...SignUpLocale.zh,
+    ...ForgetPasswordLocale.zh,
+    ...VerifyLocale.zh,
+    ...ResetPasswordLocale.zh,
   };
   static const Map<String, dynamic> my = {
     ...MainLocale.my,
@@ -60,6 +69,9 @@ class AppLocalization {
     ...DraftOrderLocale.my,
     ...ShippingOrderLocale.my,
     ...LoginLocale.my,
-    ...SignUpLocale.my
+    ...SignUpLocale.my,
+    ...ForgetPasswordLocale.my,
+    ...VerifyLocale.my,
+    ...ResetPasswordLocale.my
   };
 }
