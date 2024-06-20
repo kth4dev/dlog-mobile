@@ -10,6 +10,12 @@ class ProfileLocale {
   static const language = "profile_language";
   static const selectLanguages = "profile_selectLanguages";
   static const address = "profile_address";
+  static const selectRegion = "profile_selectRegion";
+  static const buildingArea = "profile_buildingArea";
+  static const enterBuildingArea = "profile_enterBuildingArea";
+  static const landmark = "profile_landmark";
+  static const enterLandmark = "profile_enterLandmark";
+  static const save = "profile_save";
 
 
   static const Map<String, dynamic> en = {
@@ -21,6 +27,12 @@ class ProfileLocale {
     language: "Language",
     selectLanguages: "Select Languages",
     address: "Address",
+    selectRegion: "Select Region",
+    buildingArea: "Building Area",
+    enterBuildingArea: "Enter Building Area",
+    landmark: "Landmark",
+    enterLandmark: "Enter Landmark",
+    save: "Save",
   };
 
   static const Map<String, dynamic> zh = {
@@ -32,6 +44,12 @@ class ProfileLocale {
     language: "语言",
     selectLanguages: "选择语言",
     address: "地址",
+    selectRegion: "选择地区",
+    buildingArea: "建筑面积",
+    enterBuildingArea: "输入建筑面积",
+    landmark: "地标",
+    enterLandmark: "输入地标",
+    save: "保存",
   };
 
   static const Map<String, dynamic> my = {
@@ -43,5 +61,11 @@ class ProfileLocale {
     language: "ဘာသာစကား",
     selectLanguages: "ဘာသာစကားများကိုရွေးပါ",
     address: "လိပ်စာ",
+    selectRegion: "တိုင်းဒေသကြီး",
+    buildingArea: "တိုက်အမှတ်",
+    enterBuildingArea: "တိုက်အမှတ် ထည့်ပါ",
+    landmark: "ထင်ရှားသော နေရာ",
+    enterLandmark: "ထင်ရှားသော နေရာ ထည့်ပါ",
+    save: "သိမ်းဆည်းပါ",
   };
 }
