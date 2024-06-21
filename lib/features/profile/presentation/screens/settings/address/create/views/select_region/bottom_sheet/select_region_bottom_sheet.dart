@@ -10,10 +10,14 @@ class SelectRegionBottomSheetView extends StatelessWidget {
     return Padding(
       padding: _screenPadding,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const HeaderView(headerName: "Select Region"),
           20.spacingHeight,
+          const SelectedRegion(label: "Yangon"),
+          20.spacingHeight,
+          const RegionListView()
         ],
       ),
     );
@@ -23,7 +27,6 @@ class SelectRegionBottomSheetView extends StatelessWidget {
     left: 24.5,
     right: 24.5,
     top: 30,
-    bottom: 30,
   );
 }
 

@@ -16,6 +16,7 @@ class ProfileLocale {
   static const landmark = "profile_landmark";
   static const enterLandmark = "profile_enterLandmark";
   static const save = "profile_save";
+  static const cancel = "profile_cancel";
 
 
   static const Map<String, dynamic> en = {
@@ -33,6 +34,7 @@ class ProfileLocale {
     landmark: "Landmark",
     enterLandmark: "Enter Landmark",
     save: "Save",
+    cancel : "Cancel",
   };
 
   static const Map<String, dynamic> zh = {
@@ -50,6 +52,7 @@ class ProfileLocale {
     landmark: "地标",
     enterLandmark: "输入地标",
     save: "保存",
+    cancel : "取消",
   };
 
   static const Map<String, dynamic> my = {
@@ -67,5 +70,6 @@ class ProfileLocale {
     landmark: "ထင်ရှားသော နေရာ",
     enterLandmark: "ထင်ရှားသော နေရာ ထည့်ပါ",
     save: "သိမ်းဆည်းပါ",
+    cancel : "ပယ်ဖျက်"
   };
 }
