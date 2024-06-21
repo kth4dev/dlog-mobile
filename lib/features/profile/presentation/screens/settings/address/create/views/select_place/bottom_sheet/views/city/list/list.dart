@@ -1,12 +1,14 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
-import 'package:dlog/features/profile/presentation/screens/settings/address/create/views/select_region/bottom_sheet/views/list/items/region_list_item.dart';
+import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
-class RegionListView extends StatelessWidget {
+import 'items/item.dart';
 
-  const RegionListView({super.key,});
+class CityListView extends StatelessWidget {
+
+  const CityListView({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +16,14 @@ class RegionListView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          DLogText("All Region",style: context.getTextTheme.tertiaryMedium,color: context.getColorScheme.blackColor,),
+          DLogText(context.getLocale(ProfileLocale.allCity),style: context.getTextTheme.tertiaryMedium,color: context.getColorScheme.blackColor,),
           20.spacingHeight,
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
               itemCount: 20,
               itemBuilder: (context, index) {
-                return const RegionListItem();
+                return const CityListItem();
               },
             ),
           ),

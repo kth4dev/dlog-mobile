@@ -2,9 +2,8 @@ import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:flutter/material.dart';
 
-class SelectedRegion extends StatelessWidget {
-  final String label;
-  const SelectedRegion({super.key, required this.label});
+class SelectedRegionView extends StatelessWidget {
+  const SelectedRegionView({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,7 @@ class SelectedRegion extends StatelessWidget {
           color: context.getColorScheme.yellow.light,
           border: Border.all(color: context.getColorScheme.yellow.normal)),
       child: DLogText(
-        label,
+       "Yangon",
         style: context.getTextTheme.tertiaryRegular,
         color: context.getColorScheme.blackColor,
       ),

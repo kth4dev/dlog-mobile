@@ -5,15 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class HeaderView extends StatelessWidget {
-  final String headerName;
-  const HeaderView({super.key, required this.headerName});
+  const HeaderView({super.key,});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         DLogText(
-          headerName,
+          context.getLocale(ProfileLocale.selectCity),
           style: context.getTextTheme.secondaryMedium,
           color: context.getColorScheme.blackColor,
         ),

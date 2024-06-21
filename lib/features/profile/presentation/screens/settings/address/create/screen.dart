@@ -25,7 +25,7 @@ class _CreateAddressScreenState extends State<CreateAddressScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SelectRegionView(),
+              const SelectPlaceView(),
               10.spacingHeight,
               const BuildingAreaView(),
               10.spacingHeight,

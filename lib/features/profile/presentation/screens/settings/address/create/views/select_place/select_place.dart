@@ -6,10 +6,11 @@ import 'package:dlog/core/ui/text/dlog_text.dart';
 import 'package:dlog/features/profile/presentation/res/locale/locale.dart';
 import 'package:flutter/material.dart';
 
-import 'bottom_sheet/select_region_bottom_sheet.dart';
+import 'bottom_sheet/select_place_bottom_sheet.dart';
 
-class SelectRegionView extends StatelessWidget {
-  const SelectRegionView({
+
+class SelectPlaceView extends StatelessWidget {
+  const SelectPlaceView({
     super.key,
   });
 
@@ -19,14 +20,14 @@ class SelectRegionView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DLogText(
-          context.getLocale(ProfileLocale.selectRegion),
+          context.getLocale(ProfileLocale.selectPlace),
           style: context.getTextTheme.tertiaryMedium,
           color: context.getColorScheme.blackColor,
         ),
         10.spacingHeight,
         InkWell(
           onTap: () {
-            selectRegionBottomSheet(context: context);
+            selectPlaceBottomSheet(context: context);
           },
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
@@ -39,7 +40,7 @@ class SelectRegionView extends StatelessWidget {
               children: [
                 Expanded(
                   child: DLogText(
-                    context.getLocale(ProfileLocale.selectRegion),
+                    context.getLocale(ProfileLocale.selectPlace),
                     style: context.getTextTheme.tertiaryRegular,
                     color: context.getColorScheme.grey.normal,
                   ),
