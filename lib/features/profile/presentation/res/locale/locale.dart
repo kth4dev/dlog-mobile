@@ -96,7 +96,7 @@ class ProfileLocale {
     enterLandmark: "ထင်ရှားသော နေရာ ထည့်ပါ",
     save: "သိမ်းဆည်းပါ",
     cancel : "ပယ်ဖျက်",
-    allRegion: "မြို့နယ် အားလုံး",
+    allRegion: "တိုင်းဒေသကြီး အားလုံး",
     selectDistrict: "ခရိုင်/မြို့နယ် ရွေးချယ်ရန်",
     allDistrict: "ခရိုင်/မြို့နယ် အားလုံး",
     selectTownship: "မြို့နယ် ရွေးချယ်ရန်",
