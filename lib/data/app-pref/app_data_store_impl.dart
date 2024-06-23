@@ -1,5 +1,6 @@
 import 'package:dlog/data/app-pref/app_data_store.dart';
 import 'package:dlog/data/app-pref/app_pref.dart';
+import 'package:dlog/data/models/vo/auth/user_vo.dart';
 
 class AppDataStoreImpl extends AppDataStore {
   AppPref appPref;
@@ -34,5 +35,16 @@ class AppDataStoreImpl extends AppDataStore {
   @override
   Future<void> setLocale(int value) async {
     await appPref.saveData(key: AppPref.keyLocale, value: value);
+  }
+
+  @override
+  String getToken() {
+    return appPref.getData(key: AppPref.keyToken) ?? '';
+  }
+
+  @override
+  UserVo getUser() {
+    // TODO: implement getUser
+    throw UnimplementedError();
   }
 }

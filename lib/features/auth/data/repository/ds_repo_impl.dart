@@ -18,4 +18,9 @@ class AuthDSRepositoryImpl extends AuthDSRepository {
   Future<void> saveUser(UserDTO user) async {
     await pref.saveData(key: AppPref.keyUser, value: jsonEncode(user));
   }
+
+  @override
+  Future<void> setLoggedIn() async{
+    await pref.saveData(key: AppPref.keyAuthenticated, value: true);
+  }
 }

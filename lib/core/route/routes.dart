@@ -1,5 +1,6 @@
 import 'package:dlog/data/app-pref/app_data_store.dart';
 import 'package:dlog/data/di/injection_container.dart';
+import 'package:dlog/features/auth/presentation/bloc/login/login_bloc.dart';
 import 'package:dlog/features/auth/presentation/screens/forget_password/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/login/screen.dart';
 import 'package:dlog/features/auth/presentation/screens/reset_password/screen.dart';
@@ -45,6 +46,7 @@ import 'package:dlog/features/shipping_order/presentation/screens/detail/views/o
 import 'package:dlog/features/shipping_order/presentation/screens/detail/views/package/detail/screen.dart';
 import 'package:dlog/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoute {
@@ -89,7 +91,8 @@ class AppRoute {
   static const String packageSelectItem = "/packageSelectItem";
   static const String draftOrderAddNewItem = "/draftOrderNewItem";
   static const String draftOrderSelectItem = "/draftOrderSelectItem";
-  static const String draftOrderPackageSelectItem = "/draftOrderPackageSelectItem";
+  static const String draftOrderPackageSelectItem =
+      "/draftOrderPackageSelectItem";
   static const String orderLineDetail = "/orderLineDetail";
   static const String packageDetail = "/packageDetail";
   static const String manageProfile = "/manageProfile";
@@ -114,14 +117,20 @@ class AppRoute {
           } else if (isLoggedIn) {
             return const HomeScreen();
           } else {
-            return const LoginScreen();
+            return BlocProvider(
+              create: (context) => sl<LoginBloc>(),
+              child: const LoginScreen(),
+            );
           }
         },
       ),
       GoRoute(
         path: login,
         builder: (BuildContext context, GoRouterState state) {
-          return const LoginScreen();
+          return BlocProvider(
+            create: (context) => sl<LoginBloc>(),
+            child: const LoginScreen(),
+          );
         },
       ),
       GoRoute(

@@ -1,4 +1,3 @@
 extension StrExtension on String? {
-  String get validString =>  this ?? "UnKnown";
-
+  String get validString =>  this ?? "";
 }

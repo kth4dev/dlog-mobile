@@ -5,7 +5,7 @@ class UserVo {
   final String password;
   final String userName;
   final String fullName;
-  final String avatar;
+  final num avatar;
   final String phoneNumber;
   final String wechatAcc;
   final String viberAcc;

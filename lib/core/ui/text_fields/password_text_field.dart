@@ -16,7 +16,8 @@ class DLogPasswordTextField extends StatefulWidget {
   final int? maxLength;
   final double? width;
   final double? height;
-  final Function(String?)? onChange;
+  final Function(String)? onChange;
+  final String? errorText;
 
   const DLogPasswordTextField({
     super.key,
@@ -32,6 +33,7 @@ class DLogPasswordTextField extends StatefulWidget {
     this.onChange,
     this.width,
     this.height,
+    this.errorText,
   });
 
   @override
@@ -53,9 +55,9 @@ class _DLogPasswordTextFieldState extends State<DLogPasswordTextField> {
         6.spacingHeight,
         SizedBox(
           width: widget.width,
-          height: widget.height ?? 40,
+          height: widget.height,
           child: TextFormField(
-            textAlignVertical: TextAlignVertical.top,
+            textAlignVertical: TextAlignVertical.center,
             minLines: widget.minLine,
             maxLines: widget.maxLine ?? 1,
             maxLength: widget.maxLength,
@@ -69,21 +71,26 @@ class _DLogPasswordTextFieldState extends State<DLogPasswordTextField> {
               }
               return null;
             },
+            onChanged: widget.onChange,
             textInputAction: widget.textInputAction ?? TextInputAction.next,
             obscureText: _isObscure,
             keyboardType: widget.textInputType,
             decoration: InputDecoration(
               hintText: widget.hintText,
-              hintStyle: context.getTextTheme.tertiaryMedium
-                  .copyWith(color: context.getColorScheme.grey.normal),
+              errorText: widget.errorText,
+              hintStyle: context.getTextTheme.tertiaryMedium.copyWith(
+                color: context.getColorScheme.grey.normal,
+              ),
               suffixIcon: InkWell(
-                  onTap: () {
-                    setState(() {
-                      _isObscure = !_isObscure;
-                    });
-                  },
-                  child: Icon(
-                      _isObscure ? Icons.visibility_off : Icons.visibility)),
+                onTap: () {
+                  setState(() {
+                    _isObscure = !_isObscure;
+                  });
+                },
+                child: Icon(
+                  _isObscure ? Icons.visibility_off : Icons.visibility,
+                ),
+              ),
               contentPadding: const EdgeInsets.symmetric(
                 vertical: 12.0,
                 horizontal: 10.0,

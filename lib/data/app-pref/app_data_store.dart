@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:dlog/data/models/vo/auth/user_vo.dart';
 
 abstract class AppDataStore {
   Future<void> setFirstTime(bool value);
@@ -12,4 +13,8 @@ abstract class AppDataStore {
   Future<void> setLocale(int value);
 
   int getLocale();
+
+  String getToken();
+
+  UserVo getUser();
 }
