@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
+import 'package:dlog/core/log/app_log.dart';
 import 'package:retrofit/dio.dart';
 import 'package:dlog/core/resource/datastate/dio_exceptions.dart';
 import 'package:dlog/core/resource/datastate/network_error_type.dart';
@@ -75,6 +76,7 @@ Future<NetworkResponse<T>> safeApiCall<T>(
       type: NetworkErrorType.noInternet,
     );
   } catch (e) {
+    AppLogs.error(e.toString());
     return NetworkFailed(
       message: 'SafeApiCall exception',
       type: NetworkErrorType.dynamic,

@@ -5,11 +5,12 @@ import 'package:flutter/material.dart';
 
 // todo : filled color,error text style
 class DLogOutLinedTextField extends StatelessWidget {
-  final Function(String?)? onChange;
+  final Function(String)? onChange;
   final String label;
   final TextInputType textInputType;
   final String hintText;
   final bool? isValidation;
+  final String? errorText;
   final TextInputAction? textInputAction;
   final bool? isEnable;
   final int? minLine;
@@ -17,6 +18,7 @@ class DLogOutLinedTextField extends StatelessWidget {
   final int? maxLength;
   final double? width;
   final double? height;
+  final FocusNode? focusNode;
 
   const DLogOutLinedTextField({
     super.key,
@@ -32,6 +34,8 @@ class DLogOutLinedTextField extends StatelessWidget {
     this.width,
     this.height,
     this.onChange,
+    this.errorText,
+    this.focusNode,
   });
 
   @override
@@ -46,8 +50,9 @@ class DLogOutLinedTextField extends StatelessWidget {
         6.spacingHeight,
         SizedBox(
           width: width,
-          height: height ?? 40,
+          height: height ,
           child: TextFormField(
+            focusNode: focusNode,
             textAlignVertical: TextAlignVertical.top,
             minLines: minLine,
             maxLines: maxLine,
@@ -67,6 +72,7 @@ class DLogOutLinedTextField extends StatelessWidget {
             keyboardType: textInputType,
             decoration: InputDecoration(
               hintText: hintText,
+              errorText: errorText,
               hintStyle: context.getTextTheme.tertiaryMedium
                   .copyWith(color: context.getColorScheme.grey.normal),
               contentPadding: const EdgeInsets.symmetric(

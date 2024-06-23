@@ -6,7 +6,13 @@ import 'package:dlog/features/auth/presentation/res/locale/login_locale.dart';
 import 'package:flutter/material.dart';
 
 class LoginTextFieldsView extends StatelessWidget {
-  const LoginTextFieldsView({super.key});
+  final Function(String) onChangeUserName, onChangePassword;
+
+  const LoginTextFieldsView({
+    super.key,
+    required this.onChangeUserName,
+    required this.onChangePassword,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +23,14 @@ class LoginTextFieldsView extends StatelessWidget {
           hintText: context.getLocale(LoginLocale.enterUserNameOrEmail),
           label: context.getLocale(LoginLocale.userNameOrEmail),
           textInputType: TextInputType.text,
-          isValidation: true,
-          onChange: (value) {},
+          onChange: onChangeUserName,
         ),
         20.spacingHeight,
-         DLogPasswordTextField(
-          hintText:context.getLocale(LoginLocale.enterPassword),
+        DLogPasswordTextField(
+          hintText: context.getLocale(LoginLocale.enterPassword),
           label: context.getLocale(LoginLocale.password),
           textInputType: TextInputType.text,
-          isValidation: true,
+          onChange: onChangePassword,
         )
       ],
     );

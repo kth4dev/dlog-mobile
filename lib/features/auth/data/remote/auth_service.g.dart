@@ -13,7 +13,7 @@ class _AuthService implements AuthService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://bizaid-dlog.bizaid.com.mm/user-api/api/customer/auth/';
+    baseUrl ??= 'https://bizaid-dlog.bizaid.com.mm/api/customer/auth/';
   }
 
   final Dio _dio;

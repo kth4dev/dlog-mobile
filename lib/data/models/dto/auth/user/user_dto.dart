@@ -25,7 +25,7 @@ class UserDTO {
   String? password;
   String? userName;
   String? fullName;
-  String? avatar;
+  num? avatar;
   String? phoneNumber;
   String? wechatAcc;
   String? viberAcc;
@@ -70,7 +70,7 @@ class UserDTO {
         password: password.validString,
         userName: userName.validString,
         fullName: fullName.validString,
-        avatar: avatar.validString,
+        avatar: avatar ?? -1,
         phoneNumber: phoneNumber.validString,
         wechatAcc: wechatAcc.validString,
         viberAcc: viberAcc.validString);

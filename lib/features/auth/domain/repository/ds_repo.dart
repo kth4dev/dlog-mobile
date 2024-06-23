@@ -4,4 +4,6 @@ abstract class AuthDSRepository {
   Future<void> saveToken(String token);
 
   Future<void> saveUser(UserDTO user);
+
+  Future<void> setLoggedIn();
 }
