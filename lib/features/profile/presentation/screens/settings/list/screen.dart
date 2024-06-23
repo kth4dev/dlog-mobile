@@ -34,7 +34,7 @@ class _SettingScreenState extends State<SettingScreen> {
         context.push(AppRoute.languages);
         break;
       case SettingsMenu.address:
-        //todo : navigate to address screen
+        context.push(AppRoute.addresses);
         break;
     }
   }

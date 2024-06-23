@@ -35,6 +35,8 @@ import 'package:dlog/features/more/presentation/screens/policy/screen.dart';
 import 'package:dlog/features/more/presentation/screens/teams_and_conditions/screen.dart';
 import 'package:dlog/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:dlog/features/profile/presentation/screens/manage_profile/screen.dart';
+import 'package:dlog/features/profile/presentation/screens/settings/address/create/screen.dart';
+import 'package:dlog/features/profile/presentation/screens/settings/address/list/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/langauges/screen.dart';
 import 'package:dlog/features/profile/presentation/screens/settings/list/screen.dart';
 import 'package:dlog/features/shipping_order/presentation/screens/create/screen.dart';
@@ -66,6 +68,8 @@ class AppRoute {
   static const String teamsAndConditions = "/teamsAndConditions";
   static const String policy = "/policy";
   static const String languages = "/languages";
+  static const String addresses = "/addresses";
+  static const String createAddress = "/createAddress";
   static const String notification = "/notification";
   static const String notificationDetail = "/notificationDetail";
   static const String confirmOrder = "/confirmOrder";
@@ -185,6 +189,18 @@ class AppRoute {
         path: languages,
         builder: (BuildContext context, GoRouterState state) {
           return const LanguageScreen();
+        },
+      ),
+      GoRoute(
+        path: addresses,
+        builder: (BuildContext context, GoRouterState state) {
+          return const AddressScreen();
+        },
+      ),
+      GoRoute(
+        path: createAddress,
+        builder: (BuildContext context, GoRouterState state) {
+          return const CreateAddressScreen();
         },
       ),
       GoRoute(
