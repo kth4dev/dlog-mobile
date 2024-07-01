@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:dlog/core/extensions/str_extension.dart';
-import 'package:dlog/core/log/app_log.dart';
 import 'package:dlog/core/resource/datastate/data_state.dart';
 import 'package:dlog/features/auth/data/models/login/login_request.dart';
 import 'package:dlog/features/auth/domain/usecase/login.dart';

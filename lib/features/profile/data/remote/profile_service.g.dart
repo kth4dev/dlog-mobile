@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'address_service.dart';
+part of 'profile_service.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,12 +8,12 @@ part of 'address_service.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _AddressService implements AddressService {
-  _AddressService(
+class _ProfileService implements ProfileService {
+  _ProfileService(
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://bizaid-dlog.bizaid.com.mm/user-api/api/address/';
+    baseUrl ??= 'https://bizaid-dlog.bizaid.com.mm/api/v1/customer/';
   }
 
   final Dio _dio;
@@ -21,11 +21,10 @@ class _AddressService implements AddressService {
   String? baseUrl;
 
   @override
-  Future<HttpResponse<List<RegionDTO>>> region({required String token}) async {
+  Future<HttpResponse<List<RegionDTO>>> region({required String search}) async {
     const _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{r'Authorization': token};
-    _headers.removeWhere((k, v) => v == null);
+    final queryParameters = <String, dynamic>{r'search': search};
+    final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<List<dynamic>>(
         _setStreamType<HttpResponse<List<RegionDTO>>>(Options(
@@ -35,7 +34,7 @@ class _AddressService implements AddressService {
     )
             .compose(
               _dio.options,
-              'regions',
+              'address/regions',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -52,52 +51,16 @@ class _AddressService implements AddressService {
   }
 
   @override
-  Future<HttpResponse<List<DistrictDTO>>> district({
-    required String token,
-    required String regionPostalCode,
-  }) async {
-    const _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{
-      r'regionPostalCode': regionPostalCode
-    };
-    final _headers = <String, dynamic>{r'Authorization': token};
-    _headers.removeWhere((k, v) => v == null);
-    final Map<String, dynamic>? _data = null;
-    final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<HttpResponse<List<DistrictDTO>>>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              'districts',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    var value = _result.data!
-        .map((dynamic i) => DistrictDTO.fromJson(i as Map<String, dynamic>))
-        .toList();
-    final httpResponse = HttpResponse(value, _result);
-    return httpResponse;
-  }
-
-  @override
   Future<HttpResponse<List<TownshipDTO>>> township({
-    required String token,
-    required String districtPostalCode,
+    required String search,
+    required String regionId,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{
-      r'districtPostalCode': districtPostalCode
+      r'search': search,
+      r'region_id': regionId,
     };
-    final _headers = <String, dynamic>{r'Authorization': token};
-    _headers.removeWhere((k, v) => v == null);
+    final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<List<dynamic>>(
         _setStreamType<HttpResponse<List<TownshipDTO>>>(Options(
@@ -107,7 +70,7 @@ class _AddressService implements AddressService {
     )
             .compose(
               _dio.options,
-              'townships',
+              'address/townships',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -124,30 +87,26 @@ class _AddressService implements AddressService {
   }
 
   @override
-  Future<HttpResponse<List<CityDTO>>> city({
-    required String token,
-    required String regionPostalCode,
-    required String districtPostalCode,
-    required String townshipPostalCode,
+  Future<HttpResponse<List<CityAndVillageTractsDTO>>> cityAndVillageTracts({
+    required String search,
+    required String townshipId,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{
-      r'regionPostalCode': regionPostalCode,
-      r'districtPostalCode': districtPostalCode,
-      r'townshipPostalCode': townshipPostalCode,
+      r'search': search,
+      r'township_id': townshipId,
     };
-    final _headers = <String, dynamic>{r'Authorization': token};
-    _headers.removeWhere((k, v) => v == null);
+    final _headers = <String, dynamic>{};
     final Map<String, dynamic>? _data = null;
     final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<HttpResponse<List<CityDTO>>>(Options(
+        _setStreamType<HttpResponse<List<CityAndVillageTractsDTO>>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
             .compose(
               _dio.options,
-              'cities',
+              'address/city-and-village-tracts',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -157,7 +116,45 @@ class _AddressService implements AddressService {
               baseUrl,
             ))));
     var value = _result.data!
-        .map((dynamic i) => CityDTO.fromJson(i as Map<String, dynamic>))
+        .map((dynamic i) =>
+            CityAndVillageTractsDTO.fromJson(i as Map<String, dynamic>))
+        .toList();
+    final httpResponse = HttpResponse(value, _result);
+    return httpResponse;
+  }
+
+  @override
+  Future<HttpResponse<List<VillageAndWardsDTO>>> villageAndWards({
+    required String search,
+    required String cityAndVillageTractsId,
+  }) async {
+    const _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{
+      r'search': search,
+      r'city_and_village_tract_id': cityAndVillageTractsId,
+    };
+    final _headers = <String, dynamic>{};
+    final Map<String, dynamic>? _data = null;
+    final _result = await _dio.fetch<List<dynamic>>(
+        _setStreamType<HttpResponse<List<VillageAndWardsDTO>>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              'address/village-and-wards',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    var value = _result.data!
+        .map((dynamic i) =>
+            VillageAndWardsDTO.fromJson(i as Map<String, dynamic>))
         .toList();
     final httpResponse = HttpResponse(value, _result);
     return httpResponse;

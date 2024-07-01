@@ -1,7 +1,6 @@
 import 'package:dlog/core/extensions/context_extension.dart';
 import 'package:dlog/core/extensions/num_extension.dart';
 import 'package:dlog/core/images/logo.dart';
-import 'package:dlog/core/log/app_log.dart';
 import 'package:dlog/core/route/routes.dart';
 import 'package:dlog/core/ui/app_bar/default.dart';
 import 'package:dlog/core/ui/dialog/info_dialog.dart';

@@ -4,5 +4,5 @@ class Config {
 
   static const String authUrl = "${baseUrl}api/customer/auth/";
 
-  static const String addressUrl = "${baseUrl}api/address/";
+  static const String profileUrl = "${baseUrl}api/v1/customer/";
 }

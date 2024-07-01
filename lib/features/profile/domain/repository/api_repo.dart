@@ -1,28 +1,26 @@
 import 'package:dlog/core/resource/datastate/data_state.dart';
-import 'package:dlog/data/models/dto/address/create/city_dto.dart';
-import 'package:dlog/data/models/dto/address/create/district_dto.dart';
+import 'package:dlog/data/models/dto/address/create/city_and_village_tracts_dto.dart';
 import 'package:dlog/data/models/dto/address/create/region_dto.dart';
 import 'package:dlog/data/models/dto/address/create/township_dto.dart';
+import 'package:dlog/data/models/dto/address/create/village_and_wards_dto.dart';
 
-abstract class AddressApiRepository {
+abstract class ProfileApiRepository {
   Future<DataState<List<RegionDTO>>> region(
-    String token,
-  );
-
-  Future<DataState<List<DistrictDTO>>> district(
-    String token,
-    String regionPostalCode,
+    String search,
   );
 
   Future<DataState<List<TownshipDTO>>> township(
-    String token,
-    String districtPostalCode,
+    String search,
+    String regionId,
   );
 
-  Future<DataState<List<CityDTO>>> city(
-    String token,
-    String regionPostalCode,
-    String districtPostalCode,
-    String townshipPostalCode,
+  Future<DataState<List<CityAndVillageTractsDTO>>> cityAndVillageTracts(
+    String search,
+    String townshipId,
+  );
+
+  Future<DataState<List<VillageAndWardsDTO>>> villageAndWards(
+    String search,
+    String cityAndVillageTractsId,
   );
 }

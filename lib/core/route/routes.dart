@@ -119,7 +119,7 @@ class AppRoute {
           if (isFirstTime) {
             return const OnboardingScreen();
           } else if (isLoggedIn) {
-            return const HomeScreen();
+            return const MainScreen();
           } else {
             return BlocProvider(
               create: (context) => sl<LoginBloc>(),

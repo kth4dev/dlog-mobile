@@ -4,13 +4,13 @@ import 'package:dlog/data/models/dto/address/create/region_dto.dart';
 import 'package:dlog/features/profile/domain/repository/api_repo.dart';
 
 class RegionUseCase extends UseCase<DataState<List<RegionDTO>>, String> {
-  final AddressApiRepository apiRepo;
+  final ProfileApiRepository apiRepo;
 
   RegionUseCase(this.apiRepo);
 
   @override
   Future<DataState<List<RegionDTO>>> call({String? params}) async {
-    final response = await apiRepo.region(params!);
+    final response = await apiRepo.region(params ?? "");
 
     switch (response) {
       case DataSuccess<List<RegionDTO>>():
